@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://mmwordpress.github.io"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Myanmar Wordpress Guides"
 theme = "harbor"
