@@ -1,7 +1,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>Tags on My New Hugo Site</title>
-		<link>http://example.org/tags/</link>
+		<title>Tags on Myanmar Wordpress Guides</title>
+		<link>https://h2kyaw.github.io/mmwordpress.github.io/tags/</link>
 		<description>Recent content in Tags </description>
 		<generator>Hugo -- gohugo.io</generator>
 		
@@ -9,7 +9,7 @@
 		
 		<managingEditor>Page(/tags)</managingEditor>
     	
-		<atom:link href="/tags/" rel="self" type="application/rss+xml" />
+		<atom:link href="/mmwordpress.github.io/tags/" rel="self" type="application/rss+xml" />
 		
 	</channel>
 </rss>
