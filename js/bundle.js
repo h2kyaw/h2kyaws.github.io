@@ -1,58 +1,5358 @@
-!function(e){var t={};function n(r){if(t[r])return t[r].exports;var i=t[r]={i:r,l:!1,exports:{}};return e[r].call(i.exports,i,i.exports,n),i.l=!0,i.exports}n.m=e,n.c=t,n.d=function(e,t,r){n.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},n.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},n.t=function(e,t){if(1&t&&(e=n(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var r=Object.create(null);if(n.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var i in e)n.d(r,i,function(t){return e[t]}.bind(null,i));return r},n.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return n.d(t,"a",t),t},n.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},n.p="",n(n.s=4)}([function(e,t,n){var r,i;
-/**
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// create a fake namespace object
+/******/ 	// mode & 1: value is a module id, require it
+/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 4: return value when already ns object
+/******/ 	// mode & 8|1: behave like require
+/******/ 	__webpack_require__.t = function(value, mode) {
+/******/ 		if(mode & 1) value = __webpack_require__(value);
+/******/ 		if(mode & 8) return value;
+/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+/******/ 		var ns = Object.create(null);
+/******/ 		__webpack_require__.r(ns);
+/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/ 		return ns;
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ })
+/************************************************************************/
+/******/ ({
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./static/css/main.css":
+/*!*****************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--4-1!./static/css/main.css ***!
+  \*****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, "/* noto-sans-jp-regular - japanese_latin */\r\n@font-face {\r\n  font-family: 'Noto Sans JP';\r\n  font-style: normal;\r\n  font-weight: 400;\r\n  font-display: swap;\r\n  src: local('Noto Sans Japanese Regular'), local('NotoSansJapanese-Regular'),\r\n       url('/fonts/noto-sans-jp-v25-japanese_latin-regular.woff2') format('woff2'), /* Super Modern Browsers */\r\n       url('/fonts/noto-sans-jp-v25-japanese_latin-regular.woff') format('woff'); /* Modern Browsers */\r\n}\r\n\r\n/* roboto-regular - latin */\r\n@font-face {\r\n  font-family: 'Roboto';\r\n  font-style: normal;\r\n  font-weight: 400;\r\n  font-display: swap;\r\n  src: local('Roboto'), local('Roboto-Regular'),\r\n       url('/fonts/roboto-v20-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */\r\n       url('/fonts/roboto-v20-latin-regular.woff') format('woff'); /* Modern Browsers */\r\n}\r\n\r\nhtml {\r\n  background-color: #FFFFFF;\r\n}\r\n\r\nbody {\r\n  margin: 0;\r\n  padding: 0;\r\n  font-family: 'Noto Sans JP', sans-serif;\r\n  font-size: 16px;\r\n  color: #42464c;\r\n  background: 0 0;\r\n  flex-flow: column;\r\n  text-rendering: optimizeLegibility;\r\n}\r\n\r\na {\r\n  outline: none;\r\n  text-decoration: none;\r\n}\r\n\r\n.error-text {\r\n  font-family: 'Roboto', Helvetica, sans-serif;\r\n  text-align: center;\r\n}\r\n\r\n.header {\r\n  margin: auto;\r\n  position: relative;\r\n}\r\n\r\n.navbar {\r\n  min-height: 50px;\r\n  margin-bottom: 20px;\r\n}\r\n\r\n.nav {\r\n  top: 0;\r\n  position: relative;\r\n  max-width: 800px;\r\n  margin: 20px auto;\r\n  padding: 0 10px;\r\n  text-align: right;\r\n}\r\n\r\n.nav-logo {\r\n  float: left;\r\n  transition: transform 300ms ease-out;\r\n}\r\n\r\n.nav-logo:hover {\r\n  transform: scale(1.1);\r\n}\r\n\r\n.nav-logo img {\r\n  display: block;\r\n  width: auto;\r\n}\r\n\r\n.nav-links {\r\n  margin: 0;\r\n  padding: 0;\r\n  font-size: 14px;\r\n  list-style: none;\r\n}\r\n\r\n.nav-links li {\r\n  display: inline-block;\r\n  margin: 0 0 0 10px;\r\n}\r\n\r\n.nav-links li a em {\r\n  color: #000000;\r\n}\r\n\r\n.intro-header {\r\n  margin: 40px 0 20px;\r\n  position: relative;\r\n}\r\n\r\n.intro-header [class$=\"-heading\"] {\r\n  text-align: center;\r\n}\r\n\r\n.intro-header [class$=\"-heading\"] h1 {\r\n  margin-top: 0;\r\n  padding-top: 0;\r\n  font-size: 50px;\r\n}\r\n\r\nh1,h2,h3,h4,h5,h6 {\r\n  font-family: 'Roboto', Helvetica, sans-serif;\r\n  font-weight: 800;\r\n  color: #111111;\r\n}\r\n\r\n.container[role=main] {\r\n  max-width: 700px;\r\n  padding: 0 15px;\r\n  font-size: 16px;\r\n  line-height: 1.7;\r\n  color: #333333;\r\n}\r\n\r\n.container img {\r\n  width: 100%;\r\n}\r\n\r\n#blog-archives {\r\n  margin: 20px auto;\r\n  font-size: 14px;\r\n}\r\n\r\n.archives {\r\n  margin: 20px auto;\r\n}\r\n\r\n.archives td {\r\n  border: none;\r\n  text-align: left;\r\n}\r\n\r\n.article {\r\n  text-align: justify;\r\n}\r\n\r\n#TableOfContents {\r\n  font-size: 14px;\r\n  border: 2px dotted #cccccc;\r\n  margin: 1em 0;\r\n  padding: 0.5em 0;\r\n  background-color: #f0f0f0;\r\n}\r\n\r\n#TableOfContents ul {\r\n  list-style-type: none;\r\n}\r\n\r\n#TableOfContents ul ul {\r\n  list-style-type: disc;\r\n}\r\n\r\np {\r\n  line-height: 1.5;\r\n  margin: 0.5em 0;\r\n}\r\n\r\np + p {\r\n  margin-top: 1em;\r\n}\r\n\r\n.social-icon {\r\n  margin-left: 0.2em;\r\n  margin-right: 0.2em;\r\n}\r\n\r\n.post-preview {\r\n  padding-bottom: 10px;\r\n  border-bottom: 1px solid #eeeeee;\r\n}\r\n\r\n.post-preview a {\r\n  text-decoration: none;\r\n  color: #222222;\r\n}\r\n\r\n.post-preview:last-child {\r\n  border-bottom: 0;\r\n}\r\n\r\n.postmeta {\r\n  margin: 10px 0;\r\n}\r\n\r\n.blog-tags {\r\n  font-family: 'Roboto', Helvetica, sans-serif;\r\n  color: #999999;\r\n  font-size: 15px;\r\n  margin: 30px 0;\r\n}\r\n\r\n.blog-tags a {\r\n  color: #0000BB;\r\n  text-decoration: none;\r\n  padding: 0px 5px;\r\n}\r\n\r\n.blog-tags a:before {\r\n  content: \"#\";\r\n}\r\n\r\nh4.term-name > span.badge {\r\n    float: right;\r\n}\r\n\r\ndiv.panel-body {\r\n  font-family: 'Roboto', Helvetica, sans-serif;\r\n  font-weight: 800;\r\n  border-radius: 0;\r\n  border: none;\r\n  font-size: 16px;\r\n}\r\n\r\n.post-entry {\r\n  width: 100%;\r\n  margin-top: 10px;\r\n}\r\n\r\n.post-read-more {\r\n  font-family: 'Roboto', Helvetica, sans-serif;\r\n  font-weight: 800;\r\n  float: right;\r\n  position: relative;\r\n  display: block;\r\n  text-decoration: none;\r\n}\r\n\r\na.post-read-more::after {\r\n  position: absolute;\r\n  bottom: -4px;\r\n  left: 0;\r\n  content: '';\r\n  width: 100%;\r\n  height: 2px;\r\n  background: #333;\r\n  transform: scale(0, 1);\r\n  transform-origin: center top;\r\n  transition: transform .3s;\r\n}\r\n\r\na.post-read-more:hover::after {\r\n  transform: scale(1, 1);\r\n}\r\n\r\nblockquote {\r\n  color: #808080;\r\n  padding: 0 10px;\r\n  border-left: 4px solid #aaaaaa;\r\n}\r\n\r\nblockquote p:first-child {\r\n  margin-top: 0;\r\n}\r\n\r\ntable {\r\n  padding: 0;\r\n  border-spacing: 0;\r\n}\r\n\r\ntable tr {\r\n  border-top: 1px solid #dddddd;\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n\r\ntable tr th {\r\n  font-weight: bold;\r\n  border: 1px solid #dddddd;\r\n  text-align: left;\r\n  margin: 0;\r\n  padding: 6px 13px;\r\n}\r\n\r\ntable tr td {\r\n  border: 1px solid #dddddd;\r\n  text-align: left;\r\n  margin: 0;\r\n  padding: 6px 12px;\r\n}\r\n\r\ntable tr th :first-child,\r\ntable tr td :first-child {\r\n  margin-top: 0;\r\n}\r\n\r\ntable tr th :last-child,\r\ntable tr td :last-child {\r\n  margin-bottom: 0;\r\n}\r\n\r\n.chroma .ln {\r\n  margin-right: 0.8em;\r\n  padding: 0 0.4em 0 0.4em;\r\n}\r\n\r\npre {\r\n    display: block;\r\n    padding: 9.5px;\r\n    margin: 0 0 10px;\r\n    font-size: 13px;\r\n    line-height: 1.42857143;\r\n    color: #333;\r\n    word-break: break-all;\r\n    word-wrap: break-word;\r\n    background-color: #f5f5f5;\r\n    border: 1px solid #cccccc;\r\n    border-radius: 4px;\r\n}\r\n\r\npre code {\r\n    padding: 0;\r\n    font-family: Menlo, Monaco, Consolas, monospace;\r\n    font-size: inherit;\r\n    color: inherit;\r\n    white-space: pre-wrap;\r\n    background-color: transparent;\r\n    border-radius: 0;\r\n}\r\n\r\ncode {\r\n    padding: 2px 4px;\r\n    font-size: 90%;\r\n    color: #dd0011;\r\n    background-color: #f9f9f9;\r\n    border-radius: 4px;\r\n}\r\n\r\n#backtotopButton {\r\n  position: fixed;\r\n  bottom: 20px;\r\n  right: 20px;\r\n  z-index: 99;\r\n  border: none;\r\n  outline: none;\r\n  background-color: #eeeeff;\r\n  cursor: pointer;\r\n  padding: 15px;\r\n  border-radius: 10px;\r\n  font-size: 16px;\r\n  text-align: center;\r\n}\r\n\r\n#backtotopButton:hover {\r\n  background-color: #aaaaaa;\r\n}\r\n\r\n.searchBoxContainer {\r\n  position: relative;\r\n  width: 300px;\r\n  height: 30px;\r\n  margin: 10px auto 50px auto;\r\n}\r\n\r\ninput.searchBox {\r\n  position: absolute;\r\n  width: 100%;\r\n  padding: 0 35px 0 15px;\r\n  top: 0;\r\n  left: 0;\r\n  right: 0;\r\n  bottom: 0;\r\n  border-radius: 15px;\r\n  outline: 0;\r\n  font-size: 16px;\r\n  color: #707070;\r\n  background-color:#f6f6f6;\r\n  border: solid 1px #c9c9c9;\r\n  box-sizing: border-box;\r\n}\r\n\r\n.searchBox::placeholder {\r\n  color: #c9c9c9;\r\n}\r\n\r\n.searchResults {\r\n  display: none;\r\n  max-width: 600px;\r\n  min-width: 300px;\r\n  margin: 0 auto;\r\n  top: 210px;\r\n  left: 0;\r\n  right: 0;\r\n  padding: 5px;\r\n  border-radius: 5px;\r\n  text-align: left;\r\n}\r\n\r\n.searchResultPage {\r\n  padding: 14px\r\n}\r\n\r\n.searchResultTitle {\r\n  font-family: 'Roboto', Helvetica, sans-serif;\r\n  font-weight: bold;\r\n  font-size: 24px;\r\n  margin: 5px 0;\r\n}\r\n\r\n.searchResultBody {\r\n  font-size: 16px;\r\n}\r\n\r\nmark {\r\n  background-color: #eeff00;\r\n}\r\n\r\n.pager {\r\n  list-style: none;\r\n  text-align: center;\r\n  margin:20px 0 0;\r\n  padding-left: 0;\r\n}\r\n\r\n.pager ul {\r\n  display: block;\r\n}\r\n\r\n.pager li {\r\n  display: inline;\r\n}\r\n\r\n.pager li a {\r\n  box-sizing: border-box;\r\n  font-family: 'Roboto', Helvetica, sans-serif;\r\n  text-transform: uppercase;\r\n  text-align: center;\r\n  font-size: 14px;\r\n  font-weight: 800;\r\n  letter-spacing: 1px;\r\n  padding: 10px 5px;\r\n  background: #ffffff;\r\n  border-radius: 0;\r\n  border: 1px solid #dddddd;\r\n  display: inline-block;\r\n  color: #404040;\r\n  text-decoration: none;\r\n}\r\n\r\n.pager a:hover:not(.active) {\r\n  background-color: #dddddd;\r\n}\r\n\r\n.pager .previous > a {\r\n  float: left;\r\n  display: block;\r\n}\r\n\r\n.pager .next > a {\r\n  float: right;\r\n  display: block;\r\n}\r\n\r\nfooter {\r\n  padding: 60px 0;\r\n  text-align: center;\r\n  margin-top: auto;\r\n  font-size: 14px;\r\n  font-family: 'Roboto', Helvetica, sans-serif;\r\n}\r\n\r\nfooter .copyright {\r\n  font-family: 'Roboto', Helvetica, sans-serif;\r\n  text-align: center;\r\n  margin-bottom: 0;\r\n}\r\n\r\nfooter .theme-by {\r\n  text-align: center;\r\n  margin: 10px 0 0;\r\n}\r\n\r\nfooter a {\r\n  color: #050505;\r\n  font-weight: bold;\r\n}\r\n\r\nfooter em {\r\n  cursor: pointer;\r\n}\r\n\r\n@media (min-width: 600px) {\r\n  .header {\r\n    margin: auto;\r\n  }\r\n\r\n  .nav-links {\r\n    font-size: 18px;\r\n  }\r\n\r\n  .nav-links li {\r\n    margin: 0 0 0 30px;\r\n  }\r\n\r\n  .container[role=main] {\r\n    font-size: 16px;\r\n    line-height: 1.8;\r\n    margin: 40px auto;\r\n  }\r\n\r\n  .blog-tags {\r\n    margin: 20px 0;\r\n  }\r\n\r\n  .pager li a {\r\n    padding: 10px 20px;\r\n  }\r\n\r\n  .pager.blog-pager  {\r\n    margin-top: 40px;\r\n  }\r\n}\r\nimg[alt$=\">\"] {\r\n  float: right;\r\n}\r\n\r\nimg[alt$=\"<\"] {\r\n  float: left;\r\n}\r\n\r\nimg[alt$=\"><\"] {\r\n  display: block;\r\n  max-width: 100%;\r\n  height: auto;\r\n  margin: auto;\r\n  float: none!important;\r\n}", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./static/css/syntax.css":
+/*!*******************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--4-1!./static/css/syntax.css ***!
+  \*******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, "/* Background */ .chroma { background-color: #f8f8f8 }\r\n/* Other */ .chroma .x { color: #000000 }\r\n/* Error */ .chroma .err { color: #a40000 }\r\n/* LineTableTD */ .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }\r\n/* LineTable */ .chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; width: auto; overflow: auto; display: block; }\r\n/* LineHighlight */ .chroma .hl { display: block; width: 100%;background-color: #ffffcc }\r\n/* LineNumbersTable */ .chroma .lnt { margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #7f7f7f }\r\n/* LineNumbers */ .chroma .ln { margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #7f7f7f }\r\n/* Keyword */ .chroma .k { color: #204a87; font-weight: bold }\r\n/* KeywordConstant */ .chroma .kc { color: #204a87; font-weight: bold }\r\n/* KeywordDeclaration */ .chroma .kd { color: #204a87; font-weight: bold }\r\n/* KeywordNamespace */ .chroma .kn { color: #204a87; font-weight: bold }\r\n/* KeywordPseudo */ .chroma .kp { color: #204a87; font-weight: bold }\r\n/* KeywordReserved */ .chroma .kr { color: #204a87; font-weight: bold }\r\n/* KeywordType */ .chroma .kt { color: #204a87; font-weight: bold }\r\n/* Name */ .chroma .n { color: #000000 }\r\n/* NameAttribute */ .chroma .na { color: #c4a000 }\r\n/* NameBuiltin */ .chroma .nb { color: #204a87 }\r\n/* NameBuiltinPseudo */ .chroma .bp { color: #3465a4 }\r\n/* NameClass */ .chroma .nc { color: #000000 }\r\n/* NameConstant */ .chroma .no { color: #000000 }\r\n/* NameDecorator */ .chroma .nd { color: #5c35cc; font-weight: bold }\r\n/* NameEntity */ .chroma .ni { color: #ce5c00 }\r\n/* NameException */ .chroma .ne { color: #cc0000; font-weight: bold }\r\n/* NameFunction */ .chroma .nf { color: #000000 }\r\n/* NameFunctionMagic */ .chroma .fm { color: #000000 }\r\n/* NameLabel */ .chroma .nl { color: #f57900 }\r\n/* NameNamespace */ .chroma .nn { color: #000000 }\r\n/* NameOther */ .chroma .nx { color: #000000 }\r\n/* NameProperty */ .chroma .py { color: #000000 }\r\n/* NameTag */ .chroma .nt { color: #204a87; font-weight: bold }\r\n/* NameVariable */ .chroma .nv { color: #000000 }\r\n/* NameVariableClass */ .chroma .vc { color: #000000 }\r\n/* NameVariableGlobal */ .chroma .vg { color: #000000 }\r\n/* NameVariableInstance */ .chroma .vi { color: #000000 }\r\n/* NameVariableMagic */ .chroma .vm { color: #000000 }\r\n/* Literal */ .chroma .l { color: #000000 }\r\n/* LiteralDate */ .chroma .ld { color: #000000 }\r\n/* LiteralString */ .chroma .s { color: #4e9a06 }\r\n/* LiteralStringAffix */ .chroma .sa { color: #4e9a06 }\r\n/* LiteralStringBacktick */ .chroma .sb { color: #4e9a06 }\r\n/* LiteralStringChar */ .chroma .sc { color: #4e9a06 }\r\n/* LiteralStringDelimiter */ .chroma .dl { color: #4e9a06 }\r\n/* LiteralStringDoc */ .chroma .sd { color: #8f5902; font-style: italic }\r\n/* LiteralStringDouble */ .chroma .s2 { color: #4e9a06 }\r\n/* LiteralStringEscape */ .chroma .se { color: #4e9a06 }\r\n/* LiteralStringHeredoc */ .chroma .sh { color: #4e9a06 }\r\n/* LiteralStringInterpol */ .chroma .si { color: #4e9a06 }\r\n/* LiteralStringOther */ .chroma .sx { color: #4e9a06 }\r\n/* LiteralStringRegex */ .chroma .sr { color: #4e9a06 }\r\n/* LiteralStringSingle */ .chroma .s1 { color: #4e9a06 }\r\n/* LiteralStringSymbol */ .chroma .ss { color: #4e9a06 }\r\n/* LiteralNumber */ .chroma .m { color: #0000cf; font-weight: bold }\r\n/* LiteralNumberBin */ .chroma .mb { color: #0000cf; font-weight: bold }\r\n/* LiteralNumberFloat */ .chroma .mf { color: #0000cf; font-weight: bold }\r\n/* LiteralNumberHex */ .chroma .mh { color: #0000cf; font-weight: bold }\r\n/* LiteralNumberInteger */ .chroma .mi { color: #0000cf; font-weight: bold }\r\n/* LiteralNumberIntegerLong */ .chroma .il { color: #0000cf; font-weight: bold }\r\n/* LiteralNumberOct */ .chroma .mo { color: #0000cf; font-weight: bold }\r\n/* Operator */ .chroma .o { color: #ce5c00; font-weight: bold }\r\n/* OperatorWord */ .chroma .ow { color: #204a87; font-weight: bold }\r\n/* Punctuation */ .chroma .p { color: #000000; font-weight: bold }\r\n/* Comment */ .chroma .c { color: #8f5902; font-style: italic }\r\n/* CommentHashbang */ .chroma .ch { color: #8f5902; font-style: italic }\r\n/* CommentMultiline */ .chroma .cm { color: #8f5902; font-style: italic }\r\n/* CommentSingle */ .chroma .c1 { color: #8f5902; font-style: italic }\r\n/* CommentSpecial */ .chroma .cs { color: #8f5902; font-style: italic }\r\n/* CommentPreproc */ .chroma .cp { color: #8f5902; font-style: italic }\r\n/* CommentPreprocFile */ .chroma .cpf { color: #8f5902; font-style: italic }\r\n/* Generic */ .chroma .g { color: #000000 }\r\n/* GenericDeleted */ .chroma .gd { color: #a40000 }\r\n/* GenericEmph */ .chroma .ge { color: #000000; font-style: italic }\r\n/* GenericError */ .chroma .gr { color: #ef2929 }\r\n/* GenericHeading */ .chroma .gh { color: #000080; font-weight: bold }\r\n/* GenericInserted */ .chroma .gi { color: #00a000 }\r\n/* GenericOutput */ .chroma .go { color: #000000; font-style: italic }\r\n/* GenericPrompt */ .chroma .gp { color: #8f5902 }\r\n/* GenericStrong */ .chroma .gs { color: #000000; font-weight: bold }\r\n/* GenericSubheading */ .chroma .gu { color: #800080; font-weight: bold }\r\n/* GenericTraceback */ .chroma .gt { color: #a40000; font-weight: bold }\r\n/* GenericUnderline */ .chroma .gl { color: #000000; text-decoration: underline }\r\n/* TextWhitespace */ .chroma .w { color: #f8f8f8; text-decoration: underline }\r\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/api.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/api.js ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/*
+  MIT License http://www.opensource.org/licenses/mit-license.php
+  Author Tobias Koppers @sokra
+*/
+// css base code, injected by the css-loader
+// eslint-disable-next-line func-names
+module.exports = function (useSourceMap) {
+  var list = []; // return the list of modules as css string
+
+  list.toString = function toString() {
+    return this.map(function (item) {
+      var content = cssWithMappingToString(item, useSourceMap);
+
+      if (item[2]) {
+        return "@media ".concat(item[2], " {").concat(content, "}");
+      }
+
+      return content;
+    }).join('');
+  }; // import a list of modules into the list
+  // eslint-disable-next-line func-names
+
+
+  list.i = function (modules, mediaQuery, dedupe) {
+    if (typeof modules === 'string') {
+      // eslint-disable-next-line no-param-reassign
+      modules = [[null, modules, '']];
+    }
+
+    var alreadyImportedModules = {};
+
+    if (dedupe) {
+      for (var i = 0; i < this.length; i++) {
+        // eslint-disable-next-line prefer-destructuring
+        var id = this[i][0];
+
+        if (id != null) {
+          alreadyImportedModules[id] = true;
+        }
+      }
+    }
+
+    for (var _i = 0; _i < modules.length; _i++) {
+      var item = [].concat(modules[_i]);
+
+      if (dedupe && alreadyImportedModules[item[0]]) {
+        // eslint-disable-next-line no-continue
+        continue;
+      }
+
+      if (mediaQuery) {
+        if (!item[2]) {
+          item[2] = mediaQuery;
+        } else {
+          item[2] = "".concat(mediaQuery, " and ").concat(item[2]);
+        }
+      }
+
+      list.push(item);
+    }
+  };
+
+  return list;
+};
+
+function cssWithMappingToString(item, useSourceMap) {
+  var content = item[1] || ''; // eslint-disable-next-line prefer-destructuring
+
+  var cssMapping = item[3];
+
+  if (!cssMapping) {
+    return content;
+  }
+
+  if (useSourceMap && typeof btoa === 'function') {
+    var sourceMapping = toComment(cssMapping);
+    var sourceURLs = cssMapping.sources.map(function (source) {
+      return "/*# sourceURL=".concat(cssMapping.sourceRoot || '').concat(source, " */");
+    });
+    return [content].concat(sourceURLs).concat([sourceMapping]).join('\n');
+  }
+
+  return [content].join('\n');
+} // Adapted from convert-source-map (MIT)
+
+
+function toComment(sourceMap) {
+  // eslint-disable-next-line no-undef
+  var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));
+  var data = "sourceMappingURL=data:application/json;charset=utf-8;base64,".concat(base64);
+  return "/*# ".concat(data, " */");
+}
+
+/***/ }),
+
+/***/ "./node_modules/lunr/lunr.js":
+/*!***********************************!*\
+  !*** ./node_modules/lunr/lunr.js ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
  * lunr - http://lunrjs.com - A bit like Solr, but much smaller and not as bright - 2.3.8
  * Copyright (C) 2019 Oliver Nightingale
  * @license MIT
- */!function(){var o,a,s,l,c,u,d,h,f,p,m,g,y,v,x,b,w,k,S,E,N,T,R,L,I,O,Q=function(e){var t=new Q.Builder;return t.pipeline.add(Q.trimmer,Q.stopWordFilter,Q.stemmer),t.searchPipeline.add(Q.stemmer),e.call(t,t),t.build()};Q.version="2.3.8"
+ */
+
+;(function(){
+
+/**
+ * A convenience function for configuring and constructing
+ * a new lunr Index.
+ *
+ * A lunr.Builder instance is created and the pipeline setup
+ * with a trimmer, stop word filter and stemmer.
+ *
+ * This builder object is yielded to the configuration function
+ * that is passed as a parameter, allowing the list of fields
+ * and other builder parameters to be customised.
+ *
+ * All documents _must_ be added within the passed config function.
+ *
+ * @example
+ * var idx = lunr(function () {
+ *   this.field('title')
+ *   this.field('body')
+ *   this.ref('id')
+ *
+ *   documents.forEach(function (doc) {
+ *     this.add(doc)
+ *   }, this)
+ * })
+ *
+ * @see {@link lunr.Builder}
+ * @see {@link lunr.Pipeline}
+ * @see {@link lunr.trimmer}
+ * @see {@link lunr.stopWordFilter}
+ * @see {@link lunr.stemmer}
+ * @namespace {function} lunr
+ */
+var lunr = function (config) {
+  var builder = new lunr.Builder
+
+  builder.pipeline.add(
+    lunr.trimmer,
+    lunr.stopWordFilter,
+    lunr.stemmer
+  )
+
+  builder.searchPipeline.add(
+    lunr.stemmer
+  )
+
+  config.call(builder, builder)
+  return builder.build()
+}
+
+lunr.version = "2.3.8"
 /*!
  * lunr.utils
  * Copyright (C) 2019 Oliver Nightingale
- */,Q.utils={},Q.utils.warn=(o=this,function(e){o.console&&console.warn&&console.warn(e)}),Q.utils.asString=function(e){return null==e?"":e.toString()},Q.utils.clone=function(e){if(null==e)return e;for(var t=Object.create(null),n=Object.keys(e),r=0;r<n.length;r++){var i=n[r],o=e[i];if(Array.isArray(o))t[i]=o.slice();else{if("string"!=typeof o&&"number"!=typeof o&&"boolean"!=typeof o)throw new TypeError("clone is not deep and does not support nested objects");t[i]=o}}return t},Q.FieldRef=function(e,t,n){this.docRef=e,this.fieldName=t,this._stringValue=n},Q.FieldRef.joiner="/",Q.FieldRef.fromString=function(e){var t=e.indexOf(Q.FieldRef.joiner);if(-1===t)throw"malformed field ref string";var n=e.slice(0,t),r=e.slice(t+1);return new Q.FieldRef(r,n,e)},Q.FieldRef.prototype.toString=function(){return null==this._stringValue&&(this._stringValue=this.fieldName+Q.FieldRef.joiner+this.docRef),this._stringValue}
+ */
+
+/**
+ * A namespace containing utils for the rest of the lunr library
+ * @namespace lunr.utils
+ */
+lunr.utils = {}
+
+/**
+ * Print a warning message to the console.
+ *
+ * @param {String} message The message to be printed.
+ * @memberOf lunr.utils
+ * @function
+ */
+lunr.utils.warn = (function (global) {
+  /* eslint-disable no-console */
+  return function (message) {
+    if (global.console && console.warn) {
+      console.warn(message)
+    }
+  }
+  /* eslint-enable no-console */
+})(this)
+
+/**
+ * Convert an object to a string.
+ *
+ * In the case of `null` and `undefined` the function returns
+ * the empty string, in all other cases the result of calling
+ * `toString` on the passed object is returned.
+ *
+ * @param {Any} obj The object to convert to a string.
+ * @return {String} string representation of the passed object.
+ * @memberOf lunr.utils
+ */
+lunr.utils.asString = function (obj) {
+  if (obj === void 0 || obj === null) {
+    return ""
+  } else {
+    return obj.toString()
+  }
+}
+
+/**
+ * Clones an object.
+ *
+ * Will create a copy of an existing object such that any mutations
+ * on the copy cannot affect the original.
+ *
+ * Only shallow objects are supported, passing a nested object to this
+ * function will cause a TypeError.
+ *
+ * Objects with primitives, and arrays of primitives are supported.
+ *
+ * @param {Object} obj The object to clone.
+ * @return {Object} a clone of the passed object.
+ * @throws {TypeError} when a nested object is passed.
+ * @memberOf Utils
+ */
+lunr.utils.clone = function (obj) {
+  if (obj === null || obj === undefined) {
+    return obj
+  }
+
+  var clone = Object.create(null),
+      keys = Object.keys(obj)
+
+  for (var i = 0; i < keys.length; i++) {
+    var key = keys[i],
+        val = obj[key]
+
+    if (Array.isArray(val)) {
+      clone[key] = val.slice()
+      continue
+    }
+
+    if (typeof val === 'string' ||
+        typeof val === 'number' ||
+        typeof val === 'boolean') {
+      clone[key] = val
+      continue
+    }
+
+    throw new TypeError("clone is not deep and does not support nested objects")
+  }
+
+  return clone
+}
+lunr.FieldRef = function (docRef, fieldName, stringValue) {
+  this.docRef = docRef
+  this.fieldName = fieldName
+  this._stringValue = stringValue
+}
+
+lunr.FieldRef.joiner = "/"
+
+lunr.FieldRef.fromString = function (s) {
+  var n = s.indexOf(lunr.FieldRef.joiner)
+
+  if (n === -1) {
+    throw "malformed field ref string"
+  }
+
+  var fieldRef = s.slice(0, n),
+      docRef = s.slice(n + 1)
+
+  return new lunr.FieldRef (docRef, fieldRef, s)
+}
+
+lunr.FieldRef.prototype.toString = function () {
+  if (this._stringValue == undefined) {
+    this._stringValue = this.fieldName + lunr.FieldRef.joiner + this.docRef
+  }
+
+  return this._stringValue
+}
 /*!
  * lunr.Set
  * Copyright (C) 2019 Oliver Nightingale
- */,Q.Set=function(e){if(this.elements=Object.create(null),e){this.length=e.length;for(var t=0;t<this.length;t++)this.elements[e[t]]=!0}else this.length=0},Q.Set.complete={intersect:function(e){return e},union:function(e){return e},contains:function(){return!0}},Q.Set.empty={intersect:function(){return this},union:function(e){return e},contains:function(){return!1}},Q.Set.prototype.contains=function(e){return!!this.elements[e]},Q.Set.prototype.intersect=function(e){var t,n,r,i=[];if(e===Q.Set.complete)return this;if(e===Q.Set.empty)return e;this.length<e.length?(t=this,n=e):(t=e,n=this),r=Object.keys(t.elements);for(var o=0;o<r.length;o++){var a=r[o];a in n.elements&&i.push(a)}return new Q.Set(i)},Q.Set.prototype.union=function(e){return e===Q.Set.complete?Q.Set.complete:e===Q.Set.empty?this:new Q.Set(Object.keys(this.elements).concat(Object.keys(e.elements)))},Q.idf=function(e,t){var n=0;for(var r in e)"_index"!=r&&(n+=Object.keys(e[r]).length);var i=(t-n+.5)/(n+.5);return Math.log(1+Math.abs(i))},Q.Token=function(e,t){this.str=e||"",this.metadata=t||{}},Q.Token.prototype.toString=function(){return this.str},Q.Token.prototype.update=function(e){return this.str=e(this.str,this.metadata),this},Q.Token.prototype.clone=function(e){return e=e||function(e){return e},new Q.Token(e(this.str,this.metadata),this.metadata)}
+ */
+
+/**
+ * A lunr set.
+ *
+ * @constructor
+ */
+lunr.Set = function (elements) {
+  this.elements = Object.create(null)
+
+  if (elements) {
+    this.length = elements.length
+
+    for (var i = 0; i < this.length; i++) {
+      this.elements[elements[i]] = true
+    }
+  } else {
+    this.length = 0
+  }
+}
+
+/**
+ * A complete set that contains all elements.
+ *
+ * @static
+ * @readonly
+ * @type {lunr.Set}
+ */
+lunr.Set.complete = {
+  intersect: function (other) {
+    return other
+  },
+
+  union: function (other) {
+    return other
+  },
+
+  contains: function () {
+    return true
+  }
+}
+
+/**
+ * An empty set that contains no elements.
+ *
+ * @static
+ * @readonly
+ * @type {lunr.Set}
+ */
+lunr.Set.empty = {
+  intersect: function () {
+    return this
+  },
+
+  union: function (other) {
+    return other
+  },
+
+  contains: function () {
+    return false
+  }
+}
+
+/**
+ * Returns true if this set contains the specified object.
+ *
+ * @param {object} object - Object whose presence in this set is to be tested.
+ * @returns {boolean} - True if this set contains the specified object.
+ */
+lunr.Set.prototype.contains = function (object) {
+  return !!this.elements[object]
+}
+
+/**
+ * Returns a new set containing only the elements that are present in both
+ * this set and the specified set.
+ *
+ * @param {lunr.Set} other - set to intersect with this set.
+ * @returns {lunr.Set} a new set that is the intersection of this and the specified set.
+ */
+
+lunr.Set.prototype.intersect = function (other) {
+  var a, b, elements, intersection = []
+
+  if (other === lunr.Set.complete) {
+    return this
+  }
+
+  if (other === lunr.Set.empty) {
+    return other
+  }
+
+  if (this.length < other.length) {
+    a = this
+    b = other
+  } else {
+    a = other
+    b = this
+  }
+
+  elements = Object.keys(a.elements)
+
+  for (var i = 0; i < elements.length; i++) {
+    var element = elements[i]
+    if (element in b.elements) {
+      intersection.push(element)
+    }
+  }
+
+  return new lunr.Set (intersection)
+}
+
+/**
+ * Returns a new set combining the elements of this and the specified set.
+ *
+ * @param {lunr.Set} other - set to union with this set.
+ * @return {lunr.Set} a new set that is the union of this and the specified set.
+ */
+
+lunr.Set.prototype.union = function (other) {
+  if (other === lunr.Set.complete) {
+    return lunr.Set.complete
+  }
+
+  if (other === lunr.Set.empty) {
+    return this
+  }
+
+  return new lunr.Set(Object.keys(this.elements).concat(Object.keys(other.elements)))
+}
+/**
+ * A function to calculate the inverse document frequency for
+ * a posting. This is shared between the builder and the index
+ *
+ * @private
+ * @param {object} posting - The posting for a given term
+ * @param {number} documentCount - The total number of documents.
+ */
+lunr.idf = function (posting, documentCount) {
+  var documentsWithTerm = 0
+
+  for (var fieldName in posting) {
+    if (fieldName == '_index') continue // Ignore the term index, its not a field
+    documentsWithTerm += Object.keys(posting[fieldName]).length
+  }
+
+  var x = (documentCount - documentsWithTerm + 0.5) / (documentsWithTerm + 0.5)
+
+  return Math.log(1 + Math.abs(x))
+}
+
+/**
+ * A token wraps a string representation of a token
+ * as it is passed through the text processing pipeline.
+ *
+ * @constructor
+ * @param {string} [str=''] - The string token being wrapped.
+ * @param {object} [metadata={}] - Metadata associated with this token.
+ */
+lunr.Token = function (str, metadata) {
+  this.str = str || ""
+  this.metadata = metadata || {}
+}
+
+/**
+ * Returns the token string that is being wrapped by this object.
+ *
+ * @returns {string}
+ */
+lunr.Token.prototype.toString = function () {
+  return this.str
+}
+
+/**
+ * A token update function is used when updating or optionally
+ * when cloning a token.
+ *
+ * @callback lunr.Token~updateFunction
+ * @param {string} str - The string representation of the token.
+ * @param {Object} metadata - All metadata associated with this token.
+ */
+
+/**
+ * Applies the given function to the wrapped string token.
+ *
+ * @example
+ * token.update(function (str, metadata) {
+ *   return str.toUpperCase()
+ * })
+ *
+ * @param {lunr.Token~updateFunction} fn - A function to apply to the token string.
+ * @returns {lunr.Token}
+ */
+lunr.Token.prototype.update = function (fn) {
+  this.str = fn(this.str, this.metadata)
+  return this
+}
+
+/**
+ * Creates a clone of this token. Optionally a function can be
+ * applied to the cloned token.
+ *
+ * @param {lunr.Token~updateFunction} [fn] - An optional function to apply to the cloned token.
+ * @returns {lunr.Token}
+ */
+lunr.Token.prototype.clone = function (fn) {
+  fn = fn || function (s) { return s }
+  return new lunr.Token (fn(this.str, this.metadata), this.metadata)
+}
 /*!
  * lunr.tokenizer
  * Copyright (C) 2019 Oliver Nightingale
- */,Q.tokenizer=function(e,t){if(null==e||null==e)return[];if(Array.isArray(e))return e.map((function(e){return new Q.Token(Q.utils.asString(e).toLowerCase(),Q.utils.clone(t))}));for(var n=e.toString().toLowerCase(),r=n.length,i=[],o=0,a=0;o<=r;o++){var s=o-a;if(n.charAt(o).match(Q.tokenizer.separator)||o==r){if(s>0){var l=Q.utils.clone(t)||{};l.position=[a,s],l.index=i.length,i.push(new Q.Token(n.slice(a,o),l))}a=o+1}}return i},Q.tokenizer.separator=/[\s\-]+/
+ */
+
+/**
+ * A function for splitting a string into tokens ready to be inserted into
+ * the search index. Uses `lunr.tokenizer.separator` to split strings, change
+ * the value of this property to change how strings are split into tokens.
+ *
+ * This tokenizer will convert its parameter to a string by calling `toString` and
+ * then will split this string on the character in `lunr.tokenizer.separator`.
+ * Arrays will have their elements converted to strings and wrapped in a lunr.Token.
+ *
+ * Optional metadata can be passed to the tokenizer, this metadata will be cloned and
+ * added as metadata to every token that is created from the object to be tokenized.
+ *
+ * @static
+ * @param {?(string|object|object[])} obj - The object to convert into tokens
+ * @param {?object} metadata - Optional metadata to associate with every token
+ * @returns {lunr.Token[]}
+ * @see {@link lunr.Pipeline}
+ */
+lunr.tokenizer = function (obj, metadata) {
+  if (obj == null || obj == undefined) {
+    return []
+  }
+
+  if (Array.isArray(obj)) {
+    return obj.map(function (t) {
+      return new lunr.Token(
+        lunr.utils.asString(t).toLowerCase(),
+        lunr.utils.clone(metadata)
+      )
+    })
+  }
+
+  var str = obj.toString().toLowerCase(),
+      len = str.length,
+      tokens = []
+
+  for (var sliceEnd = 0, sliceStart = 0; sliceEnd <= len; sliceEnd++) {
+    var char = str.charAt(sliceEnd),
+        sliceLength = sliceEnd - sliceStart
+
+    if ((char.match(lunr.tokenizer.separator) || sliceEnd == len)) {
+
+      if (sliceLength > 0) {
+        var tokenMetadata = lunr.utils.clone(metadata) || {}
+        tokenMetadata["position"] = [sliceStart, sliceLength]
+        tokenMetadata["index"] = tokens.length
+
+        tokens.push(
+          new lunr.Token (
+            str.slice(sliceStart, sliceEnd),
+            tokenMetadata
+          )
+        )
+      }
+
+      sliceStart = sliceEnd + 1
+    }
+
+  }
+
+  return tokens
+}
+
+/**
+ * The separator used to split a string into tokens. Override this property to change the behaviour of
+ * `lunr.tokenizer` behaviour when tokenizing strings. By default this splits on whitespace and hyphens.
+ *
+ * @static
+ * @see lunr.tokenizer
+ */
+lunr.tokenizer.separator = /[\s\-]+/
 /*!
  * lunr.Pipeline
  * Copyright (C) 2019 Oliver Nightingale
- */,Q.Pipeline=function(){this._stack=[]},Q.Pipeline.registeredFunctions=Object.create(null),Q.Pipeline.registerFunction=function(e,t){t in this.registeredFunctions&&Q.utils.warn("Overwriting existing registered function: "+t),e.label=t,Q.Pipeline.registeredFunctions[e.label]=e},Q.Pipeline.warnIfFunctionNotRegistered=function(e){e.label&&e.label in this.registeredFunctions||Q.utils.warn("Function is not registered with pipeline. This may cause problems when serialising the index.\n",e)},Q.Pipeline.load=function(e){var t=new Q.Pipeline;return e.forEach((function(e){var n=Q.Pipeline.registeredFunctions[e];if(!n)throw new Error("Cannot load unregistered function: "+e);t.add(n)})),t},Q.Pipeline.prototype.add=function(){var e=Array.prototype.slice.call(arguments);e.forEach((function(e){Q.Pipeline.warnIfFunctionNotRegistered(e),this._stack.push(e)}),this)},Q.Pipeline.prototype.after=function(e,t){Q.Pipeline.warnIfFunctionNotRegistered(t);var n=this._stack.indexOf(e);if(-1==n)throw new Error("Cannot find existingFn");n+=1,this._stack.splice(n,0,t)},Q.Pipeline.prototype.before=function(e,t){Q.Pipeline.warnIfFunctionNotRegistered(t);var n=this._stack.indexOf(e);if(-1==n)throw new Error("Cannot find existingFn");this._stack.splice(n,0,t)},Q.Pipeline.prototype.remove=function(e){var t=this._stack.indexOf(e);-1!=t&&this._stack.splice(t,1)},Q.Pipeline.prototype.run=function(e){for(var t=this._stack.length,n=0;n<t;n++){for(var r=this._stack[n],i=[],o=0;o<e.length;o++){var a=r(e[o],o,e);if(null!=a&&""!==a)if(Array.isArray(a))for(var s=0;s<a.length;s++)i.push(a[s]);else i.push(a)}e=i}return e},Q.Pipeline.prototype.runString=function(e,t){var n=new Q.Token(e,t);return this.run([n]).map((function(e){return e.toString()}))},Q.Pipeline.prototype.reset=function(){this._stack=[]},Q.Pipeline.prototype.toJSON=function(){return this._stack.map((function(e){return Q.Pipeline.warnIfFunctionNotRegistered(e),e.label}))}
+ */
+
+/**
+ * lunr.Pipelines maintain an ordered list of functions to be applied to all
+ * tokens in documents entering the search index and queries being ran against
+ * the index.
+ *
+ * An instance of lunr.Index created with the lunr shortcut will contain a
+ * pipeline with a stop word filter and an English language stemmer. Extra
+ * functions can be added before or after either of these functions or these
+ * default functions can be removed.
+ *
+ * When run the pipeline will call each function in turn, passing a token, the
+ * index of that token in the original list of all tokens and finally a list of
+ * all the original tokens.
+ *
+ * The output of functions in the pipeline will be passed to the next function
+ * in the pipeline. To exclude a token from entering the index the function
+ * should return undefined, the rest of the pipeline will not be called with
+ * this token.
+ *
+ * For serialisation of pipelines to work, all functions used in an instance of
+ * a pipeline should be registered with lunr.Pipeline. Registered functions can
+ * then be loaded. If trying to load a serialised pipeline that uses functions
+ * that are not registered an error will be thrown.
+ *
+ * If not planning on serialising the pipeline then registering pipeline functions
+ * is not necessary.
+ *
+ * @constructor
+ */
+lunr.Pipeline = function () {
+  this._stack = []
+}
+
+lunr.Pipeline.registeredFunctions = Object.create(null)
+
+/**
+ * A pipeline function maps lunr.Token to lunr.Token. A lunr.Token contains the token
+ * string as well as all known metadata. A pipeline function can mutate the token string
+ * or mutate (or add) metadata for a given token.
+ *
+ * A pipeline function can indicate that the passed token should be discarded by returning
+ * null, undefined or an empty string. This token will not be passed to any downstream pipeline
+ * functions and will not be added to the index.
+ *
+ * Multiple tokens can be returned by returning an array of tokens. Each token will be passed
+ * to any downstream pipeline functions and all will returned tokens will be added to the index.
+ *
+ * Any number of pipeline functions may be chained together using a lunr.Pipeline.
+ *
+ * @interface lunr.PipelineFunction
+ * @param {lunr.Token} token - A token from the document being processed.
+ * @param {number} i - The index of this token in the complete list of tokens for this document/field.
+ * @param {lunr.Token[]} tokens - All tokens for this document/field.
+ * @returns {(?lunr.Token|lunr.Token[])}
+ */
+
+/**
+ * Register a function with the pipeline.
+ *
+ * Functions that are used in the pipeline should be registered if the pipeline
+ * needs to be serialised, or a serialised pipeline needs to be loaded.
+ *
+ * Registering a function does not add it to a pipeline, functions must still be
+ * added to instances of the pipeline for them to be used when running a pipeline.
+ *
+ * @param {lunr.PipelineFunction} fn - The function to check for.
+ * @param {String} label - The label to register this function with
+ */
+lunr.Pipeline.registerFunction = function (fn, label) {
+  if (label in this.registeredFunctions) {
+    lunr.utils.warn('Overwriting existing registered function: ' + label)
+  }
+
+  fn.label = label
+  lunr.Pipeline.registeredFunctions[fn.label] = fn
+}
+
+/**
+ * Warns if the function is not registered as a Pipeline function.
+ *
+ * @param {lunr.PipelineFunction} fn - The function to check for.
+ * @private
+ */
+lunr.Pipeline.warnIfFunctionNotRegistered = function (fn) {
+  var isRegistered = fn.label && (fn.label in this.registeredFunctions)
+
+  if (!isRegistered) {
+    lunr.utils.warn('Function is not registered with pipeline. This may cause problems when serialising the index.\n', fn)
+  }
+}
+
+/**
+ * Loads a previously serialised pipeline.
+ *
+ * All functions to be loaded must already be registered with lunr.Pipeline.
+ * If any function from the serialised data has not been registered then an
+ * error will be thrown.
+ *
+ * @param {Object} serialised - The serialised pipeline to load.
+ * @returns {lunr.Pipeline}
+ */
+lunr.Pipeline.load = function (serialised) {
+  var pipeline = new lunr.Pipeline
+
+  serialised.forEach(function (fnName) {
+    var fn = lunr.Pipeline.registeredFunctions[fnName]
+
+    if (fn) {
+      pipeline.add(fn)
+    } else {
+      throw new Error('Cannot load unregistered function: ' + fnName)
+    }
+  })
+
+  return pipeline
+}
+
+/**
+ * Adds new functions to the end of the pipeline.
+ *
+ * Logs a warning if the function has not been registered.
+ *
+ * @param {lunr.PipelineFunction[]} functions - Any number of functions to add to the pipeline.
+ */
+lunr.Pipeline.prototype.add = function () {
+  var fns = Array.prototype.slice.call(arguments)
+
+  fns.forEach(function (fn) {
+    lunr.Pipeline.warnIfFunctionNotRegistered(fn)
+    this._stack.push(fn)
+  }, this)
+}
+
+/**
+ * Adds a single function after a function that already exists in the
+ * pipeline.
+ *
+ * Logs a warning if the function has not been registered.
+ *
+ * @param {lunr.PipelineFunction} existingFn - A function that already exists in the pipeline.
+ * @param {lunr.PipelineFunction} newFn - The new function to add to the pipeline.
+ */
+lunr.Pipeline.prototype.after = function (existingFn, newFn) {
+  lunr.Pipeline.warnIfFunctionNotRegistered(newFn)
+
+  var pos = this._stack.indexOf(existingFn)
+  if (pos == -1) {
+    throw new Error('Cannot find existingFn')
+  }
+
+  pos = pos + 1
+  this._stack.splice(pos, 0, newFn)
+}
+
+/**
+ * Adds a single function before a function that already exists in the
+ * pipeline.
+ *
+ * Logs a warning if the function has not been registered.
+ *
+ * @param {lunr.PipelineFunction} existingFn - A function that already exists in the pipeline.
+ * @param {lunr.PipelineFunction} newFn - The new function to add to the pipeline.
+ */
+lunr.Pipeline.prototype.before = function (existingFn, newFn) {
+  lunr.Pipeline.warnIfFunctionNotRegistered(newFn)
+
+  var pos = this._stack.indexOf(existingFn)
+  if (pos == -1) {
+    throw new Error('Cannot find existingFn')
+  }
+
+  this._stack.splice(pos, 0, newFn)
+}
+
+/**
+ * Removes a function from the pipeline.
+ *
+ * @param {lunr.PipelineFunction} fn The function to remove from the pipeline.
+ */
+lunr.Pipeline.prototype.remove = function (fn) {
+  var pos = this._stack.indexOf(fn)
+  if (pos == -1) {
+    return
+  }
+
+  this._stack.splice(pos, 1)
+}
+
+/**
+ * Runs the current list of functions that make up the pipeline against the
+ * passed tokens.
+ *
+ * @param {Array} tokens The tokens to run through the pipeline.
+ * @returns {Array}
+ */
+lunr.Pipeline.prototype.run = function (tokens) {
+  var stackLength = this._stack.length
+
+  for (var i = 0; i < stackLength; i++) {
+    var fn = this._stack[i]
+    var memo = []
+
+    for (var j = 0; j < tokens.length; j++) {
+      var result = fn(tokens[j], j, tokens)
+
+      if (result === null || result === void 0 || result === '') continue
+
+      if (Array.isArray(result)) {
+        for (var k = 0; k < result.length; k++) {
+          memo.push(result[k])
+        }
+      } else {
+        memo.push(result)
+      }
+    }
+
+    tokens = memo
+  }
+
+  return tokens
+}
+
+/**
+ * Convenience method for passing a string through a pipeline and getting
+ * strings out. This method takes care of wrapping the passed string in a
+ * token and mapping the resulting tokens back to strings.
+ *
+ * @param {string} str - The string to pass through the pipeline.
+ * @param {?object} metadata - Optional metadata to associate with the token
+ * passed to the pipeline.
+ * @returns {string[]}
+ */
+lunr.Pipeline.prototype.runString = function (str, metadata) {
+  var token = new lunr.Token (str, metadata)
+
+  return this.run([token]).map(function (t) {
+    return t.toString()
+  })
+}
+
+/**
+ * Resets the pipeline by removing any existing processors.
+ *
+ */
+lunr.Pipeline.prototype.reset = function () {
+  this._stack = []
+}
+
+/**
+ * Returns a representation of the pipeline ready for serialisation.
+ *
+ * Logs a warning if the function has not been registered.
+ *
+ * @returns {Array}
+ */
+lunr.Pipeline.prototype.toJSON = function () {
+  return this._stack.map(function (fn) {
+    lunr.Pipeline.warnIfFunctionNotRegistered(fn)
+
+    return fn.label
+  })
+}
 /*!
  * lunr.Vector
  * Copyright (C) 2019 Oliver Nightingale
- */,Q.Vector=function(e){this._magnitude=0,this.elements=e||[]},Q.Vector.prototype.positionForIndex=function(e){if(0==this.elements.length)return 0;for(var t=0,n=this.elements.length/2,r=n-t,i=Math.floor(r/2),o=this.elements[2*i];r>1&&(o<e&&(t=i),o>e&&(n=i),o!=e);)r=n-t,i=t+Math.floor(r/2),o=this.elements[2*i];return o==e||o>e?2*i:o<e?2*(i+1):void 0},Q.Vector.prototype.insert=function(e,t){this.upsert(e,t,(function(){throw"duplicate index"}))},Q.Vector.prototype.upsert=function(e,t,n){this._magnitude=0;var r=this.positionForIndex(e);this.elements[r]==e?this.elements[r+1]=n(this.elements[r+1],t):this.elements.splice(r,0,e,t)},Q.Vector.prototype.magnitude=function(){if(this._magnitude)return this._magnitude;for(var e=0,t=this.elements.length,n=1;n<t;n+=2){var r=this.elements[n];e+=r*r}return this._magnitude=Math.sqrt(e)},Q.Vector.prototype.dot=function(e){for(var t=0,n=this.elements,r=e.elements,i=n.length,o=r.length,a=0,s=0,l=0,c=0;l<i&&c<o;)(a=n[l])<(s=r[c])?l+=2:a>s?c+=2:a==s&&(t+=n[l+1]*r[c+1],l+=2,c+=2);return t},Q.Vector.prototype.similarity=function(e){return this.dot(e)/this.magnitude()||0},Q.Vector.prototype.toArray=function(){for(var e=new Array(this.elements.length/2),t=1,n=0;t<this.elements.length;t+=2,n++)e[n]=this.elements[t];return e},Q.Vector.prototype.toJSON=function(){return this.elements}
+ */
+
+/**
+ * A vector is used to construct the vector space of documents and queries. These
+ * vectors support operations to determine the similarity between two documents or
+ * a document and a query.
+ *
+ * Normally no parameters are required for initializing a vector, but in the case of
+ * loading a previously dumped vector the raw elements can be provided to the constructor.
+ *
+ * For performance reasons vectors are implemented with a flat array, where an elements
+ * index is immediately followed by its value. E.g. [index, value, index, value]. This
+ * allows the underlying array to be as sparse as possible and still offer decent
+ * performance when being used for vector calculations.
+ *
+ * @constructor
+ * @param {Number[]} [elements] - The flat list of element index and element value pairs.
+ */
+lunr.Vector = function (elements) {
+  this._magnitude = 0
+  this.elements = elements || []
+}
+
+
+/**
+ * Calculates the position within the vector to insert a given index.
+ *
+ * This is used internally by insert and upsert. If there are duplicate indexes then
+ * the position is returned as if the value for that index were to be updated, but it
+ * is the callers responsibility to check whether there is a duplicate at that index
+ *
+ * @param {Number} insertIdx - The index at which the element should be inserted.
+ * @returns {Number}
+ */
+lunr.Vector.prototype.positionForIndex = function (index) {
+  // For an empty vector the tuple can be inserted at the beginning
+  if (this.elements.length == 0) {
+    return 0
+  }
+
+  var start = 0,
+      end = this.elements.length / 2,
+      sliceLength = end - start,
+      pivotPoint = Math.floor(sliceLength / 2),
+      pivotIndex = this.elements[pivotPoint * 2]
+
+  while (sliceLength > 1) {
+    if (pivotIndex < index) {
+      start = pivotPoint
+    }
+
+    if (pivotIndex > index) {
+      end = pivotPoint
+    }
+
+    if (pivotIndex == index) {
+      break
+    }
+
+    sliceLength = end - start
+    pivotPoint = start + Math.floor(sliceLength / 2)
+    pivotIndex = this.elements[pivotPoint * 2]
+  }
+
+  if (pivotIndex == index) {
+    return pivotPoint * 2
+  }
+
+  if (pivotIndex > index) {
+    return pivotPoint * 2
+  }
+
+  if (pivotIndex < index) {
+    return (pivotPoint + 1) * 2
+  }
+}
+
+/**
+ * Inserts an element at an index within the vector.
+ *
+ * Does not allow duplicates, will throw an error if there is already an entry
+ * for this index.
+ *
+ * @param {Number} insertIdx - The index at which the element should be inserted.
+ * @param {Number} val - The value to be inserted into the vector.
+ */
+lunr.Vector.prototype.insert = function (insertIdx, val) {
+  this.upsert(insertIdx, val, function () {
+    throw "duplicate index"
+  })
+}
+
+/**
+ * Inserts or updates an existing index within the vector.
+ *
+ * @param {Number} insertIdx - The index at which the element should be inserted.
+ * @param {Number} val - The value to be inserted into the vector.
+ * @param {function} fn - A function that is called for updates, the existing value and the
+ * requested value are passed as arguments
+ */
+lunr.Vector.prototype.upsert = function (insertIdx, val, fn) {
+  this._magnitude = 0
+  var position = this.positionForIndex(insertIdx)
+
+  if (this.elements[position] == insertIdx) {
+    this.elements[position + 1] = fn(this.elements[position + 1], val)
+  } else {
+    this.elements.splice(position, 0, insertIdx, val)
+  }
+}
+
+/**
+ * Calculates the magnitude of this vector.
+ *
+ * @returns {Number}
+ */
+lunr.Vector.prototype.magnitude = function () {
+  if (this._magnitude) return this._magnitude
+
+  var sumOfSquares = 0,
+      elementsLength = this.elements.length
+
+  for (var i = 1; i < elementsLength; i += 2) {
+    var val = this.elements[i]
+    sumOfSquares += val * val
+  }
+
+  return this._magnitude = Math.sqrt(sumOfSquares)
+}
+
+/**
+ * Calculates the dot product of this vector and another vector.
+ *
+ * @param {lunr.Vector} otherVector - The vector to compute the dot product with.
+ * @returns {Number}
+ */
+lunr.Vector.prototype.dot = function (otherVector) {
+  var dotProduct = 0,
+      a = this.elements, b = otherVector.elements,
+      aLen = a.length, bLen = b.length,
+      aVal = 0, bVal = 0,
+      i = 0, j = 0
+
+  while (i < aLen && j < bLen) {
+    aVal = a[i], bVal = b[j]
+    if (aVal < bVal) {
+      i += 2
+    } else if (aVal > bVal) {
+      j += 2
+    } else if (aVal == bVal) {
+      dotProduct += a[i + 1] * b[j + 1]
+      i += 2
+      j += 2
+    }
+  }
+
+  return dotProduct
+}
+
+/**
+ * Calculates the similarity between this vector and another vector.
+ *
+ * @param {lunr.Vector} otherVector - The other vector to calculate the
+ * similarity with.
+ * @returns {Number}
+ */
+lunr.Vector.prototype.similarity = function (otherVector) {
+  return this.dot(otherVector) / this.magnitude() || 0
+}
+
+/**
+ * Converts the vector to an array of the elements within the vector.
+ *
+ * @returns {Number[]}
+ */
+lunr.Vector.prototype.toArray = function () {
+  var output = new Array (this.elements.length / 2)
+
+  for (var i = 1, j = 0; i < this.elements.length; i += 2, j++) {
+    output[j] = this.elements[i]
+  }
+
+  return output
+}
+
+/**
+ * A JSON serializable representation of the vector.
+ *
+ * @returns {Number[]}
+ */
+lunr.Vector.prototype.toJSON = function () {
+  return this.elements
+}
+/* eslint-disable */
 /*!
  * lunr.stemmer
  * Copyright (C) 2019 Oliver Nightingale
  * Includes code from - http://tartarus.org/~martin/PorterStemmer/js.txt
- */,Q.stemmer=(a={ational:"ate",tional:"tion",enci:"ence",anci:"ance",izer:"ize",bli:"ble",alli:"al",entli:"ent",eli:"e",ousli:"ous",ization:"ize",ation:"ate",ator:"ate",alism:"al",iveness:"ive",fulness:"ful",ousness:"ous",aliti:"al",iviti:"ive",biliti:"ble",logi:"log"},s={icate:"ic",ative:"",alize:"al",iciti:"ic",ical:"ic",ful:"",ness:""},l="[aeiouy]",c="[^aeiou][^aeiouy]*",u=new RegExp("^([^aeiou][^aeiouy]*)?[aeiouy][aeiou]*[^aeiou][^aeiouy]*"),d=new RegExp("^([^aeiou][^aeiouy]*)?[aeiouy][aeiou]*[^aeiou][^aeiouy]*[aeiouy][aeiou]*[^aeiou][^aeiouy]*"),h=new RegExp("^([^aeiou][^aeiouy]*)?[aeiouy][aeiou]*[^aeiou][^aeiouy]*([aeiouy][aeiou]*)?$"),f=new RegExp("^([^aeiou][^aeiouy]*)?[aeiouy]"),p=/^(.+?)(ss|i)es$/,m=/^(.+?)([^s])s$/,g=/^(.+?)eed$/,y=/^(.+?)(ed|ing)$/,v=/.$/,x=/(at|bl|iz)$/,b=new RegExp("([^aeiouylsz])\\1$"),w=new RegExp("^"+c+l+"[^aeiouwxy]$"),k=/^(.+?[^aeiou])y$/,S=/^(.+?)(ational|tional|enci|anci|izer|bli|alli|entli|eli|ousli|ization|ation|ator|alism|iveness|fulness|ousness|aliti|iviti|biliti|logi)$/,E=/^(.+?)(icate|ative|alize|iciti|ical|ful|ness)$/,N=/^(.+?)(al|ance|ence|er|ic|able|ible|ant|ement|ment|ent|ou|ism|ate|iti|ous|ive|ize)$/,T=/^(.+?)(s|t)(ion)$/,R=/^(.+?)e$/,L=/ll$/,I=new RegExp("^"+c+l+"[^aeiouwxy]$"),O=function(e){var t,n,r,i,o,l,c;if(e.length<3)return e;if("y"==(r=e.substr(0,1))&&(e=r.toUpperCase()+e.substr(1)),o=m,(i=p).test(e)?e=e.replace(i,"$1$2"):o.test(e)&&(e=e.replace(o,"$1$2")),o=y,(i=g).test(e)){var O=i.exec(e);(i=u).test(O[1])&&(i=v,e=e.replace(i,""))}else o.test(e)&&(t=(O=o.exec(e))[1],(o=f).test(t)&&(l=b,c=w,(o=x).test(e=t)?e+="e":l.test(e)?(i=v,e=e.replace(i,"")):c.test(e)&&(e+="e")));return(i=k).test(e)&&(e=(t=(O=i.exec(e))[1])+"i"),(i=S).test(e)&&(t=(O=i.exec(e))[1],n=O[2],(i=u).test(t)&&(e=t+a[n])),(i=E).test(e)&&(t=(O=i.exec(e))[1],n=O[2],(i=u).test(t)&&(e=t+s[n])),o=T,(i=N).test(e)?(t=(O=i.exec(e))[1],(i=d).test(t)&&(e=t)):o.test(e)&&(t=(O=o.exec(e))[1]+O[2],(o=d).test(t)&&(e=t)),(i=R).test(e)&&(t=(O=i.exec(e))[1],o=h,l=I,((i=d).test(t)||o.test(t)&&!l.test(t))&&(e=t)),o=d,(i=L).test(e)&&o.test(e)&&(i=v,e=e.replace(i,"")),"y"==r&&(e=r.toLowerCase()+e.substr(1)),e},function(e){return e.update(O)}),Q.Pipeline.registerFunction(Q.stemmer,"stemmer")
+ */
+
+/**
+ * lunr.stemmer is an english language stemmer, this is a JavaScript
+ * implementation of the PorterStemmer taken from http://tartarus.org/~martin
+ *
+ * @static
+ * @implements {lunr.PipelineFunction}
+ * @param {lunr.Token} token - The string to stem
+ * @returns {lunr.Token}
+ * @see {@link lunr.Pipeline}
+ * @function
+ */
+lunr.stemmer = (function(){
+  var step2list = {
+      "ational" : "ate",
+      "tional" : "tion",
+      "enci" : "ence",
+      "anci" : "ance",
+      "izer" : "ize",
+      "bli" : "ble",
+      "alli" : "al",
+      "entli" : "ent",
+      "eli" : "e",
+      "ousli" : "ous",
+      "ization" : "ize",
+      "ation" : "ate",
+      "ator" : "ate",
+      "alism" : "al",
+      "iveness" : "ive",
+      "fulness" : "ful",
+      "ousness" : "ous",
+      "aliti" : "al",
+      "iviti" : "ive",
+      "biliti" : "ble",
+      "logi" : "log"
+    },
+
+    step3list = {
+      "icate" : "ic",
+      "ative" : "",
+      "alize" : "al",
+      "iciti" : "ic",
+      "ical" : "ic",
+      "ful" : "",
+      "ness" : ""
+    },
+
+    c = "[^aeiou]",          // consonant
+    v = "[aeiouy]",          // vowel
+    C = c + "[^aeiouy]*",    // consonant sequence
+    V = v + "[aeiou]*",      // vowel sequence
+
+    mgr0 = "^(" + C + ")?" + V + C,               // [C]VC... is m>0
+    meq1 = "^(" + C + ")?" + V + C + "(" + V + ")?$",  // [C]VC[V] is m=1
+    mgr1 = "^(" + C + ")?" + V + C + V + C,       // [C]VCVC... is m>1
+    s_v = "^(" + C + ")?" + v;                   // vowel in stem
+
+  var re_mgr0 = new RegExp(mgr0);
+  var re_mgr1 = new RegExp(mgr1);
+  var re_meq1 = new RegExp(meq1);
+  var re_s_v = new RegExp(s_v);
+
+  var re_1a = /^(.+?)(ss|i)es$/;
+  var re2_1a = /^(.+?)([^s])s$/;
+  var re_1b = /^(.+?)eed$/;
+  var re2_1b = /^(.+?)(ed|ing)$/;
+  var re_1b_2 = /.$/;
+  var re2_1b_2 = /(at|bl|iz)$/;
+  var re3_1b_2 = new RegExp("([^aeiouylsz])\\1$");
+  var re4_1b_2 = new RegExp("^" + C + v + "[^aeiouwxy]$");
+
+  var re_1c = /^(.+?[^aeiou])y$/;
+  var re_2 = /^(.+?)(ational|tional|enci|anci|izer|bli|alli|entli|eli|ousli|ization|ation|ator|alism|iveness|fulness|ousness|aliti|iviti|biliti|logi)$/;
+
+  var re_3 = /^(.+?)(icate|ative|alize|iciti|ical|ful|ness)$/;
+
+  var re_4 = /^(.+?)(al|ance|ence|er|ic|able|ible|ant|ement|ment|ent|ou|ism|ate|iti|ous|ive|ize)$/;
+  var re2_4 = /^(.+?)(s|t)(ion)$/;
+
+  var re_5 = /^(.+?)e$/;
+  var re_5_1 = /ll$/;
+  var re3_5 = new RegExp("^" + C + v + "[^aeiouwxy]$");
+
+  var porterStemmer = function porterStemmer(w) {
+    var stem,
+      suffix,
+      firstch,
+      re,
+      re2,
+      re3,
+      re4;
+
+    if (w.length < 3) { return w; }
+
+    firstch = w.substr(0,1);
+    if (firstch == "y") {
+      w = firstch.toUpperCase() + w.substr(1);
+    }
+
+    // Step 1a
+    re = re_1a
+    re2 = re2_1a;
+
+    if (re.test(w)) { w = w.replace(re,"$1$2"); }
+    else if (re2.test(w)) { w = w.replace(re2,"$1$2"); }
+
+    // Step 1b
+    re = re_1b;
+    re2 = re2_1b;
+    if (re.test(w)) {
+      var fp = re.exec(w);
+      re = re_mgr0;
+      if (re.test(fp[1])) {
+        re = re_1b_2;
+        w = w.replace(re,"");
+      }
+    } else if (re2.test(w)) {
+      var fp = re2.exec(w);
+      stem = fp[1];
+      re2 = re_s_v;
+      if (re2.test(stem)) {
+        w = stem;
+        re2 = re2_1b_2;
+        re3 = re3_1b_2;
+        re4 = re4_1b_2;
+        if (re2.test(w)) { w = w + "e"; }
+        else if (re3.test(w)) { re = re_1b_2; w = w.replace(re,""); }
+        else if (re4.test(w)) { w = w + "e"; }
+      }
+    }
+
+    // Step 1c - replace suffix y or Y by i if preceded by a non-vowel which is not the first letter of the word (so cry -> cri, by -> by, say -> say)
+    re = re_1c;
+    if (re.test(w)) {
+      var fp = re.exec(w);
+      stem = fp[1];
+      w = stem + "i";
+    }
+
+    // Step 2
+    re = re_2;
+    if (re.test(w)) {
+      var fp = re.exec(w);
+      stem = fp[1];
+      suffix = fp[2];
+      re = re_mgr0;
+      if (re.test(stem)) {
+        w = stem + step2list[suffix];
+      }
+    }
+
+    // Step 3
+    re = re_3;
+    if (re.test(w)) {
+      var fp = re.exec(w);
+      stem = fp[1];
+      suffix = fp[2];
+      re = re_mgr0;
+      if (re.test(stem)) {
+        w = stem + step3list[suffix];
+      }
+    }
+
+    // Step 4
+    re = re_4;
+    re2 = re2_4;
+    if (re.test(w)) {
+      var fp = re.exec(w);
+      stem = fp[1];
+      re = re_mgr1;
+      if (re.test(stem)) {
+        w = stem;
+      }
+    } else if (re2.test(w)) {
+      var fp = re2.exec(w);
+      stem = fp[1] + fp[2];
+      re2 = re_mgr1;
+      if (re2.test(stem)) {
+        w = stem;
+      }
+    }
+
+    // Step 5
+    re = re_5;
+    if (re.test(w)) {
+      var fp = re.exec(w);
+      stem = fp[1];
+      re = re_mgr1;
+      re2 = re_meq1;
+      re3 = re3_5;
+      if (re.test(stem) || (re2.test(stem) && !(re3.test(stem)))) {
+        w = stem;
+      }
+    }
+
+    re = re_5_1;
+    re2 = re_mgr1;
+    if (re.test(w) && re2.test(w)) {
+      re = re_1b_2;
+      w = w.replace(re,"");
+    }
+
+    // and turn initial Y back to y
+
+    if (firstch == "y") {
+      w = firstch.toLowerCase() + w.substr(1);
+    }
+
+    return w;
+  };
+
+  return function (token) {
+    return token.update(porterStemmer);
+  }
+})();
+
+lunr.Pipeline.registerFunction(lunr.stemmer, 'stemmer')
 /*!
  * lunr.stopWordFilter
  * Copyright (C) 2019 Oliver Nightingale
- */,Q.generateStopWordFilter=function(e){var t=e.reduce((function(e,t){return e[t]=t,e}),{});return function(e){if(e&&t[e.toString()]!==e.toString())return e}},Q.stopWordFilter=Q.generateStopWordFilter(["a","able","about","across","after","all","almost","also","am","among","an","and","any","are","as","at","be","because","been","but","by","can","cannot","could","dear","did","do","does","either","else","ever","every","for","from","get","got","had","has","have","he","her","hers","him","his","how","however","i","if","in","into","is","it","its","just","least","let","like","likely","may","me","might","most","must","my","neither","no","nor","not","of","off","often","on","only","or","other","our","own","rather","said","say","says","she","should","since","so","some","than","that","the","their","them","then","there","these","they","this","tis","to","too","twas","us","wants","was","we","were","what","when","where","which","while","who","whom","why","will","with","would","yet","you","your"]),Q.Pipeline.registerFunction(Q.stopWordFilter,"stopWordFilter")
+ */
+
+/**
+ * lunr.generateStopWordFilter builds a stopWordFilter function from the provided
+ * list of stop words.
+ *
+ * The built in lunr.stopWordFilter is built using this generator and can be used
+ * to generate custom stopWordFilters for applications or non English languages.
+ *
+ * @function
+ * @param {Array} token The token to pass through the filter
+ * @returns {lunr.PipelineFunction}
+ * @see lunr.Pipeline
+ * @see lunr.stopWordFilter
+ */
+lunr.generateStopWordFilter = function (stopWords) {
+  var words = stopWords.reduce(function (memo, stopWord) {
+    memo[stopWord] = stopWord
+    return memo
+  }, {})
+
+  return function (token) {
+    if (token && words[token.toString()] !== token.toString()) return token
+  }
+}
+
+/**
+ * lunr.stopWordFilter is an English language stop word list filter, any words
+ * contained in the list will not be passed through the filter.
+ *
+ * This is intended to be used in the Pipeline. If the token does not pass the
+ * filter then undefined will be returned.
+ *
+ * @function
+ * @implements {lunr.PipelineFunction}
+ * @params {lunr.Token} token - A token to check for being a stop word.
+ * @returns {lunr.Token}
+ * @see {@link lunr.Pipeline}
+ */
+lunr.stopWordFilter = lunr.generateStopWordFilter([
+  'a',
+  'able',
+  'about',
+  'across',
+  'after',
+  'all',
+  'almost',
+  'also',
+  'am',
+  'among',
+  'an',
+  'and',
+  'any',
+  'are',
+  'as',
+  'at',
+  'be',
+  'because',
+  'been',
+  'but',
+  'by',
+  'can',
+  'cannot',
+  'could',
+  'dear',
+  'did',
+  'do',
+  'does',
+  'either',
+  'else',
+  'ever',
+  'every',
+  'for',
+  'from',
+  'get',
+  'got',
+  'had',
+  'has',
+  'have',
+  'he',
+  'her',
+  'hers',
+  'him',
+  'his',
+  'how',
+  'however',
+  'i',
+  'if',
+  'in',
+  'into',
+  'is',
+  'it',
+  'its',
+  'just',
+  'least',
+  'let',
+  'like',
+  'likely',
+  'may',
+  'me',
+  'might',
+  'most',
+  'must',
+  'my',
+  'neither',
+  'no',
+  'nor',
+  'not',
+  'of',
+  'off',
+  'often',
+  'on',
+  'only',
+  'or',
+  'other',
+  'our',
+  'own',
+  'rather',
+  'said',
+  'say',
+  'says',
+  'she',
+  'should',
+  'since',
+  'so',
+  'some',
+  'than',
+  'that',
+  'the',
+  'their',
+  'them',
+  'then',
+  'there',
+  'these',
+  'they',
+  'this',
+  'tis',
+  'to',
+  'too',
+  'twas',
+  'us',
+  'wants',
+  'was',
+  'we',
+  'were',
+  'what',
+  'when',
+  'where',
+  'which',
+  'while',
+  'who',
+  'whom',
+  'why',
+  'will',
+  'with',
+  'would',
+  'yet',
+  'you',
+  'your'
+])
+
+lunr.Pipeline.registerFunction(lunr.stopWordFilter, 'stopWordFilter')
 /*!
  * lunr.trimmer
  * Copyright (C) 2019 Oliver Nightingale
- */,Q.trimmer=function(e){return e.update((function(e){return e.replace(/^\W+/,"").replace(/\W+$/,"")}))},Q.Pipeline.registerFunction(Q.trimmer,"trimmer")
+ */
+
+/**
+ * lunr.trimmer is a pipeline function for trimming non word
+ * characters from the beginning and end of tokens before they
+ * enter the index.
+ *
+ * This implementation may not work correctly for non latin
+ * characters and should either be removed or adapted for use
+ * with languages with non-latin characters.
+ *
+ * @static
+ * @implements {lunr.PipelineFunction}
+ * @param {lunr.Token} token The token to pass through the filter
+ * @returns {lunr.Token}
+ * @see lunr.Pipeline
+ */
+lunr.trimmer = function (token) {
+  return token.update(function (s) {
+    return s.replace(/^\W+/, '').replace(/\W+$/, '')
+  })
+}
+
+lunr.Pipeline.registerFunction(lunr.trimmer, 'trimmer')
 /*!
  * lunr.TokenSet
  * Copyright (C) 2019 Oliver Nightingale
- */,Q.TokenSet=function(){this.final=!1,this.edges={},this.id=Q.TokenSet._nextId,Q.TokenSet._nextId+=1},Q.TokenSet._nextId=1,Q.TokenSet.fromArray=function(e){for(var t=new Q.TokenSet.Builder,n=0,r=e.length;n<r;n++)t.insert(e[n]);return t.finish(),t.root},Q.TokenSet.fromClause=function(e){return"editDistance"in e?Q.TokenSet.fromFuzzyString(e.term,e.editDistance):Q.TokenSet.fromString(e.term)},Q.TokenSet.fromFuzzyString=function(e,t){for(var n=new Q.TokenSet,r=[{node:n,editsRemaining:t,str:e}];r.length;){var i=r.pop();if(i.str.length>0){var o,a=i.str.charAt(0);a in i.node.edges?o=i.node.edges[a]:(o=new Q.TokenSet,i.node.edges[a]=o),1==i.str.length&&(o.final=!0),r.push({node:o,editsRemaining:i.editsRemaining,str:i.str.slice(1)})}if(0!=i.editsRemaining){if("*"in i.node.edges)var s=i.node.edges["*"];else{s=new Q.TokenSet;i.node.edges["*"]=s}if(0==i.str.length&&(s.final=!0),r.push({node:s,editsRemaining:i.editsRemaining-1,str:i.str}),i.str.length>1&&r.push({node:i.node,editsRemaining:i.editsRemaining-1,str:i.str.slice(1)}),1==i.str.length&&(i.node.final=!0),i.str.length>=1){if("*"in i.node.edges)var l=i.node.edges["*"];else{l=new Q.TokenSet;i.node.edges["*"]=l}1==i.str.length&&(l.final=!0),r.push({node:l,editsRemaining:i.editsRemaining-1,str:i.str.slice(1)})}if(i.str.length>1){var c,u=i.str.charAt(0),d=i.str.charAt(1);d in i.node.edges?c=i.node.edges[d]:(c=new Q.TokenSet,i.node.edges[d]=c),1==i.str.length&&(c.final=!0),r.push({node:c,editsRemaining:i.editsRemaining-1,str:u+i.str.slice(2)})}}}return n},Q.TokenSet.fromString=function(e){for(var t=new Q.TokenSet,n=t,r=0,i=e.length;r<i;r++){var o=e[r],a=r==i-1;if("*"==o)t.edges[o]=t,t.final=a;else{var s=new Q.TokenSet;s.final=a,t.edges[o]=s,t=s}}return n},Q.TokenSet.prototype.toArray=function(){for(var e=[],t=[{prefix:"",node:this}];t.length;){var n=t.pop(),r=Object.keys(n.node.edges),i=r.length;n.node.final&&(n.prefix.charAt(0),e.push(n.prefix));for(var o=0;o<i;o++){var a=r[o];t.push({prefix:n.prefix.concat(a),node:n.node.edges[a]})}}return e},Q.TokenSet.prototype.toString=function(){if(this._str)return this._str;for(var e=this.final?"1":"0",t=Object.keys(this.edges).sort(),n=t.length,r=0;r<n;r++){var i=t[r];e=e+i+this.edges[i].id}return e},Q.TokenSet.prototype.intersect=function(e){for(var t=new Q.TokenSet,n=void 0,r=[{qNode:e,output:t,node:this}];r.length;){n=r.pop();for(var i=Object.keys(n.qNode.edges),o=i.length,a=Object.keys(n.node.edges),s=a.length,l=0;l<o;l++)for(var c=i[l],u=0;u<s;u++){var d=a[u];if(d==c||"*"==c){var h=n.node.edges[d],f=n.qNode.edges[c],p=h.final&&f.final,m=void 0;d in n.output.edges?(m=n.output.edges[d]).final=m.final||p:((m=new Q.TokenSet).final=p,n.output.edges[d]=m),r.push({qNode:f,output:m,node:h})}}}return t},Q.TokenSet.Builder=function(){this.previousWord="",this.root=new Q.TokenSet,this.uncheckedNodes=[],this.minimizedNodes={}},Q.TokenSet.Builder.prototype.insert=function(e){var t,n=0;if(e<this.previousWord)throw new Error("Out of order word insertion");for(var r=0;r<e.length&&r<this.previousWord.length&&e[r]==this.previousWord[r];r++)n++;this.minimize(n),t=0==this.uncheckedNodes.length?this.root:this.uncheckedNodes[this.uncheckedNodes.length-1].child;for(r=n;r<e.length;r++){var i=new Q.TokenSet,o=e[r];t.edges[o]=i,this.uncheckedNodes.push({parent:t,char:o,child:i}),t=i}t.final=!0,this.previousWord=e},Q.TokenSet.Builder.prototype.finish=function(){this.minimize(0)},Q.TokenSet.Builder.prototype.minimize=function(e){for(var t=this.uncheckedNodes.length-1;t>=e;t--){var n=this.uncheckedNodes[t],r=n.child.toString();r in this.minimizedNodes?n.parent.edges[n.char]=this.minimizedNodes[r]:(n.child._str=r,this.minimizedNodes[r]=n.child),this.uncheckedNodes.pop()}}
+ */
+
+/**
+ * A token set is used to store the unique list of all tokens
+ * within an index. Token sets are also used to represent an
+ * incoming query to the index, this query token set and index
+ * token set are then intersected to find which tokens to look
+ * up in the inverted index.
+ *
+ * A token set can hold multiple tokens, as in the case of the
+ * index token set, or it can hold a single token as in the
+ * case of a simple query token set.
+ *
+ * Additionally token sets are used to perform wildcard matching.
+ * Leading, contained and trailing wildcards are supported, and
+ * from this edit distance matching can also be provided.
+ *
+ * Token sets are implemented as a minimal finite state automata,
+ * where both common prefixes and suffixes are shared between tokens.
+ * This helps to reduce the space used for storing the token set.
+ *
+ * @constructor
+ */
+lunr.TokenSet = function () {
+  this.final = false
+  this.edges = {}
+  this.id = lunr.TokenSet._nextId
+  lunr.TokenSet._nextId += 1
+}
+
+/**
+ * Keeps track of the next, auto increment, identifier to assign
+ * to a new tokenSet.
+ *
+ * TokenSets require a unique identifier to be correctly minimised.
+ *
+ * @private
+ */
+lunr.TokenSet._nextId = 1
+
+/**
+ * Creates a TokenSet instance from the given sorted array of words.
+ *
+ * @param {String[]} arr - A sorted array of strings to create the set from.
+ * @returns {lunr.TokenSet}
+ * @throws Will throw an error if the input array is not sorted.
+ */
+lunr.TokenSet.fromArray = function (arr) {
+  var builder = new lunr.TokenSet.Builder
+
+  for (var i = 0, len = arr.length; i < len; i++) {
+    builder.insert(arr[i])
+  }
+
+  builder.finish()
+  return builder.root
+}
+
+/**
+ * Creates a token set from a query clause.
+ *
+ * @private
+ * @param {Object} clause - A single clause from lunr.Query.
+ * @param {string} clause.term - The query clause term.
+ * @param {number} [clause.editDistance] - The optional edit distance for the term.
+ * @returns {lunr.TokenSet}
+ */
+lunr.TokenSet.fromClause = function (clause) {
+  if ('editDistance' in clause) {
+    return lunr.TokenSet.fromFuzzyString(clause.term, clause.editDistance)
+  } else {
+    return lunr.TokenSet.fromString(clause.term)
+  }
+}
+
+/**
+ * Creates a token set representing a single string with a specified
+ * edit distance.
+ *
+ * Insertions, deletions, substitutions and transpositions are each
+ * treated as an edit distance of 1.
+ *
+ * Increasing the allowed edit distance will have a dramatic impact
+ * on the performance of both creating and intersecting these TokenSets.
+ * It is advised to keep the edit distance less than 3.
+ *
+ * @param {string} str - The string to create the token set from.
+ * @param {number} editDistance - The allowed edit distance to match.
+ * @returns {lunr.Vector}
+ */
+lunr.TokenSet.fromFuzzyString = function (str, editDistance) {
+  var root = new lunr.TokenSet
+
+  var stack = [{
+    node: root,
+    editsRemaining: editDistance,
+    str: str
+  }]
+
+  while (stack.length) {
+    var frame = stack.pop()
+
+    // no edit
+    if (frame.str.length > 0) {
+      var char = frame.str.charAt(0),
+          noEditNode
+
+      if (char in frame.node.edges) {
+        noEditNode = frame.node.edges[char]
+      } else {
+        noEditNode = new lunr.TokenSet
+        frame.node.edges[char] = noEditNode
+      }
+
+      if (frame.str.length == 1) {
+        noEditNode.final = true
+      }
+
+      stack.push({
+        node: noEditNode,
+        editsRemaining: frame.editsRemaining,
+        str: frame.str.slice(1)
+      })
+    }
+
+    if (frame.editsRemaining == 0) {
+      continue
+    }
+
+    // insertion
+    if ("*" in frame.node.edges) {
+      var insertionNode = frame.node.edges["*"]
+    } else {
+      var insertionNode = new lunr.TokenSet
+      frame.node.edges["*"] = insertionNode
+    }
+
+    if (frame.str.length == 0) {
+      insertionNode.final = true
+    }
+
+    stack.push({
+      node: insertionNode,
+      editsRemaining: frame.editsRemaining - 1,
+      str: frame.str
+    })
+
+    // deletion
+    // can only do a deletion if we have enough edits remaining
+    // and if there are characters left to delete in the string
+    if (frame.str.length > 1) {
+      stack.push({
+        node: frame.node,
+        editsRemaining: frame.editsRemaining - 1,
+        str: frame.str.slice(1)
+      })
+    }
+
+    // deletion
+    // just removing the last character from the str
+    if (frame.str.length == 1) {
+      frame.node.final = true
+    }
+
+    // substitution
+    // can only do a substitution if we have enough edits remaining
+    // and if there are characters left to substitute
+    if (frame.str.length >= 1) {
+      if ("*" in frame.node.edges) {
+        var substitutionNode = frame.node.edges["*"]
+      } else {
+        var substitutionNode = new lunr.TokenSet
+        frame.node.edges["*"] = substitutionNode
+      }
+
+      if (frame.str.length == 1) {
+        substitutionNode.final = true
+      }
+
+      stack.push({
+        node: substitutionNode,
+        editsRemaining: frame.editsRemaining - 1,
+        str: frame.str.slice(1)
+      })
+    }
+
+    // transposition
+    // can only do a transposition if there are edits remaining
+    // and there are enough characters to transpose
+    if (frame.str.length > 1) {
+      var charA = frame.str.charAt(0),
+          charB = frame.str.charAt(1),
+          transposeNode
+
+      if (charB in frame.node.edges) {
+        transposeNode = frame.node.edges[charB]
+      } else {
+        transposeNode = new lunr.TokenSet
+        frame.node.edges[charB] = transposeNode
+      }
+
+      if (frame.str.length == 1) {
+        transposeNode.final = true
+      }
+
+      stack.push({
+        node: transposeNode,
+        editsRemaining: frame.editsRemaining - 1,
+        str: charA + frame.str.slice(2)
+      })
+    }
+  }
+
+  return root
+}
+
+/**
+ * Creates a TokenSet from a string.
+ *
+ * The string may contain one or more wildcard characters (*)
+ * that will allow wildcard matching when intersecting with
+ * another TokenSet.
+ *
+ * @param {string} str - The string to create a TokenSet from.
+ * @returns {lunr.TokenSet}
+ */
+lunr.TokenSet.fromString = function (str) {
+  var node = new lunr.TokenSet,
+      root = node
+
+  /*
+   * Iterates through all characters within the passed string
+   * appending a node for each character.
+   *
+   * When a wildcard character is found then a self
+   * referencing edge is introduced to continually match
+   * any number of any characters.
+   */
+  for (var i = 0, len = str.length; i < len; i++) {
+    var char = str[i],
+        final = (i == len - 1)
+
+    if (char == "*") {
+      node.edges[char] = node
+      node.final = final
+
+    } else {
+      var next = new lunr.TokenSet
+      next.final = final
+
+      node.edges[char] = next
+      node = next
+    }
+  }
+
+  return root
+}
+
+/**
+ * Converts this TokenSet into an array of strings
+ * contained within the TokenSet.
+ *
+ * This is not intended to be used on a TokenSet that
+ * contains wildcards, in these cases the results are
+ * undefined and are likely to cause an infinite loop.
+ *
+ * @returns {string[]}
+ */
+lunr.TokenSet.prototype.toArray = function () {
+  var words = []
+
+  var stack = [{
+    prefix: "",
+    node: this
+  }]
+
+  while (stack.length) {
+    var frame = stack.pop(),
+        edges = Object.keys(frame.node.edges),
+        len = edges.length
+
+    if (frame.node.final) {
+      /* In Safari, at this point the prefix is sometimes corrupted, see:
+       * https://github.com/olivernn/lunr.js/issues/279 Calling any
+       * String.prototype method forces Safari to "cast" this string to what
+       * it's supposed to be, fixing the bug. */
+      frame.prefix.charAt(0)
+      words.push(frame.prefix)
+    }
+
+    for (var i = 0; i < len; i++) {
+      var edge = edges[i]
+
+      stack.push({
+        prefix: frame.prefix.concat(edge),
+        node: frame.node.edges[edge]
+      })
+    }
+  }
+
+  return words
+}
+
+/**
+ * Generates a string representation of a TokenSet.
+ *
+ * This is intended to allow TokenSets to be used as keys
+ * in objects, largely to aid the construction and minimisation
+ * of a TokenSet. As such it is not designed to be a human
+ * friendly representation of the TokenSet.
+ *
+ * @returns {string}
+ */
+lunr.TokenSet.prototype.toString = function () {
+  // NOTE: Using Object.keys here as this.edges is very likely
+  // to enter 'hash-mode' with many keys being added
+  //
+  // avoiding a for-in loop here as it leads to the function
+  // being de-optimised (at least in V8). From some simple
+  // benchmarks the performance is comparable, but allowing
+  // V8 to optimize may mean easy performance wins in the future.
+
+  if (this._str) {
+    return this._str
+  }
+
+  var str = this.final ? '1' : '0',
+      labels = Object.keys(this.edges).sort(),
+      len = labels.length
+
+  for (var i = 0; i < len; i++) {
+    var label = labels[i],
+        node = this.edges[label]
+
+    str = str + label + node.id
+  }
+
+  return str
+}
+
+/**
+ * Returns a new TokenSet that is the intersection of
+ * this TokenSet and the passed TokenSet.
+ *
+ * This intersection will take into account any wildcards
+ * contained within the TokenSet.
+ *
+ * @param {lunr.TokenSet} b - An other TokenSet to intersect with.
+ * @returns {lunr.TokenSet}
+ */
+lunr.TokenSet.prototype.intersect = function (b) {
+  var output = new lunr.TokenSet,
+      frame = undefined
+
+  var stack = [{
+    qNode: b,
+    output: output,
+    node: this
+  }]
+
+  while (stack.length) {
+    frame = stack.pop()
+
+    // NOTE: As with the #toString method, we are using
+    // Object.keys and a for loop instead of a for-in loop
+    // as both of these objects enter 'hash' mode, causing
+    // the function to be de-optimised in V8
+    var qEdges = Object.keys(frame.qNode.edges),
+        qLen = qEdges.length,
+        nEdges = Object.keys(frame.node.edges),
+        nLen = nEdges.length
+
+    for (var q = 0; q < qLen; q++) {
+      var qEdge = qEdges[q]
+
+      for (var n = 0; n < nLen; n++) {
+        var nEdge = nEdges[n]
+
+        if (nEdge == qEdge || qEdge == '*') {
+          var node = frame.node.edges[nEdge],
+              qNode = frame.qNode.edges[qEdge],
+              final = node.final && qNode.final,
+              next = undefined
+
+          if (nEdge in frame.output.edges) {
+            // an edge already exists for this character
+            // no need to create a new node, just set the finality
+            // bit unless this node is already final
+            next = frame.output.edges[nEdge]
+            next.final = next.final || final
+
+          } else {
+            // no edge exists yet, must create one
+            // set the finality bit and insert it
+            // into the output
+            next = new lunr.TokenSet
+            next.final = final
+            frame.output.edges[nEdge] = next
+          }
+
+          stack.push({
+            qNode: qNode,
+            output: next,
+            node: node
+          })
+        }
+      }
+    }
+  }
+
+  return output
+}
+lunr.TokenSet.Builder = function () {
+  this.previousWord = ""
+  this.root = new lunr.TokenSet
+  this.uncheckedNodes = []
+  this.minimizedNodes = {}
+}
+
+lunr.TokenSet.Builder.prototype.insert = function (word) {
+  var node,
+      commonPrefix = 0
+
+  if (word < this.previousWord) {
+    throw new Error ("Out of order word insertion")
+  }
+
+  for (var i = 0; i < word.length && i < this.previousWord.length; i++) {
+    if (word[i] != this.previousWord[i]) break
+    commonPrefix++
+  }
+
+  this.minimize(commonPrefix)
+
+  if (this.uncheckedNodes.length == 0) {
+    node = this.root
+  } else {
+    node = this.uncheckedNodes[this.uncheckedNodes.length - 1].child
+  }
+
+  for (var i = commonPrefix; i < word.length; i++) {
+    var nextNode = new lunr.TokenSet,
+        char = word[i]
+
+    node.edges[char] = nextNode
+
+    this.uncheckedNodes.push({
+      parent: node,
+      char: char,
+      child: nextNode
+    })
+
+    node = nextNode
+  }
+
+  node.final = true
+  this.previousWord = word
+}
+
+lunr.TokenSet.Builder.prototype.finish = function () {
+  this.minimize(0)
+}
+
+lunr.TokenSet.Builder.prototype.minimize = function (downTo) {
+  for (var i = this.uncheckedNodes.length - 1; i >= downTo; i--) {
+    var node = this.uncheckedNodes[i],
+        childKey = node.child.toString()
+
+    if (childKey in this.minimizedNodes) {
+      node.parent.edges[node.char] = this.minimizedNodes[childKey]
+    } else {
+      // Cache the key for this node since
+      // we know it can't change anymore
+      node.child._str = childKey
+
+      this.minimizedNodes[childKey] = node.child
+    }
+
+    this.uncheckedNodes.pop()
+  }
+}
 /*!
  * lunr.Index
  * Copyright (C) 2019 Oliver Nightingale
- */,Q.Index=function(e){this.invertedIndex=e.invertedIndex,this.fieldVectors=e.fieldVectors,this.tokenSet=e.tokenSet,this.fields=e.fields,this.pipeline=e.pipeline},Q.Index.prototype.search=function(e){return this.query((function(t){new Q.QueryParser(e,t).parse()}))},Q.Index.prototype.query=function(e){for(var t=new Q.Query(this.fields),n=Object.create(null),r=Object.create(null),i=Object.create(null),o=Object.create(null),a=Object.create(null),s=0;s<this.fields.length;s++)r[this.fields[s]]=new Q.Vector;e.call(t,t);for(s=0;s<t.clauses.length;s++){var l=t.clauses[s],c=null,u=Q.Set.complete;c=l.usePipeline?this.pipeline.runString(l.term,{fields:l.fields}):[l.term];for(var d=0;d<c.length;d++){var h=c[d];l.term=h;var f=Q.TokenSet.fromClause(l),p=this.tokenSet.intersect(f).toArray();if(0===p.length&&l.presence===Q.Query.presence.REQUIRED){for(var m=0;m<l.fields.length;m++){o[P=l.fields[m]]=Q.Set.empty}break}for(var g=0;g<p.length;g++){var y=p[g],v=this.invertedIndex[y],x=v._index;for(m=0;m<l.fields.length;m++){var b=v[P=l.fields[m]],w=Object.keys(b),k=y+"/"+P,S=new Q.Set(w);if(l.presence==Q.Query.presence.REQUIRED&&(u=u.union(S),void 0===o[P]&&(o[P]=Q.Set.complete)),l.presence!=Q.Query.presence.PROHIBITED){if(r[P].upsert(x,l.boost,(function(e,t){return e+t})),!i[k]){for(var E=0;E<w.length;E++){var N,T=w[E],R=new Q.FieldRef(T,P),L=b[T];void 0===(N=n[R])?n[R]=new Q.MatchData(y,P,L):N.add(y,P,L)}i[k]=!0}}else void 0===a[P]&&(a[P]=Q.Set.empty),a[P]=a[P].union(S)}}}if(l.presence===Q.Query.presence.REQUIRED)for(m=0;m<l.fields.length;m++){o[P=l.fields[m]]=o[P].intersect(u)}}var I=Q.Set.complete,O=Q.Set.empty;for(s=0;s<this.fields.length;s++){var P;o[P=this.fields[s]]&&(I=I.intersect(o[P])),a[P]&&(O=O.union(a[P]))}var C=Object.keys(n),F=[],j=Object.create(null);if(t.isNegated()){C=Object.keys(this.fieldVectors);for(s=0;s<C.length;s++){R=C[s];var _=Q.FieldRef.fromString(R);n[R]=new Q.MatchData}}for(s=0;s<C.length;s++){var M=(_=Q.FieldRef.fromString(C[s])).docRef;if(I.contains(M)&&!O.contains(M)){var A,D=this.fieldVectors[_],B=r[_.fieldName].similarity(D);if(void 0!==(A=j[M]))A.score+=B,A.matchData.combine(n[_]);else{var z={ref:M,score:B,matchData:n[_]};j[M]=z,F.push(z)}}}return F.sort((function(e,t){return t.score-e.score}))},Q.Index.prototype.toJSON=function(){var e=Object.keys(this.invertedIndex).sort().map((function(e){return[e,this.invertedIndex[e]]}),this),t=Object.keys(this.fieldVectors).map((function(e){return[e,this.fieldVectors[e].toJSON()]}),this);return{version:Q.version,fields:this.fields,fieldVectors:t,invertedIndex:e,pipeline:this.pipeline.toJSON()}},Q.Index.load=function(e){var t={},n={},r=e.fieldVectors,i=Object.create(null),o=e.invertedIndex,a=new Q.TokenSet.Builder,s=Q.Pipeline.load(e.pipeline);e.version!=Q.version&&Q.utils.warn("Version mismatch when loading serialised index. Current version of lunr '"+Q.version+"' does not match serialized index '"+e.version+"'");for(var l=0;l<r.length;l++){var c=(d=r[l])[0],u=d[1];n[c]=new Q.Vector(u)}for(l=0;l<o.length;l++){var d,h=(d=o[l])[0],f=d[1];a.insert(h),i[h]=f}return a.finish(),t.fields=e.fields,t.fieldVectors=n,t.invertedIndex=i,t.tokenSet=a.root,t.pipeline=s,new Q.Index(t)}
+ */
+
+/**
+ * An index contains the built index of all documents and provides a query interface
+ * to the index.
+ *
+ * Usually instances of lunr.Index will not be created using this constructor, instead
+ * lunr.Builder should be used to construct new indexes, or lunr.Index.load should be
+ * used to load previously built and serialized indexes.
+ *
+ * @constructor
+ * @param {Object} attrs - The attributes of the built search index.
+ * @param {Object} attrs.invertedIndex - An index of term/field to document reference.
+ * @param {Object<string, lunr.Vector>} attrs.fieldVectors - Field vectors
+ * @param {lunr.TokenSet} attrs.tokenSet - An set of all corpus tokens.
+ * @param {string[]} attrs.fields - The names of indexed document fields.
+ * @param {lunr.Pipeline} attrs.pipeline - The pipeline to use for search terms.
+ */
+lunr.Index = function (attrs) {
+  this.invertedIndex = attrs.invertedIndex
+  this.fieldVectors = attrs.fieldVectors
+  this.tokenSet = attrs.tokenSet
+  this.fields = attrs.fields
+  this.pipeline = attrs.pipeline
+}
+
+/**
+ * A result contains details of a document matching a search query.
+ * @typedef {Object} lunr.Index~Result
+ * @property {string} ref - The reference of the document this result represents.
+ * @property {number} score - A number between 0 and 1 representing how similar this document is to the query.
+ * @property {lunr.MatchData} matchData - Contains metadata about this match including which term(s) caused the match.
+ */
+
+/**
+ * Although lunr provides the ability to create queries using lunr.Query, it also provides a simple
+ * query language which itself is parsed into an instance of lunr.Query.
+ *
+ * For programmatically building queries it is advised to directly use lunr.Query, the query language
+ * is best used for human entered text rather than program generated text.
+ *
+ * At its simplest queries can just be a single term, e.g. `hello`, multiple terms are also supported
+ * and will be combined with OR, e.g `hello world` will match documents that contain either 'hello'
+ * or 'world', though those that contain both will rank higher in the results.
+ *
+ * Wildcards can be included in terms to match one or more unspecified characters, these wildcards can
+ * be inserted anywhere within the term, and more than one wildcard can exist in a single term. Adding
+ * wildcards will increase the number of documents that will be found but can also have a negative
+ * impact on query performance, especially with wildcards at the beginning of a term.
+ *
+ * Terms can be restricted to specific fields, e.g. `title:hello`, only documents with the term
+ * hello in the title field will match this query. Using a field not present in the index will lead
+ * to an error being thrown.
+ *
+ * Modifiers can also be added to terms, lunr supports edit distance and boost modifiers on terms. A term
+ * boost will make documents matching that term score higher, e.g. `foo^5`. Edit distance is also supported
+ * to provide fuzzy matching, e.g. 'hello~2' will match documents with hello with an edit distance of 2.
+ * Avoid large values for edit distance to improve query performance.
+ *
+ * Each term also supports a presence modifier. By default a term's presence in document is optional, however
+ * this can be changed to either required or prohibited. For a term's presence to be required in a document the
+ * term should be prefixed with a '+', e.g. `+foo bar` is a search for documents that must contain 'foo' and
+ * optionally contain 'bar'. Conversely a leading '-' sets the terms presence to prohibited, i.e. it must not
+ * appear in a document, e.g. `-foo bar` is a search for documents that do not contain 'foo' but may contain 'bar'.
+ *
+ * To escape special characters the backslash character '\' can be used, this allows searches to include
+ * characters that would normally be considered modifiers, e.g. `foo\~2` will search for a term "foo~2" instead
+ * of attempting to apply a boost of 2 to the search term "foo".
+ *
+ * @typedef {string} lunr.Index~QueryString
+ * @example <caption>Simple single term query</caption>
+ * hello
+ * @example <caption>Multiple term query</caption>
+ * hello world
+ * @example <caption>term scoped to a field</caption>
+ * title:hello
+ * @example <caption>term with a boost of 10</caption>
+ * hello^10
+ * @example <caption>term with an edit distance of 2</caption>
+ * hello~2
+ * @example <caption>terms with presence modifiers</caption>
+ * -foo +bar baz
+ */
+
+/**
+ * Performs a search against the index using lunr query syntax.
+ *
+ * Results will be returned sorted by their score, the most relevant results
+ * will be returned first.  For details on how the score is calculated, please see
+ * the {@link https://lunrjs.com/guides/searching.html#scoring|guide}.
+ *
+ * For more programmatic querying use lunr.Index#query.
+ *
+ * @param {lunr.Index~QueryString} queryString - A string containing a lunr query.
+ * @throws {lunr.QueryParseError} If the passed query string cannot be parsed.
+ * @returns {lunr.Index~Result[]}
+ */
+lunr.Index.prototype.search = function (queryString) {
+  return this.query(function (query) {
+    var parser = new lunr.QueryParser(queryString, query)
+    parser.parse()
+  })
+}
+
+/**
+ * A query builder callback provides a query object to be used to express
+ * the query to perform on the index.
+ *
+ * @callback lunr.Index~queryBuilder
+ * @param {lunr.Query} query - The query object to build up.
+ * @this lunr.Query
+ */
+
+/**
+ * Performs a query against the index using the yielded lunr.Query object.
+ *
+ * If performing programmatic queries against the index, this method is preferred
+ * over lunr.Index#search so as to avoid the additional query parsing overhead.
+ *
+ * A query object is yielded to the supplied function which should be used to
+ * express the query to be run against the index.
+ *
+ * Note that although this function takes a callback parameter it is _not_ an
+ * asynchronous operation, the callback is just yielded a query object to be
+ * customized.
+ *
+ * @param {lunr.Index~queryBuilder} fn - A function that is used to build the query.
+ * @returns {lunr.Index~Result[]}
+ */
+lunr.Index.prototype.query = function (fn) {
+  // for each query clause
+  // * process terms
+  // * expand terms from token set
+  // * find matching documents and metadata
+  // * get document vectors
+  // * score documents
+
+  var query = new lunr.Query(this.fields),
+      matchingFields = Object.create(null),
+      queryVectors = Object.create(null),
+      termFieldCache = Object.create(null),
+      requiredMatches = Object.create(null),
+      prohibitedMatches = Object.create(null)
+
+  /*
+   * To support field level boosts a query vector is created per
+   * field. An empty vector is eagerly created to support negated
+   * queries.
+   */
+  for (var i = 0; i < this.fields.length; i++) {
+    queryVectors[this.fields[i]] = new lunr.Vector
+  }
+
+  fn.call(query, query)
+
+  for (var i = 0; i < query.clauses.length; i++) {
+    /*
+     * Unless the pipeline has been disabled for this term, which is
+     * the case for terms with wildcards, we need to pass the clause
+     * term through the search pipeline. A pipeline returns an array
+     * of processed terms. Pipeline functions may expand the passed
+     * term, which means we may end up performing multiple index lookups
+     * for a single query term.
+     */
+    var clause = query.clauses[i],
+        terms = null,
+        clauseMatches = lunr.Set.complete
+
+    if (clause.usePipeline) {
+      terms = this.pipeline.runString(clause.term, {
+        fields: clause.fields
+      })
+    } else {
+      terms = [clause.term]
+    }
+
+    for (var m = 0; m < terms.length; m++) {
+      var term = terms[m]
+
+      /*
+       * Each term returned from the pipeline needs to use the same query
+       * clause object, e.g. the same boost and or edit distance. The
+       * simplest way to do this is to re-use the clause object but mutate
+       * its term property.
+       */
+      clause.term = term
+
+      /*
+       * From the term in the clause we create a token set which will then
+       * be used to intersect the indexes token set to get a list of terms
+       * to lookup in the inverted index
+       */
+      var termTokenSet = lunr.TokenSet.fromClause(clause),
+          expandedTerms = this.tokenSet.intersect(termTokenSet).toArray()
+
+      /*
+       * If a term marked as required does not exist in the tokenSet it is
+       * impossible for the search to return any matches. We set all the field
+       * scoped required matches set to empty and stop examining any further
+       * clauses.
+       */
+      if (expandedTerms.length === 0 && clause.presence === lunr.Query.presence.REQUIRED) {
+        for (var k = 0; k < clause.fields.length; k++) {
+          var field = clause.fields[k]
+          requiredMatches[field] = lunr.Set.empty
+        }
+
+        break
+      }
+
+      for (var j = 0; j < expandedTerms.length; j++) {
+        /*
+         * For each term get the posting and termIndex, this is required for
+         * building the query vector.
+         */
+        var expandedTerm = expandedTerms[j],
+            posting = this.invertedIndex[expandedTerm],
+            termIndex = posting._index
+
+        for (var k = 0; k < clause.fields.length; k++) {
+          /*
+           * For each field that this query term is scoped by (by default
+           * all fields are in scope) we need to get all the document refs
+           * that have this term in that field.
+           *
+           * The posting is the entry in the invertedIndex for the matching
+           * term from above.
+           */
+          var field = clause.fields[k],
+              fieldPosting = posting[field],
+              matchingDocumentRefs = Object.keys(fieldPosting),
+              termField = expandedTerm + "/" + field,
+              matchingDocumentsSet = new lunr.Set(matchingDocumentRefs)
+
+          /*
+           * if the presence of this term is required ensure that the matching
+           * documents are added to the set of required matches for this clause.
+           *
+           */
+          if (clause.presence == lunr.Query.presence.REQUIRED) {
+            clauseMatches = clauseMatches.union(matchingDocumentsSet)
+
+            if (requiredMatches[field] === undefined) {
+              requiredMatches[field] = lunr.Set.complete
+            }
+          }
+
+          /*
+           * if the presence of this term is prohibited ensure that the matching
+           * documents are added to the set of prohibited matches for this field,
+           * creating that set if it does not yet exist.
+           */
+          if (clause.presence == lunr.Query.presence.PROHIBITED) {
+            if (prohibitedMatches[field] === undefined) {
+              prohibitedMatches[field] = lunr.Set.empty
+            }
+
+            prohibitedMatches[field] = prohibitedMatches[field].union(matchingDocumentsSet)
+
+            /*
+             * Prohibited matches should not be part of the query vector used for
+             * similarity scoring and no metadata should be extracted so we continue
+             * to the next field
+             */
+            continue
+          }
+
+          /*
+           * The query field vector is populated using the termIndex found for
+           * the term and a unit value with the appropriate boost applied.
+           * Using upsert because there could already be an entry in the vector
+           * for the term we are working with. In that case we just add the scores
+           * together.
+           */
+          queryVectors[field].upsert(termIndex, clause.boost, function (a, b) { return a + b })
+
+          /**
+           * If we've already seen this term, field combo then we've already collected
+           * the matching documents and metadata, no need to go through all that again
+           */
+          if (termFieldCache[termField]) {
+            continue
+          }
+
+          for (var l = 0; l < matchingDocumentRefs.length; l++) {
+            /*
+             * All metadata for this term/field/document triple
+             * are then extracted and collected into an instance
+             * of lunr.MatchData ready to be returned in the query
+             * results
+             */
+            var matchingDocumentRef = matchingDocumentRefs[l],
+                matchingFieldRef = new lunr.FieldRef (matchingDocumentRef, field),
+                metadata = fieldPosting[matchingDocumentRef],
+                fieldMatch
+
+            if ((fieldMatch = matchingFields[matchingFieldRef]) === undefined) {
+              matchingFields[matchingFieldRef] = new lunr.MatchData (expandedTerm, field, metadata)
+            } else {
+              fieldMatch.add(expandedTerm, field, metadata)
+            }
+
+          }
+
+          termFieldCache[termField] = true
+        }
+      }
+    }
+
+    /**
+     * If the presence was required we need to update the requiredMatches field sets.
+     * We do this after all fields for the term have collected their matches because
+     * the clause terms presence is required in _any_ of the fields not _all_ of the
+     * fields.
+     */
+    if (clause.presence === lunr.Query.presence.REQUIRED) {
+      for (var k = 0; k < clause.fields.length; k++) {
+        var field = clause.fields[k]
+        requiredMatches[field] = requiredMatches[field].intersect(clauseMatches)
+      }
+    }
+  }
+
+  /**
+   * Need to combine the field scoped required and prohibited
+   * matching documents into a global set of required and prohibited
+   * matches
+   */
+  var allRequiredMatches = lunr.Set.complete,
+      allProhibitedMatches = lunr.Set.empty
+
+  for (var i = 0; i < this.fields.length; i++) {
+    var field = this.fields[i]
+
+    if (requiredMatches[field]) {
+      allRequiredMatches = allRequiredMatches.intersect(requiredMatches[field])
+    }
+
+    if (prohibitedMatches[field]) {
+      allProhibitedMatches = allProhibitedMatches.union(prohibitedMatches[field])
+    }
+  }
+
+  var matchingFieldRefs = Object.keys(matchingFields),
+      results = [],
+      matches = Object.create(null)
+
+  /*
+   * If the query is negated (contains only prohibited terms)
+   * we need to get _all_ fieldRefs currently existing in the
+   * index. This is only done when we know that the query is
+   * entirely prohibited terms to avoid any cost of getting all
+   * fieldRefs unnecessarily.
+   *
+   * Additionally, blank MatchData must be created to correctly
+   * populate the results.
+   */
+  if (query.isNegated()) {
+    matchingFieldRefs = Object.keys(this.fieldVectors)
+
+    for (var i = 0; i < matchingFieldRefs.length; i++) {
+      var matchingFieldRef = matchingFieldRefs[i]
+      var fieldRef = lunr.FieldRef.fromString(matchingFieldRef)
+      matchingFields[matchingFieldRef] = new lunr.MatchData
+    }
+  }
+
+  for (var i = 0; i < matchingFieldRefs.length; i++) {
+    /*
+     * Currently we have document fields that match the query, but we
+     * need to return documents. The matchData and scores are combined
+     * from multiple fields belonging to the same document.
+     *
+     * Scores are calculated by field, using the query vectors created
+     * above, and combined into a final document score using addition.
+     */
+    var fieldRef = lunr.FieldRef.fromString(matchingFieldRefs[i]),
+        docRef = fieldRef.docRef
+
+    if (!allRequiredMatches.contains(docRef)) {
+      continue
+    }
+
+    if (allProhibitedMatches.contains(docRef)) {
+      continue
+    }
+
+    var fieldVector = this.fieldVectors[fieldRef],
+        score = queryVectors[fieldRef.fieldName].similarity(fieldVector),
+        docMatch
+
+    if ((docMatch = matches[docRef]) !== undefined) {
+      docMatch.score += score
+      docMatch.matchData.combine(matchingFields[fieldRef])
+    } else {
+      var match = {
+        ref: docRef,
+        score: score,
+        matchData: matchingFields[fieldRef]
+      }
+      matches[docRef] = match
+      results.push(match)
+    }
+  }
+
+  /*
+   * Sort the results objects by score, highest first.
+   */
+  return results.sort(function (a, b) {
+    return b.score - a.score
+  })
+}
+
+/**
+ * Prepares the index for JSON serialization.
+ *
+ * The schema for this JSON blob will be described in a
+ * separate JSON schema file.
+ *
+ * @returns {Object}
+ */
+lunr.Index.prototype.toJSON = function () {
+  var invertedIndex = Object.keys(this.invertedIndex)
+    .sort()
+    .map(function (term) {
+      return [term, this.invertedIndex[term]]
+    }, this)
+
+  var fieldVectors = Object.keys(this.fieldVectors)
+    .map(function (ref) {
+      return [ref, this.fieldVectors[ref].toJSON()]
+    }, this)
+
+  return {
+    version: lunr.version,
+    fields: this.fields,
+    fieldVectors: fieldVectors,
+    invertedIndex: invertedIndex,
+    pipeline: this.pipeline.toJSON()
+  }
+}
+
+/**
+ * Loads a previously serialized lunr.Index
+ *
+ * @param {Object} serializedIndex - A previously serialized lunr.Index
+ * @returns {lunr.Index}
+ */
+lunr.Index.load = function (serializedIndex) {
+  var attrs = {},
+      fieldVectors = {},
+      serializedVectors = serializedIndex.fieldVectors,
+      invertedIndex = Object.create(null),
+      serializedInvertedIndex = serializedIndex.invertedIndex,
+      tokenSetBuilder = new lunr.TokenSet.Builder,
+      pipeline = lunr.Pipeline.load(serializedIndex.pipeline)
+
+  if (serializedIndex.version != lunr.version) {
+    lunr.utils.warn("Version mismatch when loading serialised index. Current version of lunr '" + lunr.version + "' does not match serialized index '" + serializedIndex.version + "'")
+  }
+
+  for (var i = 0; i < serializedVectors.length; i++) {
+    var tuple = serializedVectors[i],
+        ref = tuple[0],
+        elements = tuple[1]
+
+    fieldVectors[ref] = new lunr.Vector(elements)
+  }
+
+  for (var i = 0; i < serializedInvertedIndex.length; i++) {
+    var tuple = serializedInvertedIndex[i],
+        term = tuple[0],
+        posting = tuple[1]
+
+    tokenSetBuilder.insert(term)
+    invertedIndex[term] = posting
+  }
+
+  tokenSetBuilder.finish()
+
+  attrs.fields = serializedIndex.fields
+
+  attrs.fieldVectors = fieldVectors
+  attrs.invertedIndex = invertedIndex
+  attrs.tokenSet = tokenSetBuilder.root
+  attrs.pipeline = pipeline
+
+  return new lunr.Index(attrs)
+}
 /*!
  * lunr.Builder
  * Copyright (C) 2019 Oliver Nightingale
- */,Q.Builder=function(){this._ref="id",this._fields=Object.create(null),this._documents=Object.create(null),this.invertedIndex=Object.create(null),this.fieldTermFrequencies={},this.fieldLengths={},this.tokenizer=Q.tokenizer,this.pipeline=new Q.Pipeline,this.searchPipeline=new Q.Pipeline,this.documentCount=0,this._b=.75,this._k1=1.2,this.termIndex=0,this.metadataWhitelist=[]},Q.Builder.prototype.ref=function(e){this._ref=e},Q.Builder.prototype.field=function(e,t){if(/\//.test(e))throw new RangeError("Field '"+e+"' contains illegal character '/'");this._fields[e]=t||{}},Q.Builder.prototype.b=function(e){this._b=e<0?0:e>1?1:e},Q.Builder.prototype.k1=function(e){this._k1=e},Q.Builder.prototype.add=function(e,t){var n=e[this._ref],r=Object.keys(this._fields);this._documents[n]=t||{},this.documentCount+=1;for(var i=0;i<r.length;i++){var o=r[i],a=this._fields[o].extractor,s=a?a(e):e[o],l=this.tokenizer(s,{fields:[o]}),c=this.pipeline.run(l),u=new Q.FieldRef(n,o),d=Object.create(null);this.fieldTermFrequencies[u]=d,this.fieldLengths[u]=0,this.fieldLengths[u]+=c.length;for(var h=0;h<c.length;h++){var f=c[h];if(null==d[f]&&(d[f]=0),d[f]+=1,null==this.invertedIndex[f]){var p=Object.create(null);p._index=this.termIndex,this.termIndex+=1;for(var m=0;m<r.length;m++)p[r[m]]=Object.create(null);this.invertedIndex[f]=p}null==this.invertedIndex[f][o][n]&&(this.invertedIndex[f][o][n]=Object.create(null));for(var g=0;g<this.metadataWhitelist.length;g++){var y=this.metadataWhitelist[g],v=f.metadata[y];null==this.invertedIndex[f][o][n][y]&&(this.invertedIndex[f][o][n][y]=[]),this.invertedIndex[f][o][n][y].push(v)}}}},Q.Builder.prototype.calculateAverageFieldLengths=function(){for(var e=Object.keys(this.fieldLengths),t=e.length,n={},r={},i=0;i<t;i++){var o=Q.FieldRef.fromString(e[i]),a=o.fieldName;r[a]||(r[a]=0),r[a]+=1,n[a]||(n[a]=0),n[a]+=this.fieldLengths[o]}var s=Object.keys(this._fields);for(i=0;i<s.length;i++){var l=s[i];n[l]=n[l]/r[l]}this.averageFieldLength=n},Q.Builder.prototype.createFieldVectors=function(){for(var e={},t=Object.keys(this.fieldTermFrequencies),n=t.length,r=Object.create(null),i=0;i<n;i++){for(var o=Q.FieldRef.fromString(t[i]),a=o.fieldName,s=this.fieldLengths[o],l=new Q.Vector,c=this.fieldTermFrequencies[o],u=Object.keys(c),d=u.length,h=this._fields[a].boost||1,f=this._documents[o.docRef].boost||1,p=0;p<d;p++){var m,g,y,v=u[p],x=c[v],b=this.invertedIndex[v]._index;void 0===r[v]?(m=Q.idf(this.invertedIndex[v],this.documentCount),r[v]=m):m=r[v],g=m*((this._k1+1)*x)/(this._k1*(1-this._b+this._b*(s/this.averageFieldLength[a]))+x),g*=h,g*=f,y=Math.round(1e3*g)/1e3,l.insert(b,y)}e[o]=l}this.fieldVectors=e},Q.Builder.prototype.createTokenSet=function(){this.tokenSet=Q.TokenSet.fromArray(Object.keys(this.invertedIndex).sort())},Q.Builder.prototype.build=function(){return this.calculateAverageFieldLengths(),this.createFieldVectors(),this.createTokenSet(),new Q.Index({invertedIndex:this.invertedIndex,fieldVectors:this.fieldVectors,tokenSet:this.tokenSet,fields:Object.keys(this._fields),pipeline:this.searchPipeline})},Q.Builder.prototype.use=function(e){var t=Array.prototype.slice.call(arguments,1);t.unshift(this),e.apply(this,t)},Q.MatchData=function(e,t,n){for(var r=Object.create(null),i=Object.keys(n||{}),o=0;o<i.length;o++){var a=i[o];r[a]=n[a].slice()}this.metadata=Object.create(null),void 0!==e&&(this.metadata[e]=Object.create(null),this.metadata[e][t]=r)},Q.MatchData.prototype.combine=function(e){for(var t=Object.keys(e.metadata),n=0;n<t.length;n++){var r=t[n],i=Object.keys(e.metadata[r]);null==this.metadata[r]&&(this.metadata[r]=Object.create(null));for(var o=0;o<i.length;o++){var a=i[o],s=Object.keys(e.metadata[r][a]);null==this.metadata[r][a]&&(this.metadata[r][a]=Object.create(null));for(var l=0;l<s.length;l++){var c=s[l];null==this.metadata[r][a][c]?this.metadata[r][a][c]=e.metadata[r][a][c]:this.metadata[r][a][c]=this.metadata[r][a][c].concat(e.metadata[r][a][c])}}}},Q.MatchData.prototype.add=function(e,t,n){if(!(e in this.metadata))return this.metadata[e]=Object.create(null),void(this.metadata[e][t]=n);if(t in this.metadata[e])for(var r=Object.keys(n),i=0;i<r.length;i++){var o=r[i];o in this.metadata[e][t]?this.metadata[e][t][o]=this.metadata[e][t][o].concat(n[o]):this.metadata[e][t][o]=n[o]}else this.metadata[e][t]=n},Q.Query=function(e){this.clauses=[],this.allFields=e},Q.Query.wildcard=new String("*"),Q.Query.wildcard.NONE=0,Q.Query.wildcard.LEADING=1,Q.Query.wildcard.TRAILING=2,Q.Query.presence={OPTIONAL:1,REQUIRED:2,PROHIBITED:3},Q.Query.prototype.clause=function(e){return"fields"in e||(e.fields=this.allFields),"boost"in e||(e.boost=1),"usePipeline"in e||(e.usePipeline=!0),"wildcard"in e||(e.wildcard=Q.Query.wildcard.NONE),e.wildcard&Q.Query.wildcard.LEADING&&e.term.charAt(0)!=Q.Query.wildcard&&(e.term="*"+e.term),e.wildcard&Q.Query.wildcard.TRAILING&&e.term.slice(-1)!=Q.Query.wildcard&&(e.term=e.term+"*"),"presence"in e||(e.presence=Q.Query.presence.OPTIONAL),this.clauses.push(e),this},Q.Query.prototype.isNegated=function(){for(var e=0;e<this.clauses.length;e++)if(this.clauses[e].presence!=Q.Query.presence.PROHIBITED)return!1;return!0},Q.Query.prototype.term=function(e,t){if(Array.isArray(e))return e.forEach((function(e){this.term(e,Q.utils.clone(t))}),this),this;var n=t||{};return n.term=e.toString(),this.clause(n),this},Q.QueryParseError=function(e,t,n){this.name="QueryParseError",this.message=e,this.start=t,this.end=n},Q.QueryParseError.prototype=new Error,Q.QueryLexer=function(e){this.lexemes=[],this.str=e,this.length=e.length,this.pos=0,this.start=0,this.escapeCharPositions=[]},Q.QueryLexer.prototype.run=function(){for(var e=Q.QueryLexer.lexText;e;)e=e(this)},Q.QueryLexer.prototype.sliceString=function(){for(var e=[],t=this.start,n=this.pos,r=0;r<this.escapeCharPositions.length;r++)n=this.escapeCharPositions[r],e.push(this.str.slice(t,n)),t=n+1;return e.push(this.str.slice(t,this.pos)),this.escapeCharPositions.length=0,e.join("")},Q.QueryLexer.prototype.emit=function(e){this.lexemes.push({type:e,str:this.sliceString(),start:this.start,end:this.pos}),this.start=this.pos},Q.QueryLexer.prototype.escapeCharacter=function(){this.escapeCharPositions.push(this.pos-1),this.pos+=1},Q.QueryLexer.prototype.next=function(){if(this.pos>=this.length)return Q.QueryLexer.EOS;var e=this.str.charAt(this.pos);return this.pos+=1,e},Q.QueryLexer.prototype.width=function(){return this.pos-this.start},Q.QueryLexer.prototype.ignore=function(){this.start==this.pos&&(this.pos+=1),this.start=this.pos},Q.QueryLexer.prototype.backup=function(){this.pos-=1},Q.QueryLexer.prototype.acceptDigitRun=function(){var e,t;do{t=(e=this.next()).charCodeAt(0)}while(t>47&&t<58);e!=Q.QueryLexer.EOS&&this.backup()},Q.QueryLexer.prototype.more=function(){return this.pos<this.length},Q.QueryLexer.EOS="EOS",Q.QueryLexer.FIELD="FIELD",Q.QueryLexer.TERM="TERM",Q.QueryLexer.EDIT_DISTANCE="EDIT_DISTANCE",Q.QueryLexer.BOOST="BOOST",Q.QueryLexer.PRESENCE="PRESENCE",Q.QueryLexer.lexField=function(e){return e.backup(),e.emit(Q.QueryLexer.FIELD),e.ignore(),Q.QueryLexer.lexText},Q.QueryLexer.lexTerm=function(e){if(e.width()>1&&(e.backup(),e.emit(Q.QueryLexer.TERM)),e.ignore(),e.more())return Q.QueryLexer.lexText},Q.QueryLexer.lexEditDistance=function(e){return e.ignore(),e.acceptDigitRun(),e.emit(Q.QueryLexer.EDIT_DISTANCE),Q.QueryLexer.lexText},Q.QueryLexer.lexBoost=function(e){return e.ignore(),e.acceptDigitRun(),e.emit(Q.QueryLexer.BOOST),Q.QueryLexer.lexText},Q.QueryLexer.lexEOS=function(e){e.width()>0&&e.emit(Q.QueryLexer.TERM)},Q.QueryLexer.termSeparator=Q.tokenizer.separator,Q.QueryLexer.lexText=function(e){for(;;){var t=e.next();if(t==Q.QueryLexer.EOS)return Q.QueryLexer.lexEOS;if(92!=t.charCodeAt(0)){if(":"==t)return Q.QueryLexer.lexField;if("~"==t)return e.backup(),e.width()>0&&e.emit(Q.QueryLexer.TERM),Q.QueryLexer.lexEditDistance;if("^"==t)return e.backup(),e.width()>0&&e.emit(Q.QueryLexer.TERM),Q.QueryLexer.lexBoost;if("+"==t&&1===e.width())return e.emit(Q.QueryLexer.PRESENCE),Q.QueryLexer.lexText;if("-"==t&&1===e.width())return e.emit(Q.QueryLexer.PRESENCE),Q.QueryLexer.lexText;if(t.match(Q.QueryLexer.termSeparator))return Q.QueryLexer.lexTerm}else e.escapeCharacter()}},Q.QueryParser=function(e,t){this.lexer=new Q.QueryLexer(e),this.query=t,this.currentClause={},this.lexemeIdx=0},Q.QueryParser.prototype.parse=function(){this.lexer.run(),this.lexemes=this.lexer.lexemes;for(var e=Q.QueryParser.parseClause;e;)e=e(this);return this.query},Q.QueryParser.prototype.peekLexeme=function(){return this.lexemes[this.lexemeIdx]},Q.QueryParser.prototype.consumeLexeme=function(){var e=this.peekLexeme();return this.lexemeIdx+=1,e},Q.QueryParser.prototype.nextClause=function(){var e=this.currentClause;this.query.clause(e),this.currentClause={}},Q.QueryParser.parseClause=function(e){var t=e.peekLexeme();if(null!=t)switch(t.type){case Q.QueryLexer.PRESENCE:return Q.QueryParser.parsePresence;case Q.QueryLexer.FIELD:return Q.QueryParser.parseField;case Q.QueryLexer.TERM:return Q.QueryParser.parseTerm;default:var n="expected either a field or a term, found "+t.type;throw t.str.length>=1&&(n+=" with value '"+t.str+"'"),new Q.QueryParseError(n,t.start,t.end)}},Q.QueryParser.parsePresence=function(e){var t=e.consumeLexeme();if(null!=t){switch(t.str){case"-":e.currentClause.presence=Q.Query.presence.PROHIBITED;break;case"+":e.currentClause.presence=Q.Query.presence.REQUIRED;break;default:var n="unrecognised presence operator'"+t.str+"'";throw new Q.QueryParseError(n,t.start,t.end)}var r=e.peekLexeme();if(null==r){n="expecting term or field, found nothing";throw new Q.QueryParseError(n,t.start,t.end)}switch(r.type){case Q.QueryLexer.FIELD:return Q.QueryParser.parseField;case Q.QueryLexer.TERM:return Q.QueryParser.parseTerm;default:n="expecting term or field, found '"+r.type+"'";throw new Q.QueryParseError(n,r.start,r.end)}}},Q.QueryParser.parseField=function(e){var t=e.consumeLexeme();if(null!=t){if(-1==e.query.allFields.indexOf(t.str)){var n=e.query.allFields.map((function(e){return"'"+e+"'"})).join(", "),r="unrecognised field '"+t.str+"', possible fields: "+n;throw new Q.QueryParseError(r,t.start,t.end)}e.currentClause.fields=[t.str];var i=e.peekLexeme();if(null==i){r="expecting term, found nothing";throw new Q.QueryParseError(r,t.start,t.end)}switch(i.type){case Q.QueryLexer.TERM:return Q.QueryParser.parseTerm;default:r="expecting term, found '"+i.type+"'";throw new Q.QueryParseError(r,i.start,i.end)}}},Q.QueryParser.parseTerm=function(e){var t=e.consumeLexeme();if(null!=t){e.currentClause.term=t.str.toLowerCase(),-1!=t.str.indexOf("*")&&(e.currentClause.usePipeline=!1);var n=e.peekLexeme();if(null!=n)switch(n.type){case Q.QueryLexer.TERM:return e.nextClause(),Q.QueryParser.parseTerm;case Q.QueryLexer.FIELD:return e.nextClause(),Q.QueryParser.parseField;case Q.QueryLexer.EDIT_DISTANCE:return Q.QueryParser.parseEditDistance;case Q.QueryLexer.BOOST:return Q.QueryParser.parseBoost;case Q.QueryLexer.PRESENCE:return e.nextClause(),Q.QueryParser.parsePresence;default:var r="Unexpected lexeme type '"+n.type+"'";throw new Q.QueryParseError(r,n.start,n.end)}else e.nextClause()}},Q.QueryParser.parseEditDistance=function(e){var t=e.consumeLexeme();if(null!=t){var n=parseInt(t.str,10);if(isNaN(n)){var r="edit distance must be numeric";throw new Q.QueryParseError(r,t.start,t.end)}e.currentClause.editDistance=n;var i=e.peekLexeme();if(null!=i)switch(i.type){case Q.QueryLexer.TERM:return e.nextClause(),Q.QueryParser.parseTerm;case Q.QueryLexer.FIELD:return e.nextClause(),Q.QueryParser.parseField;case Q.QueryLexer.EDIT_DISTANCE:return Q.QueryParser.parseEditDistance;case Q.QueryLexer.BOOST:return Q.QueryParser.parseBoost;case Q.QueryLexer.PRESENCE:return e.nextClause(),Q.QueryParser.parsePresence;default:r="Unexpected lexeme type '"+i.type+"'";throw new Q.QueryParseError(r,i.start,i.end)}else e.nextClause()}},Q.QueryParser.parseBoost=function(e){var t=e.consumeLexeme();if(null!=t){var n=parseInt(t.str,10);if(isNaN(n)){var r="boost must be numeric";throw new Q.QueryParseError(r,t.start,t.end)}e.currentClause.boost=n;var i=e.peekLexeme();if(null!=i)switch(i.type){case Q.QueryLexer.TERM:return e.nextClause(),Q.QueryParser.parseTerm;case Q.QueryLexer.FIELD:return e.nextClause(),Q.QueryParser.parseField;case Q.QueryLexer.EDIT_DISTANCE:return Q.QueryParser.parseEditDistance;case Q.QueryLexer.BOOST:return Q.QueryParser.parseBoost;case Q.QueryLexer.PRESENCE:return e.nextClause(),Q.QueryParser.parsePresence;default:r="Unexpected lexeme type '"+i.type+"'";throw new Q.QueryParseError(r,i.start,i.end)}else e.nextClause()}},void 0===(i="function"==typeof(r=function(){return Q})?r.call(t,n,t,e):r)||(e.exports=i)}()},function(e,t,n){"use strict";var r,i=function(){return void 0===r&&(r=Boolean(window&&document&&document.all&&!window.atob)),r},o=function(){var e={};return function(t){if(void 0===e[t]){var n=document.querySelector(t);if(window.HTMLIFrameElement&&n instanceof window.HTMLIFrameElement)try{n=n.contentDocument.head}catch(e){n=null}e[t]=n}return e[t]}}(),a=[];function s(e){for(var t=-1,n=0;n<a.length;n++)if(a[n].identifier===e){t=n;break}return t}function l(e,t){for(var n={},r=[],i=0;i<e.length;i++){var o=e[i],l=t.base?o[0]+t.base:o[0],c=n[l]||0,u="".concat(l," ").concat(c);n[l]=c+1;var d=s(u),h={css:o[1],media:o[2],sourceMap:o[3]};-1!==d?(a[d].references++,a[d].updater(h)):a.push({identifier:u,updater:g(h,t),references:1}),r.push(u)}return r}function c(e){var t=document.createElement("style"),r=e.attributes||{};if(void 0===r.nonce){var i=n.nc;i&&(r.nonce=i)}if(Object.keys(r).forEach((function(e){t.setAttribute(e,r[e])})),"function"==typeof e.insert)e.insert(t);else{var a=o(e.insert||"head");if(!a)throw new Error("Couldn't find a style target. This probably means that the value for the 'insert' parameter is invalid.");a.appendChild(t)}return t}var u,d=(u=[],function(e,t){return u[e]=t,u.filter(Boolean).join("\n")});function h(e,t,n,r){var i=n?"":r.media?"@media ".concat(r.media," {").concat(r.css,"}"):r.css;if(e.styleSheet)e.styleSheet.cssText=d(t,i);else{var o=document.createTextNode(i),a=e.childNodes;a[t]&&e.removeChild(a[t]),a.length?e.insertBefore(o,a[t]):e.appendChild(o)}}function f(e,t,n){var r=n.css,i=n.media,o=n.sourceMap;if(i?e.setAttribute("media",i):e.removeAttribute("media"),o&&btoa&&(r+="\n/*# sourceMappingURL=data:application/json;base64,".concat(btoa(unescape(encodeURIComponent(JSON.stringify(o))))," */")),e.styleSheet)e.styleSheet.cssText=r;else{for(;e.firstChild;)e.removeChild(e.firstChild);e.appendChild(document.createTextNode(r))}}var p=null,m=0;function g(e,t){var n,r,i;if(t.singleton){var o=m++;n=p||(p=c(t)),r=h.bind(null,n,o,!1),i=h.bind(null,n,o,!0)}else n=c(t),r=f.bind(null,n,t),i=function(){!function(e){if(null===e.parentNode)return!1;e.parentNode.removeChild(e)}(n)};return r(e),function(t){if(t){if(t.css===e.css&&t.media===e.media&&t.sourceMap===e.sourceMap)return;r(e=t)}else i()}}e.exports=function(e,t){(t=t||{}).singleton||"boolean"==typeof t.singleton||(t.singleton=i());var n=l(e=e||[],t);return function(e){if(e=e||[],"[object Array]"===Object.prototype.toString.call(e)){for(var r=0;r<n.length;r++){var i=s(n[r]);a[i].references--}for(var o=l(e,t),c=0;c<n.length;c++){var u=s(n[c]);0===a[u].references&&(a[u].updater(),a.splice(u,1))}n=o}}}},function(e,t,n){"use strict";e.exports=function(e){var t=[];return t.toString=function(){return this.map((function(t){var n=function(e,t){var n=e[1]||"",r=e[3];if(!r)return n;if(t&&"function"==typeof btoa){var i=(a=r,s=btoa(unescape(encodeURIComponent(JSON.stringify(a)))),l="sourceMappingURL=data:application/json;charset=utf-8;base64,".concat(s),"/*# ".concat(l," */")),o=r.sources.map((function(e){return"/*# sourceURL=".concat(r.sourceRoot||"").concat(e," */")}));return[n].concat(o).concat([i]).join("\n")}var a,s,l;return[n].join("\n")}(t,e);return t[2]?"@media ".concat(t[2]," {").concat(n,"}"):n})).join("")},t.i=function(e,n,r){"string"==typeof e&&(e=[[null,e,""]]);var i={};if(r)for(var o=0;o<this.length;o++){var a=this[o][0];null!=a&&(i[a]=!0)}for(var s=0;s<e.length;s++){var l=[].concat(e[s]);r&&i[l[0]]||(n&&(l[2]?l[2]="".concat(n," and ").concat(l[2]):l[2]=n),t.push(l))}},t}},function(e,t,n){
+ */
+
+/**
+ * lunr.Builder performs indexing on a set of documents and
+ * returns instances of lunr.Index ready for querying.
+ *
+ * All configuration of the index is done via the builder, the
+ * fields to index, the document reference, the text processing
+ * pipeline and document scoring parameters are all set on the
+ * builder before indexing.
+ *
+ * @constructor
+ * @property {string} _ref - Internal reference to the document reference field.
+ * @property {string[]} _fields - Internal reference to the document fields to index.
+ * @property {object} invertedIndex - The inverted index maps terms to document fields.
+ * @property {object} documentTermFrequencies - Keeps track of document term frequencies.
+ * @property {object} documentLengths - Keeps track of the length of documents added to the index.
+ * @property {lunr.tokenizer} tokenizer - Function for splitting strings into tokens for indexing.
+ * @property {lunr.Pipeline} pipeline - The pipeline performs text processing on tokens before indexing.
+ * @property {lunr.Pipeline} searchPipeline - A pipeline for processing search terms before querying the index.
+ * @property {number} documentCount - Keeps track of the total number of documents indexed.
+ * @property {number} _b - A parameter to control field length normalization, setting this to 0 disabled normalization, 1 fully normalizes field lengths, the default value is 0.75.
+ * @property {number} _k1 - A parameter to control how quickly an increase in term frequency results in term frequency saturation, the default value is 1.2.
+ * @property {number} termIndex - A counter incremented for each unique term, used to identify a terms position in the vector space.
+ * @property {array} metadataWhitelist - A list of metadata keys that have been whitelisted for entry in the index.
+ */
+lunr.Builder = function () {
+  this._ref = "id"
+  this._fields = Object.create(null)
+  this._documents = Object.create(null)
+  this.invertedIndex = Object.create(null)
+  this.fieldTermFrequencies = {}
+  this.fieldLengths = {}
+  this.tokenizer = lunr.tokenizer
+  this.pipeline = new lunr.Pipeline
+  this.searchPipeline = new lunr.Pipeline
+  this.documentCount = 0
+  this._b = 0.75
+  this._k1 = 1.2
+  this.termIndex = 0
+  this.metadataWhitelist = []
+}
+
+/**
+ * Sets the document field used as the document reference. Every document must have this field.
+ * The type of this field in the document should be a string, if it is not a string it will be
+ * coerced into a string by calling toString.
+ *
+ * The default ref is 'id'.
+ *
+ * The ref should _not_ be changed during indexing, it should be set before any documents are
+ * added to the index. Changing it during indexing can lead to inconsistent results.
+ *
+ * @param {string} ref - The name of the reference field in the document.
+ */
+lunr.Builder.prototype.ref = function (ref) {
+  this._ref = ref
+}
+
+/**
+ * A function that is used to extract a field from a document.
+ *
+ * Lunr expects a field to be at the top level of a document, if however the field
+ * is deeply nested within a document an extractor function can be used to extract
+ * the right field for indexing.
+ *
+ * @callback fieldExtractor
+ * @param {object} doc - The document being added to the index.
+ * @returns {?(string|object|object[])} obj - The object that will be indexed for this field.
+ * @example <caption>Extracting a nested field</caption>
+ * function (doc) { return doc.nested.field }
+ */
+
+/**
+ * Adds a field to the list of document fields that will be indexed. Every document being
+ * indexed should have this field. Null values for this field in indexed documents will
+ * not cause errors but will limit the chance of that document being retrieved by searches.
+ *
+ * All fields should be added before adding documents to the index. Adding fields after
+ * a document has been indexed will have no effect on already indexed documents.
+ *
+ * Fields can be boosted at build time. This allows terms within that field to have more
+ * importance when ranking search results. Use a field boost to specify that matches within
+ * one field are more important than other fields.
+ *
+ * @param {string} fieldName - The name of a field to index in all documents.
+ * @param {object} attributes - Optional attributes associated with this field.
+ * @param {number} [attributes.boost=1] - Boost applied to all terms within this field.
+ * @param {fieldExtractor} [attributes.extractor] - Function to extract a field from a document.
+ * @throws {RangeError} fieldName cannot contain unsupported characters '/'
+ */
+lunr.Builder.prototype.field = function (fieldName, attributes) {
+  if (/\//.test(fieldName)) {
+    throw new RangeError ("Field '" + fieldName + "' contains illegal character '/'")
+  }
+
+  this._fields[fieldName] = attributes || {}
+}
+
+/**
+ * A parameter to tune the amount of field length normalisation that is applied when
+ * calculating relevance scores. A value of 0 will completely disable any normalisation
+ * and a value of 1 will fully normalise field lengths. The default is 0.75. Values of b
+ * will be clamped to the range 0 - 1.
+ *
+ * @param {number} number - The value to set for this tuning parameter.
+ */
+lunr.Builder.prototype.b = function (number) {
+  if (number < 0) {
+    this._b = 0
+  } else if (number > 1) {
+    this._b = 1
+  } else {
+    this._b = number
+  }
+}
+
+/**
+ * A parameter that controls the speed at which a rise in term frequency results in term
+ * frequency saturation. The default value is 1.2. Setting this to a higher value will give
+ * slower saturation levels, a lower value will result in quicker saturation.
+ *
+ * @param {number} number - The value to set for this tuning parameter.
+ */
+lunr.Builder.prototype.k1 = function (number) {
+  this._k1 = number
+}
+
+/**
+ * Adds a document to the index.
+ *
+ * Before adding fields to the index the index should have been fully setup, with the document
+ * ref and all fields to index already having been specified.
+ *
+ * The document must have a field name as specified by the ref (by default this is 'id') and
+ * it should have all fields defined for indexing, though null or undefined values will not
+ * cause errors.
+ *
+ * Entire documents can be boosted at build time. Applying a boost to a document indicates that
+ * this document should rank higher in search results than other documents.
+ *
+ * @param {object} doc - The document to add to the index.
+ * @param {object} attributes - Optional attributes associated with this document.
+ * @param {number} [attributes.boost=1] - Boost applied to all terms within this document.
+ */
+lunr.Builder.prototype.add = function (doc, attributes) {
+  var docRef = doc[this._ref],
+      fields = Object.keys(this._fields)
+
+  this._documents[docRef] = attributes || {}
+  this.documentCount += 1
+
+  for (var i = 0; i < fields.length; i++) {
+    var fieldName = fields[i],
+        extractor = this._fields[fieldName].extractor,
+        field = extractor ? extractor(doc) : doc[fieldName],
+        tokens = this.tokenizer(field, {
+          fields: [fieldName]
+        }),
+        terms = this.pipeline.run(tokens),
+        fieldRef = new lunr.FieldRef (docRef, fieldName),
+        fieldTerms = Object.create(null)
+
+    this.fieldTermFrequencies[fieldRef] = fieldTerms
+    this.fieldLengths[fieldRef] = 0
+
+    // store the length of this field for this document
+    this.fieldLengths[fieldRef] += terms.length
+
+    // calculate term frequencies for this field
+    for (var j = 0; j < terms.length; j++) {
+      var term = terms[j]
+
+      if (fieldTerms[term] == undefined) {
+        fieldTerms[term] = 0
+      }
+
+      fieldTerms[term] += 1
+
+      // add to inverted index
+      // create an initial posting if one doesn't exist
+      if (this.invertedIndex[term] == undefined) {
+        var posting = Object.create(null)
+        posting["_index"] = this.termIndex
+        this.termIndex += 1
+
+        for (var k = 0; k < fields.length; k++) {
+          posting[fields[k]] = Object.create(null)
+        }
+
+        this.invertedIndex[term] = posting
+      }
+
+      // add an entry for this term/fieldName/docRef to the invertedIndex
+      if (this.invertedIndex[term][fieldName][docRef] == undefined) {
+        this.invertedIndex[term][fieldName][docRef] = Object.create(null)
+      }
+
+      // store all whitelisted metadata about this token in the
+      // inverted index
+      for (var l = 0; l < this.metadataWhitelist.length; l++) {
+        var metadataKey = this.metadataWhitelist[l],
+            metadata = term.metadata[metadataKey]
+
+        if (this.invertedIndex[term][fieldName][docRef][metadataKey] == undefined) {
+          this.invertedIndex[term][fieldName][docRef][metadataKey] = []
+        }
+
+        this.invertedIndex[term][fieldName][docRef][metadataKey].push(metadata)
+      }
+    }
+
+  }
+}
+
+/**
+ * Calculates the average document length for this index
+ *
+ * @private
+ */
+lunr.Builder.prototype.calculateAverageFieldLengths = function () {
+
+  var fieldRefs = Object.keys(this.fieldLengths),
+      numberOfFields = fieldRefs.length,
+      accumulator = {},
+      documentsWithField = {}
+
+  for (var i = 0; i < numberOfFields; i++) {
+    var fieldRef = lunr.FieldRef.fromString(fieldRefs[i]),
+        field = fieldRef.fieldName
+
+    documentsWithField[field] || (documentsWithField[field] = 0)
+    documentsWithField[field] += 1
+
+    accumulator[field] || (accumulator[field] = 0)
+    accumulator[field] += this.fieldLengths[fieldRef]
+  }
+
+  var fields = Object.keys(this._fields)
+
+  for (var i = 0; i < fields.length; i++) {
+    var fieldName = fields[i]
+    accumulator[fieldName] = accumulator[fieldName] / documentsWithField[fieldName]
+  }
+
+  this.averageFieldLength = accumulator
+}
+
+/**
+ * Builds a vector space model of every document using lunr.Vector
+ *
+ * @private
+ */
+lunr.Builder.prototype.createFieldVectors = function () {
+  var fieldVectors = {},
+      fieldRefs = Object.keys(this.fieldTermFrequencies),
+      fieldRefsLength = fieldRefs.length,
+      termIdfCache = Object.create(null)
+
+  for (var i = 0; i < fieldRefsLength; i++) {
+    var fieldRef = lunr.FieldRef.fromString(fieldRefs[i]),
+        fieldName = fieldRef.fieldName,
+        fieldLength = this.fieldLengths[fieldRef],
+        fieldVector = new lunr.Vector,
+        termFrequencies = this.fieldTermFrequencies[fieldRef],
+        terms = Object.keys(termFrequencies),
+        termsLength = terms.length
+
+
+    var fieldBoost = this._fields[fieldName].boost || 1,
+        docBoost = this._documents[fieldRef.docRef].boost || 1
+
+    for (var j = 0; j < termsLength; j++) {
+      var term = terms[j],
+          tf = termFrequencies[term],
+          termIndex = this.invertedIndex[term]._index,
+          idf, score, scoreWithPrecision
+
+      if (termIdfCache[term] === undefined) {
+        idf = lunr.idf(this.invertedIndex[term], this.documentCount)
+        termIdfCache[term] = idf
+      } else {
+        idf = termIdfCache[term]
+      }
+
+      score = idf * ((this._k1 + 1) * tf) / (this._k1 * (1 - this._b + this._b * (fieldLength / this.averageFieldLength[fieldName])) + tf)
+      score *= fieldBoost
+      score *= docBoost
+      scoreWithPrecision = Math.round(score * 1000) / 1000
+      // Converts 1.23456789 to 1.234.
+      // Reducing the precision so that the vectors take up less
+      // space when serialised. Doing it now so that they behave
+      // the same before and after serialisation. Also, this is
+      // the fastest approach to reducing a number's precision in
+      // JavaScript.
+
+      fieldVector.insert(termIndex, scoreWithPrecision)
+    }
+
+    fieldVectors[fieldRef] = fieldVector
+  }
+
+  this.fieldVectors = fieldVectors
+}
+
+/**
+ * Creates a token set of all tokens in the index using lunr.TokenSet
+ *
+ * @private
+ */
+lunr.Builder.prototype.createTokenSet = function () {
+  this.tokenSet = lunr.TokenSet.fromArray(
+    Object.keys(this.invertedIndex).sort()
+  )
+}
+
+/**
+ * Builds the index, creating an instance of lunr.Index.
+ *
+ * This completes the indexing process and should only be called
+ * once all documents have been added to the index.
+ *
+ * @returns {lunr.Index}
+ */
+lunr.Builder.prototype.build = function () {
+  this.calculateAverageFieldLengths()
+  this.createFieldVectors()
+  this.createTokenSet()
+
+  return new lunr.Index({
+    invertedIndex: this.invertedIndex,
+    fieldVectors: this.fieldVectors,
+    tokenSet: this.tokenSet,
+    fields: Object.keys(this._fields),
+    pipeline: this.searchPipeline
+  })
+}
+
+/**
+ * Applies a plugin to the index builder.
+ *
+ * A plugin is a function that is called with the index builder as its context.
+ * Plugins can be used to customise or extend the behaviour of the index
+ * in some way. A plugin is just a function, that encapsulated the custom
+ * behaviour that should be applied when building the index.
+ *
+ * The plugin function will be called with the index builder as its argument, additional
+ * arguments can also be passed when calling use. The function will be called
+ * with the index builder as its context.
+ *
+ * @param {Function} plugin The plugin to apply.
+ */
+lunr.Builder.prototype.use = function (fn) {
+  var args = Array.prototype.slice.call(arguments, 1)
+  args.unshift(this)
+  fn.apply(this, args)
+}
+/**
+ * Contains and collects metadata about a matching document.
+ * A single instance of lunr.MatchData is returned as part of every
+ * lunr.Index~Result.
+ *
+ * @constructor
+ * @param {string} term - The term this match data is associated with
+ * @param {string} field - The field in which the term was found
+ * @param {object} metadata - The metadata recorded about this term in this field
+ * @property {object} metadata - A cloned collection of metadata associated with this document.
+ * @see {@link lunr.Index~Result}
+ */
+lunr.MatchData = function (term, field, metadata) {
+  var clonedMetadata = Object.create(null),
+      metadataKeys = Object.keys(metadata || {})
+
+  // Cloning the metadata to prevent the original
+  // being mutated during match data combination.
+  // Metadata is kept in an array within the inverted
+  // index so cloning the data can be done with
+  // Array#slice
+  for (var i = 0; i < metadataKeys.length; i++) {
+    var key = metadataKeys[i]
+    clonedMetadata[key] = metadata[key].slice()
+  }
+
+  this.metadata = Object.create(null)
+
+  if (term !== undefined) {
+    this.metadata[term] = Object.create(null)
+    this.metadata[term][field] = clonedMetadata
+  }
+}
+
+/**
+ * An instance of lunr.MatchData will be created for every term that matches a
+ * document. However only one instance is required in a lunr.Index~Result. This
+ * method combines metadata from another instance of lunr.MatchData with this
+ * objects metadata.
+ *
+ * @param {lunr.MatchData} otherMatchData - Another instance of match data to merge with this one.
+ * @see {@link lunr.Index~Result}
+ */
+lunr.MatchData.prototype.combine = function (otherMatchData) {
+  var terms = Object.keys(otherMatchData.metadata)
+
+  for (var i = 0; i < terms.length; i++) {
+    var term = terms[i],
+        fields = Object.keys(otherMatchData.metadata[term])
+
+    if (this.metadata[term] == undefined) {
+      this.metadata[term] = Object.create(null)
+    }
+
+    for (var j = 0; j < fields.length; j++) {
+      var field = fields[j],
+          keys = Object.keys(otherMatchData.metadata[term][field])
+
+      if (this.metadata[term][field] == undefined) {
+        this.metadata[term][field] = Object.create(null)
+      }
+
+      for (var k = 0; k < keys.length; k++) {
+        var key = keys[k]
+
+        if (this.metadata[term][field][key] == undefined) {
+          this.metadata[term][field][key] = otherMatchData.metadata[term][field][key]
+        } else {
+          this.metadata[term][field][key] = this.metadata[term][field][key].concat(otherMatchData.metadata[term][field][key])
+        }
+
+      }
+    }
+  }
+}
+
+/**
+ * Add metadata for a term/field pair to this instance of match data.
+ *
+ * @param {string} term - The term this match data is associated with
+ * @param {string} field - The field in which the term was found
+ * @param {object} metadata - The metadata recorded about this term in this field
+ */
+lunr.MatchData.prototype.add = function (term, field, metadata) {
+  if (!(term in this.metadata)) {
+    this.metadata[term] = Object.create(null)
+    this.metadata[term][field] = metadata
+    return
+  }
+
+  if (!(field in this.metadata[term])) {
+    this.metadata[term][field] = metadata
+    return
+  }
+
+  var metadataKeys = Object.keys(metadata)
+
+  for (var i = 0; i < metadataKeys.length; i++) {
+    var key = metadataKeys[i]
+
+    if (key in this.metadata[term][field]) {
+      this.metadata[term][field][key] = this.metadata[term][field][key].concat(metadata[key])
+    } else {
+      this.metadata[term][field][key] = metadata[key]
+    }
+  }
+}
+/**
+ * A lunr.Query provides a programmatic way of defining queries to be performed
+ * against a {@link lunr.Index}.
+ *
+ * Prefer constructing a lunr.Query using the {@link lunr.Index#query} method
+ * so the query object is pre-initialized with the right index fields.
+ *
+ * @constructor
+ * @property {lunr.Query~Clause[]} clauses - An array of query clauses.
+ * @property {string[]} allFields - An array of all available fields in a lunr.Index.
+ */
+lunr.Query = function (allFields) {
+  this.clauses = []
+  this.allFields = allFields
+}
+
+/**
+ * Constants for indicating what kind of automatic wildcard insertion will be used when constructing a query clause.
+ *
+ * This allows wildcards to be added to the beginning and end of a term without having to manually do any string
+ * concatenation.
+ *
+ * The wildcard constants can be bitwise combined to select both leading and trailing wildcards.
+ *
+ * @constant
+ * @default
+ * @property {number} wildcard.NONE - The term will have no wildcards inserted, this is the default behaviour
+ * @property {number} wildcard.LEADING - Prepend the term with a wildcard, unless a leading wildcard already exists
+ * @property {number} wildcard.TRAILING - Append a wildcard to the term, unless a trailing wildcard already exists
+ * @see lunr.Query~Clause
+ * @see lunr.Query#clause
+ * @see lunr.Query#term
+ * @example <caption>query term with trailing wildcard</caption>
+ * query.term('foo', { wildcard: lunr.Query.wildcard.TRAILING })
+ * @example <caption>query term with leading and trailing wildcard</caption>
+ * query.term('foo', {
+ *   wildcard: lunr.Query.wildcard.LEADING | lunr.Query.wildcard.TRAILING
+ * })
+ */
+
+lunr.Query.wildcard = new String ("*")
+lunr.Query.wildcard.NONE = 0
+lunr.Query.wildcard.LEADING = 1
+lunr.Query.wildcard.TRAILING = 2
+
+/**
+ * Constants for indicating what kind of presence a term must have in matching documents.
+ *
+ * @constant
+ * @enum {number}
+ * @see lunr.Query~Clause
+ * @see lunr.Query#clause
+ * @see lunr.Query#term
+ * @example <caption>query term with required presence</caption>
+ * query.term('foo', { presence: lunr.Query.presence.REQUIRED })
+ */
+lunr.Query.presence = {
+  /**
+   * Term's presence in a document is optional, this is the default value.
+   */
+  OPTIONAL: 1,
+
+  /**
+   * Term's presence in a document is required, documents that do not contain
+   * this term will not be returned.
+   */
+  REQUIRED: 2,
+
+  /**
+   * Term's presence in a document is prohibited, documents that do contain
+   * this term will not be returned.
+   */
+  PROHIBITED: 3
+}
+
+/**
+ * A single clause in a {@link lunr.Query} contains a term and details on how to
+ * match that term against a {@link lunr.Index}.
+ *
+ * @typedef {Object} lunr.Query~Clause
+ * @property {string[]} fields - The fields in an index this clause should be matched against.
+ * @property {number} [boost=1] - Any boost that should be applied when matching this clause.
+ * @property {number} [editDistance] - Whether the term should have fuzzy matching applied, and how fuzzy the match should be.
+ * @property {boolean} [usePipeline] - Whether the term should be passed through the search pipeline.
+ * @property {number} [wildcard=lunr.Query.wildcard.NONE] - Whether the term should have wildcards appended or prepended.
+ * @property {number} [presence=lunr.Query.presence.OPTIONAL] - The terms presence in any matching documents.
+ */
+
+/**
+ * Adds a {@link lunr.Query~Clause} to this query.
+ *
+ * Unless the clause contains the fields to be matched all fields will be matched. In addition
+ * a default boost of 1 is applied to the clause.
+ *
+ * @param {lunr.Query~Clause} clause - The clause to add to this query.
+ * @see lunr.Query~Clause
+ * @returns {lunr.Query}
+ */
+lunr.Query.prototype.clause = function (clause) {
+  if (!('fields' in clause)) {
+    clause.fields = this.allFields
+  }
+
+  if (!('boost' in clause)) {
+    clause.boost = 1
+  }
+
+  if (!('usePipeline' in clause)) {
+    clause.usePipeline = true
+  }
+
+  if (!('wildcard' in clause)) {
+    clause.wildcard = lunr.Query.wildcard.NONE
+  }
+
+  if ((clause.wildcard & lunr.Query.wildcard.LEADING) && (clause.term.charAt(0) != lunr.Query.wildcard)) {
+    clause.term = "*" + clause.term
+  }
+
+  if ((clause.wildcard & lunr.Query.wildcard.TRAILING) && (clause.term.slice(-1) != lunr.Query.wildcard)) {
+    clause.term = "" + clause.term + "*"
+  }
+
+  if (!('presence' in clause)) {
+    clause.presence = lunr.Query.presence.OPTIONAL
+  }
+
+  this.clauses.push(clause)
+
+  return this
+}
+
+/**
+ * A negated query is one in which every clause has a presence of
+ * prohibited. These queries require some special processing to return
+ * the expected results.
+ *
+ * @returns boolean
+ */
+lunr.Query.prototype.isNegated = function () {
+  for (var i = 0; i < this.clauses.length; i++) {
+    if (this.clauses[i].presence != lunr.Query.presence.PROHIBITED) {
+      return false
+    }
+  }
+
+  return true
+}
+
+/**
+ * Adds a term to the current query, under the covers this will create a {@link lunr.Query~Clause}
+ * to the list of clauses that make up this query.
+ *
+ * The term is used as is, i.e. no tokenization will be performed by this method. Instead conversion
+ * to a token or token-like string should be done before calling this method.
+ *
+ * The term will be converted to a string by calling `toString`. Multiple terms can be passed as an
+ * array, each term in the array will share the same options.
+ *
+ * @param {object|object[]} term - The term(s) to add to the query.
+ * @param {object} [options] - Any additional properties to add to the query clause.
+ * @returns {lunr.Query}
+ * @see lunr.Query#clause
+ * @see lunr.Query~Clause
+ * @example <caption>adding a single term to a query</caption>
+ * query.term("foo")
+ * @example <caption>adding a single term to a query and specifying search fields, term boost and automatic trailing wildcard</caption>
+ * query.term("foo", {
+ *   fields: ["title"],
+ *   boost: 10,
+ *   wildcard: lunr.Query.wildcard.TRAILING
+ * })
+ * @example <caption>using lunr.tokenizer to convert a string to tokens before using them as terms</caption>
+ * query.term(lunr.tokenizer("foo bar"))
+ */
+lunr.Query.prototype.term = function (term, options) {
+  if (Array.isArray(term)) {
+    term.forEach(function (t) { this.term(t, lunr.utils.clone(options)) }, this)
+    return this
+  }
+
+  var clause = options || {}
+  clause.term = term.toString()
+
+  this.clause(clause)
+
+  return this
+}
+lunr.QueryParseError = function (message, start, end) {
+  this.name = "QueryParseError"
+  this.message = message
+  this.start = start
+  this.end = end
+}
+
+lunr.QueryParseError.prototype = new Error
+lunr.QueryLexer = function (str) {
+  this.lexemes = []
+  this.str = str
+  this.length = str.length
+  this.pos = 0
+  this.start = 0
+  this.escapeCharPositions = []
+}
+
+lunr.QueryLexer.prototype.run = function () {
+  var state = lunr.QueryLexer.lexText
+
+  while (state) {
+    state = state(this)
+  }
+}
+
+lunr.QueryLexer.prototype.sliceString = function () {
+  var subSlices = [],
+      sliceStart = this.start,
+      sliceEnd = this.pos
+
+  for (var i = 0; i < this.escapeCharPositions.length; i++) {
+    sliceEnd = this.escapeCharPositions[i]
+    subSlices.push(this.str.slice(sliceStart, sliceEnd))
+    sliceStart = sliceEnd + 1
+  }
+
+  subSlices.push(this.str.slice(sliceStart, this.pos))
+  this.escapeCharPositions.length = 0
+
+  return subSlices.join('')
+}
+
+lunr.QueryLexer.prototype.emit = function (type) {
+  this.lexemes.push({
+    type: type,
+    str: this.sliceString(),
+    start: this.start,
+    end: this.pos
+  })
+
+  this.start = this.pos
+}
+
+lunr.QueryLexer.prototype.escapeCharacter = function () {
+  this.escapeCharPositions.push(this.pos - 1)
+  this.pos += 1
+}
+
+lunr.QueryLexer.prototype.next = function () {
+  if (this.pos >= this.length) {
+    return lunr.QueryLexer.EOS
+  }
+
+  var char = this.str.charAt(this.pos)
+  this.pos += 1
+  return char
+}
+
+lunr.QueryLexer.prototype.width = function () {
+  return this.pos - this.start
+}
+
+lunr.QueryLexer.prototype.ignore = function () {
+  if (this.start == this.pos) {
+    this.pos += 1
+  }
+
+  this.start = this.pos
+}
+
+lunr.QueryLexer.prototype.backup = function () {
+  this.pos -= 1
+}
+
+lunr.QueryLexer.prototype.acceptDigitRun = function () {
+  var char, charCode
+
+  do {
+    char = this.next()
+    charCode = char.charCodeAt(0)
+  } while (charCode > 47 && charCode < 58)
+
+  if (char != lunr.QueryLexer.EOS) {
+    this.backup()
+  }
+}
+
+lunr.QueryLexer.prototype.more = function () {
+  return this.pos < this.length
+}
+
+lunr.QueryLexer.EOS = 'EOS'
+lunr.QueryLexer.FIELD = 'FIELD'
+lunr.QueryLexer.TERM = 'TERM'
+lunr.QueryLexer.EDIT_DISTANCE = 'EDIT_DISTANCE'
+lunr.QueryLexer.BOOST = 'BOOST'
+lunr.QueryLexer.PRESENCE = 'PRESENCE'
+
+lunr.QueryLexer.lexField = function (lexer) {
+  lexer.backup()
+  lexer.emit(lunr.QueryLexer.FIELD)
+  lexer.ignore()
+  return lunr.QueryLexer.lexText
+}
+
+lunr.QueryLexer.lexTerm = function (lexer) {
+  if (lexer.width() > 1) {
+    lexer.backup()
+    lexer.emit(lunr.QueryLexer.TERM)
+  }
+
+  lexer.ignore()
+
+  if (lexer.more()) {
+    return lunr.QueryLexer.lexText
+  }
+}
+
+lunr.QueryLexer.lexEditDistance = function (lexer) {
+  lexer.ignore()
+  lexer.acceptDigitRun()
+  lexer.emit(lunr.QueryLexer.EDIT_DISTANCE)
+  return lunr.QueryLexer.lexText
+}
+
+lunr.QueryLexer.lexBoost = function (lexer) {
+  lexer.ignore()
+  lexer.acceptDigitRun()
+  lexer.emit(lunr.QueryLexer.BOOST)
+  return lunr.QueryLexer.lexText
+}
+
+lunr.QueryLexer.lexEOS = function (lexer) {
+  if (lexer.width() > 0) {
+    lexer.emit(lunr.QueryLexer.TERM)
+  }
+}
+
+// This matches the separator used when tokenising fields
+// within a document. These should match otherwise it is
+// not possible to search for some tokens within a document.
+//
+// It is possible for the user to change the separator on the
+// tokenizer so it _might_ clash with any other of the special
+// characters already used within the search string, e.g. :.
+//
+// This means that it is possible to change the separator in
+// such a way that makes some words unsearchable using a search
+// string.
+lunr.QueryLexer.termSeparator = lunr.tokenizer.separator
+
+lunr.QueryLexer.lexText = function (lexer) {
+  while (true) {
+    var char = lexer.next()
+
+    if (char == lunr.QueryLexer.EOS) {
+      return lunr.QueryLexer.lexEOS
+    }
+
+    // Escape character is '\'
+    if (char.charCodeAt(0) == 92) {
+      lexer.escapeCharacter()
+      continue
+    }
+
+    if (char == ":") {
+      return lunr.QueryLexer.lexField
+    }
+
+    if (char == "~") {
+      lexer.backup()
+      if (lexer.width() > 0) {
+        lexer.emit(lunr.QueryLexer.TERM)
+      }
+      return lunr.QueryLexer.lexEditDistance
+    }
+
+    if (char == "^") {
+      lexer.backup()
+      if (lexer.width() > 0) {
+        lexer.emit(lunr.QueryLexer.TERM)
+      }
+      return lunr.QueryLexer.lexBoost
+    }
+
+    // "+" indicates term presence is required
+    // checking for length to ensure that only
+    // leading "+" are considered
+    if (char == "+" && lexer.width() === 1) {
+      lexer.emit(lunr.QueryLexer.PRESENCE)
+      return lunr.QueryLexer.lexText
+    }
+
+    // "-" indicates term presence is prohibited
+    // checking for length to ensure that only
+    // leading "-" are considered
+    if (char == "-" && lexer.width() === 1) {
+      lexer.emit(lunr.QueryLexer.PRESENCE)
+      return lunr.QueryLexer.lexText
+    }
+
+    if (char.match(lunr.QueryLexer.termSeparator)) {
+      return lunr.QueryLexer.lexTerm
+    }
+  }
+}
+
+lunr.QueryParser = function (str, query) {
+  this.lexer = new lunr.QueryLexer (str)
+  this.query = query
+  this.currentClause = {}
+  this.lexemeIdx = 0
+}
+
+lunr.QueryParser.prototype.parse = function () {
+  this.lexer.run()
+  this.lexemes = this.lexer.lexemes
+
+  var state = lunr.QueryParser.parseClause
+
+  while (state) {
+    state = state(this)
+  }
+
+  return this.query
+}
+
+lunr.QueryParser.prototype.peekLexeme = function () {
+  return this.lexemes[this.lexemeIdx]
+}
+
+lunr.QueryParser.prototype.consumeLexeme = function () {
+  var lexeme = this.peekLexeme()
+  this.lexemeIdx += 1
+  return lexeme
+}
+
+lunr.QueryParser.prototype.nextClause = function () {
+  var completedClause = this.currentClause
+  this.query.clause(completedClause)
+  this.currentClause = {}
+}
+
+lunr.QueryParser.parseClause = function (parser) {
+  var lexeme = parser.peekLexeme()
+
+  if (lexeme == undefined) {
+    return
+  }
+
+  switch (lexeme.type) {
+    case lunr.QueryLexer.PRESENCE:
+      return lunr.QueryParser.parsePresence
+    case lunr.QueryLexer.FIELD:
+      return lunr.QueryParser.parseField
+    case lunr.QueryLexer.TERM:
+      return lunr.QueryParser.parseTerm
+    default:
+      var errorMessage = "expected either a field or a term, found " + lexeme.type
+
+      if (lexeme.str.length >= 1) {
+        errorMessage += " with value '" + lexeme.str + "'"
+      }
+
+      throw new lunr.QueryParseError (errorMessage, lexeme.start, lexeme.end)
+  }
+}
+
+lunr.QueryParser.parsePresence = function (parser) {
+  var lexeme = parser.consumeLexeme()
+
+  if (lexeme == undefined) {
+    return
+  }
+
+  switch (lexeme.str) {
+    case "-":
+      parser.currentClause.presence = lunr.Query.presence.PROHIBITED
+      break
+    case "+":
+      parser.currentClause.presence = lunr.Query.presence.REQUIRED
+      break
+    default:
+      var errorMessage = "unrecognised presence operator'" + lexeme.str + "'"
+      throw new lunr.QueryParseError (errorMessage, lexeme.start, lexeme.end)
+  }
+
+  var nextLexeme = parser.peekLexeme()
+
+  if (nextLexeme == undefined) {
+    var errorMessage = "expecting term or field, found nothing"
+    throw new lunr.QueryParseError (errorMessage, lexeme.start, lexeme.end)
+  }
+
+  switch (nextLexeme.type) {
+    case lunr.QueryLexer.FIELD:
+      return lunr.QueryParser.parseField
+    case lunr.QueryLexer.TERM:
+      return lunr.QueryParser.parseTerm
+    default:
+      var errorMessage = "expecting term or field, found '" + nextLexeme.type + "'"
+      throw new lunr.QueryParseError (errorMessage, nextLexeme.start, nextLexeme.end)
+  }
+}
+
+lunr.QueryParser.parseField = function (parser) {
+  var lexeme = parser.consumeLexeme()
+
+  if (lexeme == undefined) {
+    return
+  }
+
+  if (parser.query.allFields.indexOf(lexeme.str) == -1) {
+    var possibleFields = parser.query.allFields.map(function (f) { return "'" + f + "'" }).join(', '),
+        errorMessage = "unrecognised field '" + lexeme.str + "', possible fields: " + possibleFields
+
+    throw new lunr.QueryParseError (errorMessage, lexeme.start, lexeme.end)
+  }
+
+  parser.currentClause.fields = [lexeme.str]
+
+  var nextLexeme = parser.peekLexeme()
+
+  if (nextLexeme == undefined) {
+    var errorMessage = "expecting term, found nothing"
+    throw new lunr.QueryParseError (errorMessage, lexeme.start, lexeme.end)
+  }
+
+  switch (nextLexeme.type) {
+    case lunr.QueryLexer.TERM:
+      return lunr.QueryParser.parseTerm
+    default:
+      var errorMessage = "expecting term, found '" + nextLexeme.type + "'"
+      throw new lunr.QueryParseError (errorMessage, nextLexeme.start, nextLexeme.end)
+  }
+}
+
+lunr.QueryParser.parseTerm = function (parser) {
+  var lexeme = parser.consumeLexeme()
+
+  if (lexeme == undefined) {
+    return
+  }
+
+  parser.currentClause.term = lexeme.str.toLowerCase()
+
+  if (lexeme.str.indexOf("*") != -1) {
+    parser.currentClause.usePipeline = false
+  }
+
+  var nextLexeme = parser.peekLexeme()
+
+  if (nextLexeme == undefined) {
+    parser.nextClause()
+    return
+  }
+
+  switch (nextLexeme.type) {
+    case lunr.QueryLexer.TERM:
+      parser.nextClause()
+      return lunr.QueryParser.parseTerm
+    case lunr.QueryLexer.FIELD:
+      parser.nextClause()
+      return lunr.QueryParser.parseField
+    case lunr.QueryLexer.EDIT_DISTANCE:
+      return lunr.QueryParser.parseEditDistance
+    case lunr.QueryLexer.BOOST:
+      return lunr.QueryParser.parseBoost
+    case lunr.QueryLexer.PRESENCE:
+      parser.nextClause()
+      return lunr.QueryParser.parsePresence
+    default:
+      var errorMessage = "Unexpected lexeme type '" + nextLexeme.type + "'"
+      throw new lunr.QueryParseError (errorMessage, nextLexeme.start, nextLexeme.end)
+  }
+}
+
+lunr.QueryParser.parseEditDistance = function (parser) {
+  var lexeme = parser.consumeLexeme()
+
+  if (lexeme == undefined) {
+    return
+  }
+
+  var editDistance = parseInt(lexeme.str, 10)
+
+  if (isNaN(editDistance)) {
+    var errorMessage = "edit distance must be numeric"
+    throw new lunr.QueryParseError (errorMessage, lexeme.start, lexeme.end)
+  }
+
+  parser.currentClause.editDistance = editDistance
+
+  var nextLexeme = parser.peekLexeme()
+
+  if (nextLexeme == undefined) {
+    parser.nextClause()
+    return
+  }
+
+  switch (nextLexeme.type) {
+    case lunr.QueryLexer.TERM:
+      parser.nextClause()
+      return lunr.QueryParser.parseTerm
+    case lunr.QueryLexer.FIELD:
+      parser.nextClause()
+      return lunr.QueryParser.parseField
+    case lunr.QueryLexer.EDIT_DISTANCE:
+      return lunr.QueryParser.parseEditDistance
+    case lunr.QueryLexer.BOOST:
+      return lunr.QueryParser.parseBoost
+    case lunr.QueryLexer.PRESENCE:
+      parser.nextClause()
+      return lunr.QueryParser.parsePresence
+    default:
+      var errorMessage = "Unexpected lexeme type '" + nextLexeme.type + "'"
+      throw new lunr.QueryParseError (errorMessage, nextLexeme.start, nextLexeme.end)
+  }
+}
+
+lunr.QueryParser.parseBoost = function (parser) {
+  var lexeme = parser.consumeLexeme()
+
+  if (lexeme == undefined) {
+    return
+  }
+
+  var boost = parseInt(lexeme.str, 10)
+
+  if (isNaN(boost)) {
+    var errorMessage = "boost must be numeric"
+    throw new lunr.QueryParseError (errorMessage, lexeme.start, lexeme.end)
+  }
+
+  parser.currentClause.boost = boost
+
+  var nextLexeme = parser.peekLexeme()
+
+  if (nextLexeme == undefined) {
+    parser.nextClause()
+    return
+  }
+
+  switch (nextLexeme.type) {
+    case lunr.QueryLexer.TERM:
+      parser.nextClause()
+      return lunr.QueryParser.parseTerm
+    case lunr.QueryLexer.FIELD:
+      parser.nextClause()
+      return lunr.QueryParser.parseField
+    case lunr.QueryLexer.EDIT_DISTANCE:
+      return lunr.QueryParser.parseEditDistance
+    case lunr.QueryLexer.BOOST:
+      return lunr.QueryParser.parseBoost
+    case lunr.QueryLexer.PRESENCE:
+      parser.nextClause()
+      return lunr.QueryParser.parsePresence
+    default:
+      var errorMessage = "Unexpected lexeme type '" + nextLexeme.type + "'"
+      throw new lunr.QueryParseError (errorMessage, nextLexeme.start, nextLexeme.end)
+  }
+}
+
+  /**
+   * export the module via AMD, CommonJS or as a browser global
+   * Export code from https://github.com/umdjs/umd/blob/master/returnExports.js
+   */
+  ;(function (root, factory) {
+    if (true) {
+      // AMD. Register as an anonymous module.
+      !(__WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.call(exports, __webpack_require__, exports, module)) :
+				__WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__))
+    } else {}
+  }(this, function () {
+    /**
+     * Just return a value to define the module export.
+     * This example returns an object, but the module
+     * can return a function as the exported value.
+     */
+    return lunr
+  }))
+})();
+
+
+/***/ }),
+
+/***/ "./node_modules/mark.js/dist/mark.js":
+/*!*******************************************!*\
+  !*** ./node_modules/mark.js/dist/mark.js ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
 /*!***************************************************
 * mark.js v8.11.1
 * https://markjs.io/
 * Copyright (c) 2014–2018, Julian Kühnel
 * Released under the MIT license https://git.io/vwTVl
 *****************************************************/
-e.exports=function(){"use strict";var e="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},t=function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")},n=function(){function e(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}return function(t,n,r){return n&&e(t.prototype,n),r&&e(t,r),t}}(),r=Object.assign||function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},i=function(){function e(n){var r=!(arguments.length>1&&void 0!==arguments[1])||arguments[1],i=arguments.length>2&&void 0!==arguments[2]?arguments[2]:[],o=arguments.length>3&&void 0!==arguments[3]?arguments[3]:5e3;t(this,e),this.ctx=n,this.iframes=r,this.exclude=i,this.iframesTimeout=o}return n(e,[{key:"getContexts",value:function(){var e=[];return(void 0!==this.ctx&&this.ctx?NodeList.prototype.isPrototypeOf(this.ctx)?Array.prototype.slice.call(this.ctx):Array.isArray(this.ctx)?this.ctx:"string"==typeof this.ctx?Array.prototype.slice.call(document.querySelectorAll(this.ctx)):[this.ctx]:[]).forEach((function(t){var n=e.filter((function(e){return e.contains(t)})).length>0;-1!==e.indexOf(t)||n||e.push(t)})),e}},{key:"getIframeContents",value:function(e,t){var n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:function(){},r=void 0;try{var i=e.contentWindow;if(r=i.document,!i||!r)throw new Error("iframe inaccessible")}catch(e){n()}r&&t(r)}},{key:"isIframeBlank",value:function(e){var t="about:blank",n=e.getAttribute("src").trim();return e.contentWindow.location.href===t&&n!==t&&n}},{key:"observeIframeLoad",value:function(e,t,n){var r=this,i=!1,o=null,a=function a(){if(!i){i=!0,clearTimeout(o);try{r.isIframeBlank(e)||(e.removeEventListener("load",a),r.getIframeContents(e,t,n))}catch(e){n()}}};e.addEventListener("load",a),o=setTimeout(a,this.iframesTimeout)}},{key:"onIframeReady",value:function(e,t,n){try{"complete"===e.contentWindow.document.readyState?this.isIframeBlank(e)?this.observeIframeLoad(e,t,n):this.getIframeContents(e,t,n):this.observeIframeLoad(e,t,n)}catch(e){n()}}},{key:"waitForIframes",value:function(e,t){var n=this,r=0;this.forEachIframe(e,(function(){return!0}),(function(e){r++,n.waitForIframes(e.querySelector("html"),(function(){--r||t()}))}),(function(e){e||t()}))}},{key:"forEachIframe",value:function(t,n,r){var i=this,o=arguments.length>3&&void 0!==arguments[3]?arguments[3]:function(){},a=t.querySelectorAll("iframe"),s=a.length,l=0;a=Array.prototype.slice.call(a);var c=function(){--s<=0&&o(l)};s||c(),a.forEach((function(t){e.matches(t,i.exclude)?c():i.onIframeReady(t,(function(e){n(t)&&(l++,r(e)),c()}),c)}))}},{key:"createIterator",value:function(e,t,n){return document.createNodeIterator(e,t,n,!1)}},{key:"createInstanceOnIframe",value:function(t){return new e(t.querySelector("html"),this.iframes)}},{key:"compareNodeIframe",value:function(e,t,n){if(e.compareDocumentPosition(n)&Node.DOCUMENT_POSITION_PRECEDING){if(null===t)return!0;if(t.compareDocumentPosition(n)&Node.DOCUMENT_POSITION_FOLLOWING)return!0}return!1}},{key:"getIteratorNode",value:function(e){var t=e.previousNode();return{prevNode:t,node:(null===t||e.nextNode())&&e.nextNode()}}},{key:"checkIframeFilter",value:function(e,t,n,r){var i=!1,o=!1;return r.forEach((function(e,t){e.val===n&&(i=t,o=e.handled)})),this.compareNodeIframe(e,t,n)?(!1!==i||o?!1===i||o||(r[i].handled=!0):r.push({val:n,handled:!0}),!0):(!1===i&&r.push({val:n,handled:!1}),!1)}},{key:"handleOpenIframes",value:function(e,t,n,r){var i=this;e.forEach((function(e){e.handled||i.getIframeContents(e.val,(function(e){i.createInstanceOnIframe(e).forEachNode(t,n,r)}))}))}},{key:"iterateThroughNodes",value:function(e,t,n,r,i){for(var o,a=this,s=this.createIterator(t,e,r),l=[],c=[],u=void 0,d=void 0;o=void 0,o=a.getIteratorNode(s),d=o.prevNode,u=o.node;)this.iframes&&this.forEachIframe(t,(function(e){return a.checkIframeFilter(u,d,e,l)}),(function(t){a.createInstanceOnIframe(t).forEachNode(e,(function(e){return c.push(e)}),r)})),c.push(u);c.forEach((function(e){n(e)})),this.iframes&&this.handleOpenIframes(l,e,n,r),i()}},{key:"forEachNode",value:function(e,t,n){var r=this,i=arguments.length>3&&void 0!==arguments[3]?arguments[3]:function(){},o=this.getContexts(),a=o.length;a||i(),o.forEach((function(o){var s=function(){r.iterateThroughNodes(e,o,t,n,(function(){--a<=0&&i()}))};r.iframes?r.waitForIframes(o,s):s()}))}}],[{key:"matches",value:function(e,t){var n="string"==typeof t?[t]:t,r=e.matches||e.matchesSelector||e.msMatchesSelector||e.mozMatchesSelector||e.oMatchesSelector||e.webkitMatchesSelector;if(r){var i=!1;return n.every((function(t){return!r.call(e,t)||(i=!0,!1)})),i}return!1}}]),e}(),o=function(){function o(e){t(this,o),this.ctx=e,this.ie=!1;var n=window.navigator.userAgent;(n.indexOf("MSIE")>-1||n.indexOf("Trident")>-1)&&(this.ie=!0)}return n(o,[{key:"log",value:function(t){var n=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"debug",r=this.opt.log;this.opt.debug&&"object"===(void 0===r?"undefined":e(r))&&"function"==typeof r[n]&&r[n]("mark.js: "+t)}},{key:"escapeStr",value:function(e){return e.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g,"\\$&")}},{key:"createRegExp",value:function(e){return"disabled"!==this.opt.wildcards&&(e=this.setupWildcardsRegExp(e)),e=this.escapeStr(e),Object.keys(this.opt.synonyms).length&&(e=this.createSynonymsRegExp(e)),(this.opt.ignoreJoiners||this.opt.ignorePunctuation.length)&&(e=this.setupIgnoreJoinersRegExp(e)),this.opt.diacritics&&(e=this.createDiacriticsRegExp(e)),e=this.createMergedBlanksRegExp(e),(this.opt.ignoreJoiners||this.opt.ignorePunctuation.length)&&(e=this.createJoinersRegExp(e)),"disabled"!==this.opt.wildcards&&(e=this.createWildcardsRegExp(e)),e=this.createAccuracyRegExp(e)}},{key:"createSynonymsRegExp",value:function(e){var t=this.opt.synonyms,n=this.opt.caseSensitive?"":"i",r=this.opt.ignoreJoiners||this.opt.ignorePunctuation.length?"\0":"";for(var i in t)if(t.hasOwnProperty(i)){var o=t[i],a="disabled"!==this.opt.wildcards?this.setupWildcardsRegExp(i):this.escapeStr(i),s="disabled"!==this.opt.wildcards?this.setupWildcardsRegExp(o):this.escapeStr(o);""!==a&&""!==s&&(e=e.replace(new RegExp("("+this.escapeStr(a)+"|"+this.escapeStr(s)+")","gm"+n),r+"("+this.processSynomyms(a)+"|"+this.processSynomyms(s)+")"+r))}return e}},{key:"processSynomyms",value:function(e){return(this.opt.ignoreJoiners||this.opt.ignorePunctuation.length)&&(e=this.setupIgnoreJoinersRegExp(e)),e}},{key:"setupWildcardsRegExp",value:function(e){return(e=e.replace(/(?:\\)*\?/g,(function(e){return"\\"===e.charAt(0)?"?":""}))).replace(/(?:\\)*\*/g,(function(e){return"\\"===e.charAt(0)?"*":""}))}},{key:"createWildcardsRegExp",value:function(e){var t="withSpaces"===this.opt.wildcards;return e.replace(/\u0001/g,t?"[\\S\\s]?":"\\S?").replace(/\u0002/g,t?"[\\S\\s]*?":"\\S*")}},{key:"setupIgnoreJoinersRegExp",value:function(e){return e.replace(/[^(|)\\]/g,(function(e,t,n){var r=n.charAt(t+1);return/[(|)\\]/.test(r)||""===r?e:e+"\0"}))}},{key:"createJoinersRegExp",value:function(e){var t=[],n=this.opt.ignorePunctuation;return Array.isArray(n)&&n.length&&t.push(this.escapeStr(n.join(""))),this.opt.ignoreJoiners&&t.push("\\u00ad\\u200b\\u200c\\u200d"),t.length?e.split(/\u0000+/).join("["+t.join("")+"]*"):e}},{key:"createDiacriticsRegExp",value:function(e){var t=this.opt.caseSensitive?"":"i",n=this.opt.caseSensitive?["aàáảãạăằắẳẵặâầấẩẫậäåāą","AÀÁẢÃẠĂẰẮẲẴẶÂẦẤẨẪẬÄÅĀĄ","cçćč","CÇĆČ","dđď","DĐĎ","eèéẻẽẹêềếểễệëěēę","EÈÉẺẼẸÊỀẾỂỄỆËĚĒĘ","iìíỉĩịîïī","IÌÍỈĨỊÎÏĪ","lł","LŁ","nñňń","NÑŇŃ","oòóỏõọôồốổỗộơởỡớờợöøō","OÒÓỎÕỌÔỒỐỔỖỘƠỞỠỚỜỢÖØŌ","rř","RŘ","sšśșş","SŠŚȘŞ","tťțţ","TŤȚŢ","uùúủũụưừứửữựûüůū","UÙÚỦŨỤƯỪỨỬỮỰÛÜŮŪ","yýỳỷỹỵÿ","YÝỲỶỸỴŸ","zžżź","ZŽŻŹ"]:["aàáảãạăằắẳẵặâầấẩẫậäåāąAÀÁẢÃẠĂẰẮẲẴẶÂẦẤẨẪẬÄÅĀĄ","cçćčCÇĆČ","dđďDĐĎ","eèéẻẽẹêềếểễệëěēęEÈÉẺẼẸÊỀẾỂỄỆËĚĒĘ","iìíỉĩịîïīIÌÍỈĨỊÎÏĪ","lłLŁ","nñňńNÑŇŃ","oòóỏõọôồốổỗộơởỡớờợöøōOÒÓỎÕỌÔỒỐỔỖỘƠỞỠỚỜỢÖØŌ","rřRŘ","sšśșşSŠŚȘŞ","tťțţTŤȚŢ","uùúủũụưừứửữựûüůūUÙÚỦŨỤƯỪỨỬỮỰÛÜŮŪ","yýỳỷỹỵÿYÝỲỶỸỴŸ","zžżźZŽŻŹ"],r=[];return e.split("").forEach((function(i){n.every((function(n){if(-1!==n.indexOf(i)){if(r.indexOf(n)>-1)return!1;e=e.replace(new RegExp("["+n+"]","gm"+t),"["+n+"]"),r.push(n)}return!0}))})),e}},{key:"createMergedBlanksRegExp",value:function(e){return e.replace(/[\s]+/gim,"[\\s]+")}},{key:"createAccuracyRegExp",value:function(e){var t=this,n=this.opt.accuracy,r="string"==typeof n?n:n.value,i="string"==typeof n?[]:n.limiters,o="";switch(i.forEach((function(e){o+="|"+t.escapeStr(e)})),r){case"partially":default:return"()("+e+")";case"complementary":return"()([^"+(o="\\s"+(o||this.escapeStr("!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~¡¿")))+"]*"+e+"[^"+o+"]*)";case"exactly":return"(^|\\s"+o+")("+e+")(?=$|\\s"+o+")"}}},{key:"getSeparatedKeywords",value:function(e){var t=this,n=[];return e.forEach((function(e){t.opt.separateWordSearch?e.split(" ").forEach((function(e){e.trim()&&-1===n.indexOf(e)&&n.push(e)})):e.trim()&&-1===n.indexOf(e)&&n.push(e)})),{keywords:n.sort((function(e,t){return t.length-e.length})),length:n.length}}},{key:"isNumeric",value:function(e){return Number(parseFloat(e))==e}},{key:"checkRanges",value:function(e){var t=this;if(!Array.isArray(e)||"[object Object]"!==Object.prototype.toString.call(e[0]))return this.log("markRanges() will only accept an array of objects"),this.opt.noMatch(e),[];var n=[],r=0;return e.sort((function(e,t){return e.start-t.start})).forEach((function(e){var i=t.callNoMatchOnInvalidRanges(e,r),o=i.start,a=i.end;i.valid&&(e.start=o,e.length=a-o,n.push(e),r=a)})),n}},{key:"callNoMatchOnInvalidRanges",value:function(e,t){var n=void 0,r=void 0,i=!1;return e&&void 0!==e.start?(r=(n=parseInt(e.start,10))+parseInt(e.length,10),this.isNumeric(e.start)&&this.isNumeric(e.length)&&r-t>0&&r-n>0?i=!0:(this.log("Ignoring invalid or overlapping range: "+JSON.stringify(e)),this.opt.noMatch(e))):(this.log("Ignoring invalid range: "+JSON.stringify(e)),this.opt.noMatch(e)),{start:n,end:r,valid:i}}},{key:"checkWhitespaceRanges",value:function(e,t,n){var r=void 0,i=!0,o=n.length,a=t-o,s=parseInt(e.start,10)-a;return(r=(s=s>o?o:s)+parseInt(e.length,10))>o&&(r=o,this.log("End range automatically set to the max value of "+o)),s<0||r-s<0||s>o||r>o?(i=!1,this.log("Invalid range: "+JSON.stringify(e)),this.opt.noMatch(e)):""===n.substring(s,r).replace(/\s+/g,"")&&(i=!1,this.log("Skipping whitespace only range: "+JSON.stringify(e)),this.opt.noMatch(e)),{start:s,end:r,valid:i}}},{key:"getTextNodes",value:function(e){var t=this,n="",r=[];this.iterator.forEachNode(NodeFilter.SHOW_TEXT,(function(e){r.push({start:n.length,end:(n+=e.textContent).length,node:e})}),(function(e){return t.matchesExclude(e.parentNode)?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT}),(function(){e({value:n,nodes:r})}))}},{key:"matchesExclude",value:function(e){return i.matches(e,this.opt.exclude.concat(["script","style","title","head","html"]))}},{key:"wrapRangeInTextNode",value:function(e,t,n){var r=this.opt.element?this.opt.element:"mark",i=e.splitText(t),o=i.splitText(n-t),a=document.createElement(r);return a.setAttribute("data-markjs","true"),this.opt.className&&a.setAttribute("class",this.opt.className),a.textContent=i.textContent,i.parentNode.replaceChild(a,i),o}},{key:"wrapRangeInMappedTextNode",value:function(e,t,n,r,i){var o=this;e.nodes.every((function(a,s){var l=e.nodes[s+1];if(void 0===l||l.start>t){if(!r(a.node))return!1;var c=t-a.start,u=(n>a.end?a.end:n)-a.start,d=e.value.substr(0,a.start),h=e.value.substr(u+a.start);if(a.node=o.wrapRangeInTextNode(a.node,c,u),e.value=d+h,e.nodes.forEach((function(t,n){n>=s&&(e.nodes[n].start>0&&n!==s&&(e.nodes[n].start-=u),e.nodes[n].end-=u)})),n-=u,i(a.node.previousSibling,a.start),!(n>a.end))return!1;t=a.end}return!0}))}},{key:"wrapMatches",value:function(e,t,n,r,i){var o=this,a=0===t?0:t+1;this.getTextNodes((function(t){t.nodes.forEach((function(t){t=t.node;for(var i=void 0;null!==(i=e.exec(t.textContent))&&""!==i[a];)if(n(i[a],t)){var s=i.index;if(0!==a)for(var l=1;l<a;l++)s+=i[l].length;t=o.wrapRangeInTextNode(t,s,s+i[a].length),r(t.previousSibling),e.lastIndex=0}})),i()}))}},{key:"wrapMatchesAcrossElements",value:function(e,t,n,r,i){var o=this,a=0===t?0:t+1;this.getTextNodes((function(t){for(var s=void 0;null!==(s=e.exec(t.value))&&""!==s[a];){var l=s.index;if(0!==a)for(var c=1;c<a;c++)l+=s[c].length;var u=l+s[a].length;o.wrapRangeInMappedTextNode(t,l,u,(function(e){return n(s[a],e)}),(function(t,n){e.lastIndex=n,r(t)}))}i()}))}},{key:"wrapRangeFromIndex",value:function(e,t,n,r){var i=this;this.getTextNodes((function(o){var a=o.value.length;e.forEach((function(e,r){var s=i.checkWhitespaceRanges(e,a,o.value),l=s.start,c=s.end;s.valid&&i.wrapRangeInMappedTextNode(o,l,c,(function(n){return t(n,e,o.value.substring(l,c),r)}),(function(t){n(t,e)}))})),r()}))}},{key:"unwrapMatches",value:function(e){for(var t=e.parentNode,n=document.createDocumentFragment();e.firstChild;)n.appendChild(e.removeChild(e.firstChild));t.replaceChild(n,e),this.ie?this.normalizeTextNode(t):t.normalize()}},{key:"normalizeTextNode",value:function(e){if(e){if(3===e.nodeType)for(;e.nextSibling&&3===e.nextSibling.nodeType;)e.nodeValue+=e.nextSibling.nodeValue,e.parentNode.removeChild(e.nextSibling);else this.normalizeTextNode(e.firstChild);this.normalizeTextNode(e.nextSibling)}}},{key:"markRegExp",value:function(e,t){var n=this;this.opt=t,this.log('Searching with expression "'+e+'"');var r=0,i="wrapMatches";this.opt.acrossElements&&(i="wrapMatchesAcrossElements"),this[i](e,this.opt.ignoreGroups,(function(e,t){return n.opt.filter(t,e,r)}),(function(e){r++,n.opt.each(e)}),(function(){0===r&&n.opt.noMatch(e),n.opt.done(r)}))}},{key:"mark",value:function(e,t){var n=this;this.opt=t;var r=0,i="wrapMatches",o=this.getSeparatedKeywords("string"==typeof e?[e]:e),a=o.keywords,s=o.length,l=this.opt.caseSensitive?"":"i";this.opt.acrossElements&&(i="wrapMatchesAcrossElements"),0===s?this.opt.done(r):function e(t){var o=new RegExp(n.createRegExp(t),"gm"+l),c=0;n.log('Searching with expression "'+o+'"'),n[i](o,1,(function(e,i){return n.opt.filter(i,t,r,c)}),(function(e){c++,r++,n.opt.each(e)}),(function(){0===c&&n.opt.noMatch(t),a[s-1]===t?n.opt.done(r):e(a[a.indexOf(t)+1])}))}(a[0])}},{key:"markRanges",value:function(e,t){var n=this;this.opt=t;var r=0,i=this.checkRanges(e);i&&i.length?(this.log("Starting to mark with the following ranges: "+JSON.stringify(i)),this.wrapRangeFromIndex(i,(function(e,t,r,i){return n.opt.filter(e,t,r,i)}),(function(e,t){r++,n.opt.each(e,t)}),(function(){n.opt.done(r)}))):this.opt.done(r)}},{key:"unmark",value:function(e){var t=this;this.opt=e;var n=this.opt.element?this.opt.element:"*";n+="[data-markjs]",this.opt.className&&(n+="."+this.opt.className),this.log('Removal selector "'+n+'"'),this.iterator.forEachNode(NodeFilter.SHOW_ELEMENT,(function(e){t.unwrapMatches(e)}),(function(e){var r=i.matches(e,n),o=t.matchesExclude(e);return!r||o?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT}),this.opt.done)}},{key:"opt",set:function(e){this._opt=r({},{element:"",className:"",exclude:[],iframes:!1,iframesTimeout:5e3,separateWordSearch:!0,diacritics:!0,synonyms:{},accuracy:"partially",acrossElements:!1,caseSensitive:!1,ignoreJoiners:!1,ignoreGroups:0,ignorePunctuation:[],wildcards:"disabled",each:function(){},noMatch:function(){},filter:function(){return!0},done:function(){},debug:!1,log:window.console},e)},get:function(){return this._opt}},{key:"iterator",get:function(){return new i(this.ctx,this.opt.iframes,this.opt.exclude,this.opt.iframesTimeout)}}]),o}();return function(e){var t=this,n=new o(e);return this.mark=function(e,r){return n.mark(e,r),t},this.markRegExp=function(e,r){return n.markRegExp(e,r),t},this.markRanges=function(e,r){return n.markRanges(e,r),t},this.unmark=function(e){return n.unmark(e),t},this}}()},function(e,t,n){n(5),e.exports=n(10)},function(e,t,n){"use strict";n.r(t);var r=n(0),i=n.n(r),o=n(3),a=n.n(o);n(6),n(8);let s,l,c;const u=(e,t)=>{if(null==e||null==e)return[];let n=e.toString().trim().toLowerCase(),i=[];for(let e=0;e<=n.length-2;e++){let o=r.utils.clone(t)||{};o.position=[e,e+2],o.index=i.length,i.push(new r.Token(n.slice(e,e+2),o))}return i},d=e=>{const t=document.querySelector("#searchResults"),n=document.querySelector("#searchBox").value;for(;t.firstChild;)t.removeChild(t.firstChild);if(!e.length){let e=document.createElement("div");return e.className="searchResultPage",e.innerHTML='No results found for query "'+n+'"',void t.append(e)}let r=new a.a(document.querySelector("#searchResults"));e.slice(0,10).forEach((e,i)=>{let o=document.createElement("div");o.className="searchResultPage";let a=l[i].matchData.metadata,s=a[Object.keys(a)[0]].body.position[0][0],c=s-50>0?s-50:0,u=document.createElement("a");u.className="searchResultTitle",u.href=e.ref,u.innerHTML=e.title,o.append(u);let d=document.createElement("div");d.className="searchResultBody",d.innerHTML=e.body.substr(c,100),o.append(d),t.append(o),r.mark(n)})};(()=>{let e=new XMLHttpRequest;e.open("GET","../post/index.json",!0),e.onload=function(){this.status>=200&&this.status<400?(c=JSON.parse(this.response),s=i()((function(){this.tokenizer=u,this.pipeline.reset(),this.ref("ref"),this.field("title",{boost:10}),this.field("body"),this.metadataWhitelist=["position"],c.forEach(e=>{this.add(e)},this)}))):console.error("Error getting Hugo index flie")},e.onerror=function(){console.error("connection error")},e.send()})(),(()=>{const e=document.querySelector("#searchBox");null!==e&&e.addEventListener("keyup",(function(e){let t=document.querySelector("#searchResults"),n=e.currentTarget.value;n.length<2?t.style.display="none":(d((e=>(l=s.search((e=>{const t=e.toString().trim().toLowerCase(),n=[];for(let e=0;e<=t.length-2;e++)n.push(t.slice(e,e+2));return n.join(" ")})(e)),l.map(e=>c.filter(t=>t.ref===e.ref)[0])))(n)),t.style.display="block")}))})()},function(e,t,n){var r=n(1),i=n(7);"string"==typeof(i=i.__esModule?i.default:i)&&(i=[[e.i,i,""]]);var o={insert:"head",singleton:!1},a=(r(i,o),i.locals?i.locals:{});e.exports=a},function(e,t,n){(t=n(2)(!1)).push([e.i,"/* noto-sans-jp-regular - japanese_latin */\n@font-face {\n  font-family: 'Noto Sans JP';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: local('Noto Sans Japanese Regular'), local('NotoSansJapanese-Regular'),\n       url('../fonts/noto-sans-jp-v25-japanese_latin-regular.woff2') format('woff2'), /* Super Modern Browsers */\n       url('../fonts/noto-sans-jp-v25-japanese_latin-regular.woff') format('woff'); /* Modern Browsers */\n}\n\n/* roboto-regular - latin */\n@font-face {\n  font-family: 'Roboto';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: local('Roboto'), local('Roboto-Regular'),\n       url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */\n       url('../fonts/roboto-v20-latin-regular.woff') format('woff'); /* Modern Browsers */\n}\n\nhtml {\n  background-color: #FFFFFF;\n}\n\nbody {\n  margin: 0;\n  padding: 0;\n  font-family: 'Noto Sans JP', sans-serif;\n  font-size: 16px;\n  color: #42464c;\n  background: 0 0;\n  flex-flow: column;\n  text-rendering: optimizeLegibility;\n}\n\na {\n  outline: none;\n  text-decoration: none;\n}\n\n.error-text {\n  font-family: 'Roboto', Helvetica, sans-serif;\n  text-align: center;\n}\n\n.header {\n  margin: auto;\n  position: relative;\n}\n\n.navbar {\n  min-height: 50px;\n  margin-bottom: 20px;\n}\n\n.nav {\n  top: 0;\n  position: relative;\n  max-width: 800px;\n  margin: 20px auto;\n  padding: 0 10px;\n  text-align: right;\n}\n\n.nav-logo {\n  float: left;\n  transition: transform 300ms ease-out;\n}\n\n.nav-logo:hover {\n  transform: scale(1.1);\n}\n\n.nav-logo img {\n  display: block;\n  width: auto;\n}\n\n.nav-links {\n  margin: 0;\n  padding: 0;\n  font-size: 14px;\n  list-style: none;\n}\n\n.nav-links li {\n  display: inline-block;\n  margin: 0 0 0 10px;\n}\n\n.nav-links li a em {\n  color: #000000;\n}\n\n.intro-header {\n  margin: 40px 0 20px;\n  position: relative;\n}\n\n.intro-header [class$=\"-heading\"] {\n  text-align: center;\n}\n\n.intro-header [class$=\"-heading\"] h1 {\n  margin-top: 0;\n  padding-top: 0;\n  font-size: 50px;\n}\n\nh1,h2,h3,h4,h5,h6 {\n  font-family: 'Roboto', Helvetica, sans-serif;\n  font-weight: 800;\n  color: #111111;\n}\n\n.container[role=main] {\n  max-width: 700px;\n  padding: 0 15px;\n  font-size: 16px;\n  line-height: 1.7;\n  color: #333333;\n}\n\n.container img {\n  width: 100%;\n}\n\n#blog-archives {\n  margin: 20px auto;\n  font-size: 14px;\n}\n\n.archives {\n  margin: 20px auto;\n}\n\n.archives td {\n  border: none;\n  text-align: left;\n}\n\n.article {\n  text-align: justify;\n}\n\n#TableOfContents {\n  font-size: 14px;\n  border: 2px dotted #cccccc;\n  margin: 1em 0;\n  padding: 0.5em 0;\n  background-color: #f0f0f0;\n}\n\n#TableOfContents ul {\n  list-style-type: none;\n}\n\n#TableOfContents ul ul {\n  list-style-type: disc;\n}\n\np {\n  line-height: 1.5;\n  margin: 0.5em 0;\n}\n\np + p {\n  margin-top: 1em;\n}\n\n.social-icon {\n  margin-left: 0.2em;\n  margin-right: 0.2em;\n}\n\n.post-preview {\n  padding-bottom: 10px;\n  border-bottom: 1px solid #eeeeee;\n}\n\n.post-preview a {\n  text-decoration: none;\n  color: #222222;\n}\n\n.post-preview:last-child {\n  border-bottom: 0;\n}\n\n.postmeta {\n  margin: 10px 0;\n}\n\n.blog-tags {\n  font-family: 'Roboto', Helvetica, sans-serif;\n  color: #999999;\n  font-size: 15px;\n  margin: 30px 0;\n}\n\n.blog-tags a {\n  color: #0000BB;\n  text-decoration: none;\n  padding: 0px 5px;\n}\n\n.blog-tags a:before {\n  content: \"#\";\n}\n\nh4.term-name > span.badge {\n    float: right;\n}\n\ndiv.panel-body {\n  font-family: 'Roboto', Helvetica, sans-serif;\n  font-weight: 800;\n  border-radius: 0;\n  border: none;\n  font-size: 16px;\n}\n\n.post-entry {\n  width: 100%;\n  margin-top: 10px;\n}\n\n.post-read-more {\n  font-family: 'Roboto', Helvetica, sans-serif;\n  font-weight: 800;\n  float: right;\n  position: relative;\n  display: block;\n  text-decoration: none;\n}\n\na.post-read-more::after {\n  position: absolute;\n  bottom: -4px;\n  left: 0;\n  content: '';\n  width: 100%;\n  height: 2px;\n  background: #333;\n  transform: scale(0, 1);\n  transform-origin: center top;\n  transition: transform .3s;\n}\n\na.post-read-more:hover::after {\n  transform: scale(1, 1);\n}\n\nblockquote {\n  color: #808080;\n  padding: 0 10px;\n  border-left: 4px solid #aaaaaa;\n}\n\nblockquote p:first-child {\n  margin-top: 0;\n}\n\ntable {\n  padding: 0;\n  border-spacing: 0;\n}\n\ntable tr {\n  border-top: 1px solid #dddddd;\n  margin: 0;\n  padding: 0;\n}\n\ntable tr th {\n  font-weight: bold;\n  border: 1px solid #dddddd;\n  text-align: left;\n  margin: 0;\n  padding: 6px 13px;\n}\n\ntable tr td {\n  border: 1px solid #dddddd;\n  text-align: left;\n  margin: 0;\n  padding: 6px 12px;\n}\n\ntable tr th :first-child,\ntable tr td :first-child {\n  margin-top: 0;\n}\n\ntable tr th :last-child,\ntable tr td :last-child {\n  margin-bottom: 0;\n}\n\n.chroma .ln {\n  margin-right: 0.8em;\n  padding: 0 0.4em 0 0.4em;\n}\n\npre {\n    display: block;\n    padding: 9.5px;\n    margin: 0 0 10px;\n    font-size: 13px;\n    line-height: 1.42857143;\n    color: #333;\n    word-break: break-all;\n    word-wrap: break-word;\n    background-color: #f5f5f5;\n    border: 1px solid #cccccc;\n    border-radius: 4px;\n}\n\npre code {\n    padding: 0;\n    font-family: Menlo, Monaco, Consolas, monospace;\n    font-size: inherit;\n    color: inherit;\n    white-space: pre-wrap;\n    background-color: transparent;\n    border-radius: 0;\n}\n\ncode {\n    padding: 2px 4px;\n    font-size: 90%;\n    color: #dd0011;\n    background-color: #f9f9f9;\n    border-radius: 4px;\n}\n\n#backtotopButton {\n  position: fixed;\n  bottom: 20px;\n  right: 20px;\n  z-index: 99;\n  border: none;\n  outline: none;\n  background-color: #eeeeff;\n  cursor: pointer;\n  padding: 15px;\n  border-radius: 10px;\n  font-size: 16px;\n  text-align: center;\n}\n\n#backtotopButton:hover {\n  background-color: #aaaaaa;\n}\n\n.searchBoxContainer {\n  position: relative;\n  width: 300px;\n  height: 30px;\n  margin: 10px auto 50px auto;\n}\n\ninput.searchBox {\n  position: absolute;\n  width: 100%;\n  padding: 0 35px 0 15px;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  border-radius: 15px;\n  outline: 0;\n  font-size: 16px;\n  color: #707070;\n  background-color:#f6f6f6;\n  border: solid 1px #c9c9c9;\n  box-sizing: border-box;\n}\n\n.searchBox::placeholder {\n  color: #c9c9c9;\n}\n\n.searchResults {\n  display: none;\n  max-width: 600px;\n  min-width: 300px;\n  margin: 0 auto;\n  top: 210px;\n  left: 0;\n  right: 0;\n  padding: 5px;\n  border-radius: 5px;\n  text-align: left;\n}\n\n.searchResultPage {\n  padding: 14px\n}\n\n.searchResultTitle {\n  font-family: 'Roboto', Helvetica, sans-serif;\n  font-weight: bold;\n  font-size: 24px;\n  margin: 5px 0;\n}\n\n.searchResultBody {\n  font-size: 16px;\n}\n\nmark {\n  background-color: #eeff00;\n}\n\n.pager {\n  list-style: none;\n  text-align: center;\n  margin:20px 0 0;\n  padding-left: 0;\n}\n\n.pager ul {\n  display: block;\n}\n\n.pager li {\n  display: inline;\n}\n\n.pager li a {\n  box-sizing: border-box;\n  font-family: 'Roboto', Helvetica, sans-serif;\n  text-transform: uppercase;\n  text-align: center;\n  font-size: 14px;\n  font-weight: 800;\n  letter-spacing: 1px;\n  padding: 10px 5px;\n  background: #ffffff;\n  border-radius: 0;\n  border: 1px solid #dddddd;\n  display: inline-block;\n  color: #404040;\n  text-decoration: none;\n}\n\n.pager a:hover:not(.active) {\n  background-color: #dddddd;\n}\n\n.pager .previous > a {\n  float: left;\n  display: block;\n}\n\n.pager .next > a {\n  float: right;\n  display: block;\n}\n\nfooter {\n  padding: 60px 0;\n  text-align: center;\n  margin-top: auto;\n  font-size: 14px;\n  font-family: 'Roboto', Helvetica, sans-serif;\n}\n\nfooter .copyright {\n  font-family: 'Roboto', Helvetica, sans-serif;\n  text-align: center;\n  margin-bottom: 0;\n}\n\nfooter .theme-by {\n  text-align: center;\n  margin: 10px 0 0;\n}\n\nfooter a {\n  color: #050505;\n  font-weight: bold;\n}\n\nfooter em {\n  cursor: pointer;\n}\n\n@media (min-width: 600px) {\n  .header {\n    margin: auto;\n  }\n\n  .nav-links {\n    font-size: 18px;\n  }\n\n  .nav-links li {\n    margin: 0 0 0 30px;\n  }\n\n  .container[role=main] {\n    font-size: 16px;\n    line-height: 1.8;\n    margin: 40px auto;\n  }\n\n  .blog-tags {\n    margin: 20px 0;\n  }\n\n  .pager li a {\n    padding: 10px 20px;\n  }\n\n  .pager.blog-pager  {\n    margin-top: 40px;\n  }\n}\n",""]),e.exports=t},function(e,t,n){var r=n(1),i=n(9);"string"==typeof(i=i.__esModule?i.default:i)&&(i=[[e.i,i,""]]);var o={insert:"head",singleton:!1},a=(r(i,o),i.locals?i.locals:{});e.exports=a},function(e,t,n){(t=n(2)(!1)).push([e.i,"/* Background */ .chroma { background-color: #f8f8f8 }\n/* Other */ .chroma .x { color: #000000 }\n/* Error */ .chroma .err { color: #a40000 }\n/* LineTableTD */ .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }\n/* LineTable */ .chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; width: auto; overflow: auto; display: block; }\n/* LineHighlight */ .chroma .hl { display: block; width: 100%;background-color: #ffffcc }\n/* LineNumbersTable */ .chroma .lnt { margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #7f7f7f }\n/* LineNumbers */ .chroma .ln { margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #7f7f7f }\n/* Keyword */ .chroma .k { color: #204a87; font-weight: bold }\n/* KeywordConstant */ .chroma .kc { color: #204a87; font-weight: bold }\n/* KeywordDeclaration */ .chroma .kd { color: #204a87; font-weight: bold }\n/* KeywordNamespace */ .chroma .kn { color: #204a87; font-weight: bold }\n/* KeywordPseudo */ .chroma .kp { color: #204a87; font-weight: bold }\n/* KeywordReserved */ .chroma .kr { color: #204a87; font-weight: bold }\n/* KeywordType */ .chroma .kt { color: #204a87; font-weight: bold }\n/* Name */ .chroma .n { color: #000000 }\n/* NameAttribute */ .chroma .na { color: #c4a000 }\n/* NameBuiltin */ .chroma .nb { color: #204a87 }\n/* NameBuiltinPseudo */ .chroma .bp { color: #3465a4 }\n/* NameClass */ .chroma .nc { color: #000000 }\n/* NameConstant */ .chroma .no { color: #000000 }\n/* NameDecorator */ .chroma .nd { color: #5c35cc; font-weight: bold }\n/* NameEntity */ .chroma .ni { color: #ce5c00 }\n/* NameException */ .chroma .ne { color: #cc0000; font-weight: bold }\n/* NameFunction */ .chroma .nf { color: #000000 }\n/* NameFunctionMagic */ .chroma .fm { color: #000000 }\n/* NameLabel */ .chroma .nl { color: #f57900 }\n/* NameNamespace */ .chroma .nn { color: #000000 }\n/* NameOther */ .chroma .nx { color: #000000 }\n/* NameProperty */ .chroma .py { color: #000000 }\n/* NameTag */ .chroma .nt { color: #204a87; font-weight: bold }\n/* NameVariable */ .chroma .nv { color: #000000 }\n/* NameVariableClass */ .chroma .vc { color: #000000 }\n/* NameVariableGlobal */ .chroma .vg { color: #000000 }\n/* NameVariableInstance */ .chroma .vi { color: #000000 }\n/* NameVariableMagic */ .chroma .vm { color: #000000 }\n/* Literal */ .chroma .l { color: #000000 }\n/* LiteralDate */ .chroma .ld { color: #000000 }\n/* LiteralString */ .chroma .s { color: #4e9a06 }\n/* LiteralStringAffix */ .chroma .sa { color: #4e9a06 }\n/* LiteralStringBacktick */ .chroma .sb { color: #4e9a06 }\n/* LiteralStringChar */ .chroma .sc { color: #4e9a06 }\n/* LiteralStringDelimiter */ .chroma .dl { color: #4e9a06 }\n/* LiteralStringDoc */ .chroma .sd { color: #8f5902; font-style: italic }\n/* LiteralStringDouble */ .chroma .s2 { color: #4e9a06 }\n/* LiteralStringEscape */ .chroma .se { color: #4e9a06 }\n/* LiteralStringHeredoc */ .chroma .sh { color: #4e9a06 }\n/* LiteralStringInterpol */ .chroma .si { color: #4e9a06 }\n/* LiteralStringOther */ .chroma .sx { color: #4e9a06 }\n/* LiteralStringRegex */ .chroma .sr { color: #4e9a06 }\n/* LiteralStringSingle */ .chroma .s1 { color: #4e9a06 }\n/* LiteralStringSymbol */ .chroma .ss { color: #4e9a06 }\n/* LiteralNumber */ .chroma .m { color: #0000cf; font-weight: bold }\n/* LiteralNumberBin */ .chroma .mb { color: #0000cf; font-weight: bold }\n/* LiteralNumberFloat */ .chroma .mf { color: #0000cf; font-weight: bold }\n/* LiteralNumberHex */ .chroma .mh { color: #0000cf; font-weight: bold }\n/* LiteralNumberInteger */ .chroma .mi { color: #0000cf; font-weight: bold }\n/* LiteralNumberIntegerLong */ .chroma .il { color: #0000cf; font-weight: bold }\n/* LiteralNumberOct */ .chroma .mo { color: #0000cf; font-weight: bold }\n/* Operator */ .chroma .o { color: #ce5c00; font-weight: bold }\n/* OperatorWord */ .chroma .ow { color: #204a87; font-weight: bold }\n/* Punctuation */ .chroma .p { color: #000000; font-weight: bold }\n/* Comment */ .chroma .c { color: #8f5902; font-style: italic }\n/* CommentHashbang */ .chroma .ch { color: #8f5902; font-style: italic }\n/* CommentMultiline */ .chroma .cm { color: #8f5902; font-style: italic }\n/* CommentSingle */ .chroma .c1 { color: #8f5902; font-style: italic }\n/* CommentSpecial */ .chroma .cs { color: #8f5902; font-style: italic }\n/* CommentPreproc */ .chroma .cp { color: #8f5902; font-style: italic }\n/* CommentPreprocFile */ .chroma .cpf { color: #8f5902; font-style: italic }\n/* Generic */ .chroma .g { color: #000000 }\n/* GenericDeleted */ .chroma .gd { color: #a40000 }\n/* GenericEmph */ .chroma .ge { color: #000000; font-style: italic }\n/* GenericError */ .chroma .gr { color: #ef2929 }\n/* GenericHeading */ .chroma .gh { color: #000080; font-weight: bold }\n/* GenericInserted */ .chroma .gi { color: #00a000 }\n/* GenericOutput */ .chroma .go { color: #000000; font-style: italic }\n/* GenericPrompt */ .chroma .gp { color: #8f5902 }\n/* GenericStrong */ .chroma .gs { color: #000000; font-weight: bold }\n/* GenericSubheading */ .chroma .gu { color: #800080; font-weight: bold }\n/* GenericTraceback */ .chroma .gt { color: #a40000; font-weight: bold }\n/* GenericUnderline */ .chroma .gl { color: #000000; text-decoration: underline }\n/* TextWhitespace */ .chroma .w { color: #f8f8f8; text-decoration: underline }\n",""]),e.exports=t},function(e,t){window.onload=function(){var e=document.getElementById("dark-mode-toggle"),t=document.getElementById("dark-mode-theme");function n(n){localStorage.setItem("dark-mode-storage",n),"dark"===n?(t.disabled=!1,e.className="fas fa-sun"):"light"===n&&(t.disabled=!0,e.className="fas fa-moon")}window.matchMedia("(prefers-color-scheme: dark)").matches?n(localStorage.getItem("dark-mode-storage")||"dark"):n(localStorage.getItem("dark-mode-storage")||"light"),e.addEventListener("click",()=>{"fas fa-moon"===e.className?n("dark"):"fas fa-sun"===e.className&&n("light")})}}]);
+
+(function (global, factory) {
+	 true ? module.exports = factory() :
+	undefined;
+}(this, (function () { 'use strict';
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) {
+  return typeof obj;
+} : function (obj) {
+  return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+};
+
+
+
+
+
+
+
+
+
+
+
+var classCallCheck = function (instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+};
+
+var createClass = function () {
+  function defineProperties(target, props) {
+    for (var i = 0; i < props.length; i++) {
+      var descriptor = props[i];
+      descriptor.enumerable = descriptor.enumerable || false;
+      descriptor.configurable = true;
+      if ("value" in descriptor) descriptor.writable = true;
+      Object.defineProperty(target, descriptor.key, descriptor);
+    }
+  }
+
+  return function (Constructor, protoProps, staticProps) {
+    if (protoProps) defineProperties(Constructor.prototype, protoProps);
+    if (staticProps) defineProperties(Constructor, staticProps);
+    return Constructor;
+  };
+}();
+
+
+
+
+
+
+
+var _extends = Object.assign || function (target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i];
+
+    for (var key in source) {
+      if (Object.prototype.hasOwnProperty.call(source, key)) {
+        target[key] = source[key];
+      }
+    }
+  }
+
+  return target;
+};
+
+var DOMIterator = function () {
+  function DOMIterator(ctx) {
+    var iframes = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
+    var exclude = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : [];
+    var iframesTimeout = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 5000;
+    classCallCheck(this, DOMIterator);
+
+    this.ctx = ctx;
+    this.iframes = iframes;
+    this.exclude = exclude;
+    this.iframesTimeout = iframesTimeout;
+  }
+
+  createClass(DOMIterator, [{
+    key: 'getContexts',
+    value: function getContexts() {
+      var ctx = void 0,
+          filteredCtx = [];
+      if (typeof this.ctx === 'undefined' || !this.ctx) {
+        ctx = [];
+      } else if (NodeList.prototype.isPrototypeOf(this.ctx)) {
+        ctx = Array.prototype.slice.call(this.ctx);
+      } else if (Array.isArray(this.ctx)) {
+        ctx = this.ctx;
+      } else if (typeof this.ctx === 'string') {
+        ctx = Array.prototype.slice.call(document.querySelectorAll(this.ctx));
+      } else {
+        ctx = [this.ctx];
+      }
+      ctx.forEach(function (ctx) {
+        var isDescendant = filteredCtx.filter(function (contexts) {
+          return contexts.contains(ctx);
+        }).length > 0;
+        if (filteredCtx.indexOf(ctx) === -1 && !isDescendant) {
+          filteredCtx.push(ctx);
+        }
+      });
+      return filteredCtx;
+    }
+  }, {
+    key: 'getIframeContents',
+    value: function getIframeContents(ifr, successFn) {
+      var errorFn = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : function () {};
+
+      var doc = void 0;
+      try {
+        var ifrWin = ifr.contentWindow;
+        doc = ifrWin.document;
+        if (!ifrWin || !doc) {
+          throw new Error('iframe inaccessible');
+        }
+      } catch (e) {
+        errorFn();
+      }
+      if (doc) {
+        successFn(doc);
+      }
+    }
+  }, {
+    key: 'isIframeBlank',
+    value: function isIframeBlank(ifr) {
+      var bl = 'about:blank',
+          src = ifr.getAttribute('src').trim(),
+          href = ifr.contentWindow.location.href;
+      return href === bl && src !== bl && src;
+    }
+  }, {
+    key: 'observeIframeLoad',
+    value: function observeIframeLoad(ifr, successFn, errorFn) {
+      var _this = this;
+
+      var called = false,
+          tout = null;
+      var listener = function listener() {
+        if (called) {
+          return;
+        }
+        called = true;
+        clearTimeout(tout);
+        try {
+          if (!_this.isIframeBlank(ifr)) {
+            ifr.removeEventListener('load', listener);
+            _this.getIframeContents(ifr, successFn, errorFn);
+          }
+        } catch (e) {
+          errorFn();
+        }
+      };
+      ifr.addEventListener('load', listener);
+      tout = setTimeout(listener, this.iframesTimeout);
+    }
+  }, {
+    key: 'onIframeReady',
+    value: function onIframeReady(ifr, successFn, errorFn) {
+      try {
+        if (ifr.contentWindow.document.readyState === 'complete') {
+          if (this.isIframeBlank(ifr)) {
+            this.observeIframeLoad(ifr, successFn, errorFn);
+          } else {
+            this.getIframeContents(ifr, successFn, errorFn);
+          }
+        } else {
+          this.observeIframeLoad(ifr, successFn, errorFn);
+        }
+      } catch (e) {
+        errorFn();
+      }
+    }
+  }, {
+    key: 'waitForIframes',
+    value: function waitForIframes(ctx, done) {
+      var _this2 = this;
+
+      var eachCalled = 0;
+      this.forEachIframe(ctx, function () {
+        return true;
+      }, function (ifr) {
+        eachCalled++;
+        _this2.waitForIframes(ifr.querySelector('html'), function () {
+          if (! --eachCalled) {
+            done();
+          }
+        });
+      }, function (handled) {
+        if (!handled) {
+          done();
+        }
+      });
+    }
+  }, {
+    key: 'forEachIframe',
+    value: function forEachIframe(ctx, filter, each) {
+      var _this3 = this;
+
+      var end = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : function () {};
+
+      var ifr = ctx.querySelectorAll('iframe'),
+          open = ifr.length,
+          handled = 0;
+      ifr = Array.prototype.slice.call(ifr);
+      var checkEnd = function checkEnd() {
+        if (--open <= 0) {
+          end(handled);
+        }
+      };
+      if (!open) {
+        checkEnd();
+      }
+      ifr.forEach(function (ifr) {
+        if (DOMIterator.matches(ifr, _this3.exclude)) {
+          checkEnd();
+        } else {
+          _this3.onIframeReady(ifr, function (con) {
+            if (filter(ifr)) {
+              handled++;
+              each(con);
+            }
+            checkEnd();
+          }, checkEnd);
+        }
+      });
+    }
+  }, {
+    key: 'createIterator',
+    value: function createIterator(ctx, whatToShow, filter) {
+      return document.createNodeIterator(ctx, whatToShow, filter, false);
+    }
+  }, {
+    key: 'createInstanceOnIframe',
+    value: function createInstanceOnIframe(contents) {
+      return new DOMIterator(contents.querySelector('html'), this.iframes);
+    }
+  }, {
+    key: 'compareNodeIframe',
+    value: function compareNodeIframe(node, prevNode, ifr) {
+      var compCurr = node.compareDocumentPosition(ifr),
+          prev = Node.DOCUMENT_POSITION_PRECEDING;
+      if (compCurr & prev) {
+        if (prevNode !== null) {
+          var compPrev = prevNode.compareDocumentPosition(ifr),
+              after = Node.DOCUMENT_POSITION_FOLLOWING;
+          if (compPrev & after) {
+            return true;
+          }
+        } else {
+          return true;
+        }
+      }
+      return false;
+    }
+  }, {
+    key: 'getIteratorNode',
+    value: function getIteratorNode(itr) {
+      var prevNode = itr.previousNode();
+      var node = void 0;
+      if (prevNode === null) {
+        node = itr.nextNode();
+      } else {
+        node = itr.nextNode() && itr.nextNode();
+      }
+      return {
+        prevNode: prevNode,
+        node: node
+      };
+    }
+  }, {
+    key: 'checkIframeFilter',
+    value: function checkIframeFilter(node, prevNode, currIfr, ifr) {
+      var key = false,
+          handled = false;
+      ifr.forEach(function (ifrDict, i) {
+        if (ifrDict.val === currIfr) {
+          key = i;
+          handled = ifrDict.handled;
+        }
+      });
+      if (this.compareNodeIframe(node, prevNode, currIfr)) {
+        if (key === false && !handled) {
+          ifr.push({
+            val: currIfr,
+            handled: true
+          });
+        } else if (key !== false && !handled) {
+          ifr[key].handled = true;
+        }
+        return true;
+      }
+      if (key === false) {
+        ifr.push({
+          val: currIfr,
+          handled: false
+        });
+      }
+      return false;
+    }
+  }, {
+    key: 'handleOpenIframes',
+    value: function handleOpenIframes(ifr, whatToShow, eCb, fCb) {
+      var _this4 = this;
+
+      ifr.forEach(function (ifrDict) {
+        if (!ifrDict.handled) {
+          _this4.getIframeContents(ifrDict.val, function (con) {
+            _this4.createInstanceOnIframe(con).forEachNode(whatToShow, eCb, fCb);
+          });
+        }
+      });
+    }
+  }, {
+    key: 'iterateThroughNodes',
+    value: function iterateThroughNodes(whatToShow, ctx, eachCb, filterCb, doneCb) {
+      var _this5 = this;
+
+      var itr = this.createIterator(ctx, whatToShow, filterCb);
+      var ifr = [],
+          elements = [],
+          node = void 0,
+          prevNode = void 0,
+          retrieveNodes = function retrieveNodes() {
+        var _getIteratorNode = _this5.getIteratorNode(itr);
+
+        prevNode = _getIteratorNode.prevNode;
+        node = _getIteratorNode.node;
+
+        return node;
+      };
+      while (retrieveNodes()) {
+        if (this.iframes) {
+          this.forEachIframe(ctx, function (currIfr) {
+            return _this5.checkIframeFilter(node, prevNode, currIfr, ifr);
+          }, function (con) {
+            _this5.createInstanceOnIframe(con).forEachNode(whatToShow, function (ifrNode) {
+              return elements.push(ifrNode);
+            }, filterCb);
+          });
+        }
+        elements.push(node);
+      }
+      elements.forEach(function (node) {
+        eachCb(node);
+      });
+      if (this.iframes) {
+        this.handleOpenIframes(ifr, whatToShow, eachCb, filterCb);
+      }
+      doneCb();
+    }
+  }, {
+    key: 'forEachNode',
+    value: function forEachNode(whatToShow, each, filter) {
+      var _this6 = this;
+
+      var done = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : function () {};
+
+      var contexts = this.getContexts();
+      var open = contexts.length;
+      if (!open) {
+        done();
+      }
+      contexts.forEach(function (ctx) {
+        var ready = function ready() {
+          _this6.iterateThroughNodes(whatToShow, ctx, each, filter, function () {
+            if (--open <= 0) {
+              done();
+            }
+          });
+        };
+        if (_this6.iframes) {
+          _this6.waitForIframes(ctx, ready);
+        } else {
+          ready();
+        }
+      });
+    }
+  }], [{
+    key: 'matches',
+    value: function matches(element, selector) {
+      var selectors = typeof selector === 'string' ? [selector] : selector,
+          fn = element.matches || element.matchesSelector || element.msMatchesSelector || element.mozMatchesSelector || element.oMatchesSelector || element.webkitMatchesSelector;
+      if (fn) {
+        var match = false;
+        selectors.every(function (sel) {
+          if (fn.call(element, sel)) {
+            match = true;
+            return false;
+          }
+          return true;
+        });
+        return match;
+      } else {
+        return false;
+      }
+    }
+  }]);
+  return DOMIterator;
+}();
+
+var Mark$1 = function () {
+  function Mark(ctx) {
+    classCallCheck(this, Mark);
+
+    this.ctx = ctx;
+    this.ie = false;
+    var ua = window.navigator.userAgent;
+    if (ua.indexOf('MSIE') > -1 || ua.indexOf('Trident') > -1) {
+      this.ie = true;
+    }
+  }
+
+  createClass(Mark, [{
+    key: 'log',
+    value: function log(msg) {
+      var level = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'debug';
+
+      var log = this.opt.log;
+      if (!this.opt.debug) {
+        return;
+      }
+      if ((typeof log === 'undefined' ? 'undefined' : _typeof(log)) === 'object' && typeof log[level] === 'function') {
+        log[level]('mark.js: ' + msg);
+      }
+    }
+  }, {
+    key: 'escapeStr',
+    value: function escapeStr(str) {
+      return str.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, '\\$&');
+    }
+  }, {
+    key: 'createRegExp',
+    value: function createRegExp(str) {
+      if (this.opt.wildcards !== 'disabled') {
+        str = this.setupWildcardsRegExp(str);
+      }
+      str = this.escapeStr(str);
+      if (Object.keys(this.opt.synonyms).length) {
+        str = this.createSynonymsRegExp(str);
+      }
+      if (this.opt.ignoreJoiners || this.opt.ignorePunctuation.length) {
+        str = this.setupIgnoreJoinersRegExp(str);
+      }
+      if (this.opt.diacritics) {
+        str = this.createDiacriticsRegExp(str);
+      }
+      str = this.createMergedBlanksRegExp(str);
+      if (this.opt.ignoreJoiners || this.opt.ignorePunctuation.length) {
+        str = this.createJoinersRegExp(str);
+      }
+      if (this.opt.wildcards !== 'disabled') {
+        str = this.createWildcardsRegExp(str);
+      }
+      str = this.createAccuracyRegExp(str);
+      return str;
+    }
+  }, {
+    key: 'createSynonymsRegExp',
+    value: function createSynonymsRegExp(str) {
+      var syn = this.opt.synonyms,
+          sens = this.opt.caseSensitive ? '' : 'i',
+          joinerPlaceholder = this.opt.ignoreJoiners || this.opt.ignorePunctuation.length ? '\0' : '';
+      for (var index in syn) {
+        if (syn.hasOwnProperty(index)) {
+          var value = syn[index],
+              k1 = this.opt.wildcards !== 'disabled' ? this.setupWildcardsRegExp(index) : this.escapeStr(index),
+              k2 = this.opt.wildcards !== 'disabled' ? this.setupWildcardsRegExp(value) : this.escapeStr(value);
+          if (k1 !== '' && k2 !== '') {
+            str = str.replace(new RegExp('(' + this.escapeStr(k1) + '|' + this.escapeStr(k2) + ')', 'gm' + sens), joinerPlaceholder + ('(' + this.processSynomyms(k1) + '|') + (this.processSynomyms(k2) + ')') + joinerPlaceholder);
+          }
+        }
+      }
+      return str;
+    }
+  }, {
+    key: 'processSynomyms',
+    value: function processSynomyms(str) {
+      if (this.opt.ignoreJoiners || this.opt.ignorePunctuation.length) {
+        str = this.setupIgnoreJoinersRegExp(str);
+      }
+      return str;
+    }
+  }, {
+    key: 'setupWildcardsRegExp',
+    value: function setupWildcardsRegExp(str) {
+      str = str.replace(/(?:\\)*\?/g, function (val) {
+        return val.charAt(0) === '\\' ? '?' : '\x01';
+      });
+      return str.replace(/(?:\\)*\*/g, function (val) {
+        return val.charAt(0) === '\\' ? '*' : '\x02';
+      });
+    }
+  }, {
+    key: 'createWildcardsRegExp',
+    value: function createWildcardsRegExp(str) {
+      var spaces = this.opt.wildcards === 'withSpaces';
+      return str.replace(/\u0001/g, spaces ? '[\\S\\s]?' : '\\S?').replace(/\u0002/g, spaces ? '[\\S\\s]*?' : '\\S*');
+    }
+  }, {
+    key: 'setupIgnoreJoinersRegExp',
+    value: function setupIgnoreJoinersRegExp(str) {
+      return str.replace(/[^(|)\\]/g, function (val, indx, original) {
+        var nextChar = original.charAt(indx + 1);
+        if (/[(|)\\]/.test(nextChar) || nextChar === '') {
+          return val;
+        } else {
+          return val + '\0';
+        }
+      });
+    }
+  }, {
+    key: 'createJoinersRegExp',
+    value: function createJoinersRegExp(str) {
+      var joiner = [];
+      var ignorePunctuation = this.opt.ignorePunctuation;
+      if (Array.isArray(ignorePunctuation) && ignorePunctuation.length) {
+        joiner.push(this.escapeStr(ignorePunctuation.join('')));
+      }
+      if (this.opt.ignoreJoiners) {
+        joiner.push('\\u00ad\\u200b\\u200c\\u200d');
+      }
+      return joiner.length ? str.split(/\u0000+/).join('[' + joiner.join('') + ']*') : str;
+    }
+  }, {
+    key: 'createDiacriticsRegExp',
+    value: function createDiacriticsRegExp(str) {
+      var sens = this.opt.caseSensitive ? '' : 'i',
+          dct = this.opt.caseSensitive ? ['aàáảãạăằắẳẵặâầấẩẫậäåāą', 'AÀÁẢÃẠĂẰẮẲẴẶÂẦẤẨẪẬÄÅĀĄ', 'cçćč', 'CÇĆČ', 'dđď', 'DĐĎ', 'eèéẻẽẹêềếểễệëěēę', 'EÈÉẺẼẸÊỀẾỂỄỆËĚĒĘ', 'iìíỉĩịîïī', 'IÌÍỈĨỊÎÏĪ', 'lł', 'LŁ', 'nñňń', 'NÑŇŃ', 'oòóỏõọôồốổỗộơởỡớờợöøō', 'OÒÓỎÕỌÔỒỐỔỖỘƠỞỠỚỜỢÖØŌ', 'rř', 'RŘ', 'sšśșş', 'SŠŚȘŞ', 'tťțţ', 'TŤȚŢ', 'uùúủũụưừứửữựûüůū', 'UÙÚỦŨỤƯỪỨỬỮỰÛÜŮŪ', 'yýỳỷỹỵÿ', 'YÝỲỶỸỴŸ', 'zžżź', 'ZŽŻŹ'] : ['aàáảãạăằắẳẵặâầấẩẫậäåāąAÀÁẢÃẠĂẰẮẲẴẶÂẦẤẨẪẬÄÅĀĄ', 'cçćčCÇĆČ', 'dđďDĐĎ', 'eèéẻẽẹêềếểễệëěēęEÈÉẺẼẸÊỀẾỂỄỆËĚĒĘ', 'iìíỉĩịîïīIÌÍỈĨỊÎÏĪ', 'lłLŁ', 'nñňńNÑŇŃ', 'oòóỏõọôồốổỗộơởỡớờợöøōOÒÓỎÕỌÔỒỐỔỖỘƠỞỠỚỜỢÖØŌ', 'rřRŘ', 'sšśșşSŠŚȘŞ', 'tťțţTŤȚŢ', 'uùúủũụưừứửữựûüůūUÙÚỦŨỤƯỪỨỬỮỰÛÜŮŪ', 'yýỳỷỹỵÿYÝỲỶỸỴŸ', 'zžżźZŽŻŹ'];
+      var handled = [];
+      str.split('').forEach(function (ch) {
+        dct.every(function (dct) {
+          if (dct.indexOf(ch) !== -1) {
+            if (handled.indexOf(dct) > -1) {
+              return false;
+            }
+            str = str.replace(new RegExp('[' + dct + ']', 'gm' + sens), '[' + dct + ']');
+            handled.push(dct);
+          }
+          return true;
+        });
+      });
+      return str;
+    }
+  }, {
+    key: 'createMergedBlanksRegExp',
+    value: function createMergedBlanksRegExp(str) {
+      return str.replace(/[\s]+/gmi, '[\\s]+');
+    }
+  }, {
+    key: 'createAccuracyRegExp',
+    value: function createAccuracyRegExp(str) {
+      var _this = this;
+
+      var chars = '!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~¡¿';
+      var acc = this.opt.accuracy,
+          val = typeof acc === 'string' ? acc : acc.value,
+          ls = typeof acc === 'string' ? [] : acc.limiters,
+          lsJoin = '';
+      ls.forEach(function (limiter) {
+        lsJoin += '|' + _this.escapeStr(limiter);
+      });
+      switch (val) {
+        case 'partially':
+        default:
+          return '()(' + str + ')';
+        case 'complementary':
+          lsJoin = '\\s' + (lsJoin ? lsJoin : this.escapeStr(chars));
+          return '()([^' + lsJoin + ']*' + str + '[^' + lsJoin + ']*)';
+        case 'exactly':
+          return '(^|\\s' + lsJoin + ')(' + str + ')(?=$|\\s' + lsJoin + ')';
+      }
+    }
+  }, {
+    key: 'getSeparatedKeywords',
+    value: function getSeparatedKeywords(sv) {
+      var _this2 = this;
+
+      var stack = [];
+      sv.forEach(function (kw) {
+        if (!_this2.opt.separateWordSearch) {
+          if (kw.trim() && stack.indexOf(kw) === -1) {
+            stack.push(kw);
+          }
+        } else {
+          kw.split(' ').forEach(function (kwSplitted) {
+            if (kwSplitted.trim() && stack.indexOf(kwSplitted) === -1) {
+              stack.push(kwSplitted);
+            }
+          });
+        }
+      });
+      return {
+        'keywords': stack.sort(function (a, b) {
+          return b.length - a.length;
+        }),
+        'length': stack.length
+      };
+    }
+  }, {
+    key: 'isNumeric',
+    value: function isNumeric(value) {
+      return Number(parseFloat(value)) == value;
+    }
+  }, {
+    key: 'checkRanges',
+    value: function checkRanges(array) {
+      var _this3 = this;
+
+      if (!Array.isArray(array) || Object.prototype.toString.call(array[0]) !== '[object Object]') {
+        this.log('markRanges() will only accept an array of objects');
+        this.opt.noMatch(array);
+        return [];
+      }
+      var stack = [];
+      var last = 0;
+      array.sort(function (a, b) {
+        return a.start - b.start;
+      }).forEach(function (item) {
+        var _callNoMatchOnInvalid = _this3.callNoMatchOnInvalidRanges(item, last),
+            start = _callNoMatchOnInvalid.start,
+            end = _callNoMatchOnInvalid.end,
+            valid = _callNoMatchOnInvalid.valid;
+
+        if (valid) {
+          item.start = start;
+          item.length = end - start;
+          stack.push(item);
+          last = end;
+        }
+      });
+      return stack;
+    }
+  }, {
+    key: 'callNoMatchOnInvalidRanges',
+    value: function callNoMatchOnInvalidRanges(range, last) {
+      var start = void 0,
+          end = void 0,
+          valid = false;
+      if (range && typeof range.start !== 'undefined') {
+        start = parseInt(range.start, 10);
+        end = start + parseInt(range.length, 10);
+        if (this.isNumeric(range.start) && this.isNumeric(range.length) && end - last > 0 && end - start > 0) {
+          valid = true;
+        } else {
+          this.log('Ignoring invalid or overlapping range: ' + ('' + JSON.stringify(range)));
+          this.opt.noMatch(range);
+        }
+      } else {
+        this.log('Ignoring invalid range: ' + JSON.stringify(range));
+        this.opt.noMatch(range);
+      }
+      return {
+        start: start,
+        end: end,
+        valid: valid
+      };
+    }
+  }, {
+    key: 'checkWhitespaceRanges',
+    value: function checkWhitespaceRanges(range, originalLength, string) {
+      var end = void 0,
+          valid = true,
+          max = string.length,
+          offset = originalLength - max,
+          start = parseInt(range.start, 10) - offset;
+      start = start > max ? max : start;
+      end = start + parseInt(range.length, 10);
+      if (end > max) {
+        end = max;
+        this.log('End range automatically set to the max value of ' + max);
+      }
+      if (start < 0 || end - start < 0 || start > max || end > max) {
+        valid = false;
+        this.log('Invalid range: ' + JSON.stringify(range));
+        this.opt.noMatch(range);
+      } else if (string.substring(start, end).replace(/\s+/g, '') === '') {
+        valid = false;
+        this.log('Skipping whitespace only range: ' + JSON.stringify(range));
+        this.opt.noMatch(range);
+      }
+      return {
+        start: start,
+        end: end,
+        valid: valid
+      };
+    }
+  }, {
+    key: 'getTextNodes',
+    value: function getTextNodes(cb) {
+      var _this4 = this;
+
+      var val = '',
+          nodes = [];
+      this.iterator.forEachNode(NodeFilter.SHOW_TEXT, function (node) {
+        nodes.push({
+          start: val.length,
+          end: (val += node.textContent).length,
+          node: node
+        });
+      }, function (node) {
+        if (_this4.matchesExclude(node.parentNode)) {
+          return NodeFilter.FILTER_REJECT;
+        } else {
+          return NodeFilter.FILTER_ACCEPT;
+        }
+      }, function () {
+        cb({
+          value: val,
+          nodes: nodes
+        });
+      });
+    }
+  }, {
+    key: 'matchesExclude',
+    value: function matchesExclude(el) {
+      return DOMIterator.matches(el, this.opt.exclude.concat(['script', 'style', 'title', 'head', 'html']));
+    }
+  }, {
+    key: 'wrapRangeInTextNode',
+    value: function wrapRangeInTextNode(node, start, end) {
+      var hEl = !this.opt.element ? 'mark' : this.opt.element,
+          startNode = node.splitText(start),
+          ret = startNode.splitText(end - start);
+      var repl = document.createElement(hEl);
+      repl.setAttribute('data-markjs', 'true');
+      if (this.opt.className) {
+        repl.setAttribute('class', this.opt.className);
+      }
+      repl.textContent = startNode.textContent;
+      startNode.parentNode.replaceChild(repl, startNode);
+      return ret;
+    }
+  }, {
+    key: 'wrapRangeInMappedTextNode',
+    value: function wrapRangeInMappedTextNode(dict, start, end, filterCb, eachCb) {
+      var _this5 = this;
+
+      dict.nodes.every(function (n, i) {
+        var sibl = dict.nodes[i + 1];
+        if (typeof sibl === 'undefined' || sibl.start > start) {
+          if (!filterCb(n.node)) {
+            return false;
+          }
+          var s = start - n.start,
+              e = (end > n.end ? n.end : end) - n.start,
+              startStr = dict.value.substr(0, n.start),
+              endStr = dict.value.substr(e + n.start);
+          n.node = _this5.wrapRangeInTextNode(n.node, s, e);
+          dict.value = startStr + endStr;
+          dict.nodes.forEach(function (k, j) {
+            if (j >= i) {
+              if (dict.nodes[j].start > 0 && j !== i) {
+                dict.nodes[j].start -= e;
+              }
+              dict.nodes[j].end -= e;
+            }
+          });
+          end -= e;
+          eachCb(n.node.previousSibling, n.start);
+          if (end > n.end) {
+            start = n.end;
+          } else {
+            return false;
+          }
+        }
+        return true;
+      });
+    }
+  }, {
+    key: 'wrapMatches',
+    value: function wrapMatches(regex, ignoreGroups, filterCb, eachCb, endCb) {
+      var _this6 = this;
+
+      var matchIdx = ignoreGroups === 0 ? 0 : ignoreGroups + 1;
+      this.getTextNodes(function (dict) {
+        dict.nodes.forEach(function (node) {
+          node = node.node;
+          var match = void 0;
+          while ((match = regex.exec(node.textContent)) !== null && match[matchIdx] !== '') {
+            if (!filterCb(match[matchIdx], node)) {
+              continue;
+            }
+            var pos = match.index;
+            if (matchIdx !== 0) {
+              for (var i = 1; i < matchIdx; i++) {
+                pos += match[i].length;
+              }
+            }
+            node = _this6.wrapRangeInTextNode(node, pos, pos + match[matchIdx].length);
+            eachCb(node.previousSibling);
+            regex.lastIndex = 0;
+          }
+        });
+        endCb();
+      });
+    }
+  }, {
+    key: 'wrapMatchesAcrossElements',
+    value: function wrapMatchesAcrossElements(regex, ignoreGroups, filterCb, eachCb, endCb) {
+      var _this7 = this;
+
+      var matchIdx = ignoreGroups === 0 ? 0 : ignoreGroups + 1;
+      this.getTextNodes(function (dict) {
+        var match = void 0;
+        while ((match = regex.exec(dict.value)) !== null && match[matchIdx] !== '') {
+          var start = match.index;
+          if (matchIdx !== 0) {
+            for (var i = 1; i < matchIdx; i++) {
+              start += match[i].length;
+            }
+          }
+          var end = start + match[matchIdx].length;
+          _this7.wrapRangeInMappedTextNode(dict, start, end, function (node) {
+            return filterCb(match[matchIdx], node);
+          }, function (node, lastIndex) {
+            regex.lastIndex = lastIndex;
+            eachCb(node);
+          });
+        }
+        endCb();
+      });
+    }
+  }, {
+    key: 'wrapRangeFromIndex',
+    value: function wrapRangeFromIndex(ranges, filterCb, eachCb, endCb) {
+      var _this8 = this;
+
+      this.getTextNodes(function (dict) {
+        var originalLength = dict.value.length;
+        ranges.forEach(function (range, counter) {
+          var _checkWhitespaceRange = _this8.checkWhitespaceRanges(range, originalLength, dict.value),
+              start = _checkWhitespaceRange.start,
+              end = _checkWhitespaceRange.end,
+              valid = _checkWhitespaceRange.valid;
+
+          if (valid) {
+            _this8.wrapRangeInMappedTextNode(dict, start, end, function (node) {
+              return filterCb(node, range, dict.value.substring(start, end), counter);
+            }, function (node) {
+              eachCb(node, range);
+            });
+          }
+        });
+        endCb();
+      });
+    }
+  }, {
+    key: 'unwrapMatches',
+    value: function unwrapMatches(node) {
+      var parent = node.parentNode;
+      var docFrag = document.createDocumentFragment();
+      while (node.firstChild) {
+        docFrag.appendChild(node.removeChild(node.firstChild));
+      }
+      parent.replaceChild(docFrag, node);
+      if (!this.ie) {
+        parent.normalize();
+      } else {
+        this.normalizeTextNode(parent);
+      }
+    }
+  }, {
+    key: 'normalizeTextNode',
+    value: function normalizeTextNode(node) {
+      if (!node) {
+        return;
+      }
+      if (node.nodeType === 3) {
+        while (node.nextSibling && node.nextSibling.nodeType === 3) {
+          node.nodeValue += node.nextSibling.nodeValue;
+          node.parentNode.removeChild(node.nextSibling);
+        }
+      } else {
+        this.normalizeTextNode(node.firstChild);
+      }
+      this.normalizeTextNode(node.nextSibling);
+    }
+  }, {
+    key: 'markRegExp',
+    value: function markRegExp(regexp, opt) {
+      var _this9 = this;
+
+      this.opt = opt;
+      this.log('Searching with expression "' + regexp + '"');
+      var totalMatches = 0,
+          fn = 'wrapMatches';
+      var eachCb = function eachCb(element) {
+        totalMatches++;
+        _this9.opt.each(element);
+      };
+      if (this.opt.acrossElements) {
+        fn = 'wrapMatchesAcrossElements';
+      }
+      this[fn](regexp, this.opt.ignoreGroups, function (match, node) {
+        return _this9.opt.filter(node, match, totalMatches);
+      }, eachCb, function () {
+        if (totalMatches === 0) {
+          _this9.opt.noMatch(regexp);
+        }
+        _this9.opt.done(totalMatches);
+      });
+    }
+  }, {
+    key: 'mark',
+    value: function mark(sv, opt) {
+      var _this10 = this;
+
+      this.opt = opt;
+      var totalMatches = 0,
+          fn = 'wrapMatches';
+
+      var _getSeparatedKeywords = this.getSeparatedKeywords(typeof sv === 'string' ? [sv] : sv),
+          kwArr = _getSeparatedKeywords.keywords,
+          kwArrLen = _getSeparatedKeywords.length,
+          sens = this.opt.caseSensitive ? '' : 'i',
+          handler = function handler(kw) {
+        var regex = new RegExp(_this10.createRegExp(kw), 'gm' + sens),
+            matches = 0;
+        _this10.log('Searching with expression "' + regex + '"');
+        _this10[fn](regex, 1, function (term, node) {
+          return _this10.opt.filter(node, kw, totalMatches, matches);
+        }, function (element) {
+          matches++;
+          totalMatches++;
+          _this10.opt.each(element);
+        }, function () {
+          if (matches === 0) {
+            _this10.opt.noMatch(kw);
+          }
+          if (kwArr[kwArrLen - 1] === kw) {
+            _this10.opt.done(totalMatches);
+          } else {
+            handler(kwArr[kwArr.indexOf(kw) + 1]);
+          }
+        });
+      };
+
+      if (this.opt.acrossElements) {
+        fn = 'wrapMatchesAcrossElements';
+      }
+      if (kwArrLen === 0) {
+        this.opt.done(totalMatches);
+      } else {
+        handler(kwArr[0]);
+      }
+    }
+  }, {
+    key: 'markRanges',
+    value: function markRanges(rawRanges, opt) {
+      var _this11 = this;
+
+      this.opt = opt;
+      var totalMatches = 0,
+          ranges = this.checkRanges(rawRanges);
+      if (ranges && ranges.length) {
+        this.log('Starting to mark with the following ranges: ' + JSON.stringify(ranges));
+        this.wrapRangeFromIndex(ranges, function (node, range, match, counter) {
+          return _this11.opt.filter(node, range, match, counter);
+        }, function (element, range) {
+          totalMatches++;
+          _this11.opt.each(element, range);
+        }, function () {
+          _this11.opt.done(totalMatches);
+        });
+      } else {
+        this.opt.done(totalMatches);
+      }
+    }
+  }, {
+    key: 'unmark',
+    value: function unmark(opt) {
+      var _this12 = this;
+
+      this.opt = opt;
+      var sel = this.opt.element ? this.opt.element : '*';
+      sel += '[data-markjs]';
+      if (this.opt.className) {
+        sel += '.' + this.opt.className;
+      }
+      this.log('Removal selector "' + sel + '"');
+      this.iterator.forEachNode(NodeFilter.SHOW_ELEMENT, function (node) {
+        _this12.unwrapMatches(node);
+      }, function (node) {
+        var matchesSel = DOMIterator.matches(node, sel),
+            matchesExclude = _this12.matchesExclude(node);
+        if (!matchesSel || matchesExclude) {
+          return NodeFilter.FILTER_REJECT;
+        } else {
+          return NodeFilter.FILTER_ACCEPT;
+        }
+      }, this.opt.done);
+    }
+  }, {
+    key: 'opt',
+    set: function set$$1(val) {
+      this._opt = _extends({}, {
+        'element': '',
+        'className': '',
+        'exclude': [],
+        'iframes': false,
+        'iframesTimeout': 5000,
+        'separateWordSearch': true,
+        'diacritics': true,
+        'synonyms': {},
+        'accuracy': 'partially',
+        'acrossElements': false,
+        'caseSensitive': false,
+        'ignoreJoiners': false,
+        'ignoreGroups': 0,
+        'ignorePunctuation': [],
+        'wildcards': 'disabled',
+        'each': function each() {},
+        'noMatch': function noMatch() {},
+        'filter': function filter() {
+          return true;
+        },
+        'done': function done() {},
+        'debug': false,
+        'log': window.console
+      }, val);
+    },
+    get: function get$$1() {
+      return this._opt;
+    }
+  }, {
+    key: 'iterator',
+    get: function get$$1() {
+      return new DOMIterator(this.ctx, this.opt.iframes, this.opt.exclude, this.opt.iframesTimeout);
+    }
+  }]);
+  return Mark;
+}();
+
+function Mark(ctx) {
+  var _this = this;
+
+  var instance = new Mark$1(ctx);
+  this.mark = function (sv, opt) {
+    instance.mark(sv, opt);
+    return _this;
+  };
+  this.markRegExp = function (sv, opt) {
+    instance.markRegExp(sv, opt);
+    return _this;
+  };
+  this.markRanges = function (sv, opt) {
+    instance.markRanges(sv, opt);
+    return _this;
+  };
+  this.unmark = function (opt) {
+    instance.unmark(opt);
+    return _this;
+  };
+  return this;
+}
+
+return Mark;
+
+})));
+
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js":
+/*!****************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js ***!
+  \****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var isOldIE = function isOldIE() {
+  var memo;
+  return function memorize() {
+    if (typeof memo === 'undefined') {
+      // Test for IE <= 9 as proposed by Browserhacks
+      // @see http://browserhacks.com/#hack-e71d8692f65334173fee715c222cb805
+      // Tests for existence of standard globals is to allow style-loader
+      // to operate correctly into non-standard environments
+      // @see https://github.com/webpack-contrib/style-loader/issues/177
+      memo = Boolean(window && document && document.all && !window.atob);
+    }
+
+    return memo;
+  };
+}();
+
+var getTarget = function getTarget() {
+  var memo = {};
+  return function memorize(target) {
+    if (typeof memo[target] === 'undefined') {
+      var styleTarget = document.querySelector(target); // Special case to return head of iframe instead of iframe itself
+
+      if (window.HTMLIFrameElement && styleTarget instanceof window.HTMLIFrameElement) {
+        try {
+          // This will throw an exception if access to iframe is blocked
+          // due to cross-origin restrictions
+          styleTarget = styleTarget.contentDocument.head;
+        } catch (e) {
+          // istanbul ignore next
+          styleTarget = null;
+        }
+      }
+
+      memo[target] = styleTarget;
+    }
+
+    return memo[target];
+  };
+}();
+
+var stylesInDom = [];
+
+function getIndexByIdentifier(identifier) {
+  var result = -1;
+
+  for (var i = 0; i < stylesInDom.length; i++) {
+    if (stylesInDom[i].identifier === identifier) {
+      result = i;
+      break;
+    }
+  }
+
+  return result;
+}
+
+function modulesToDom(list, options) {
+  var idCountMap = {};
+  var identifiers = [];
+
+  for (var i = 0; i < list.length; i++) {
+    var item = list[i];
+    var id = options.base ? item[0] + options.base : item[0];
+    var count = idCountMap[id] || 0;
+    var identifier = "".concat(id, " ").concat(count);
+    idCountMap[id] = count + 1;
+    var index = getIndexByIdentifier(identifier);
+    var obj = {
+      css: item[1],
+      media: item[2],
+      sourceMap: item[3]
+    };
+
+    if (index !== -1) {
+      stylesInDom[index].references++;
+      stylesInDom[index].updater(obj);
+    } else {
+      stylesInDom.push({
+        identifier: identifier,
+        updater: addStyle(obj, options),
+        references: 1
+      });
+    }
+
+    identifiers.push(identifier);
+  }
+
+  return identifiers;
+}
+
+function insertStyleElement(options) {
+  var style = document.createElement('style');
+  var attributes = options.attributes || {};
+
+  if (typeof attributes.nonce === 'undefined') {
+    var nonce =  true ? __webpack_require__.nc : undefined;
+
+    if (nonce) {
+      attributes.nonce = nonce;
+    }
+  }
+
+  Object.keys(attributes).forEach(function (key) {
+    style.setAttribute(key, attributes[key]);
+  });
+
+  if (typeof options.insert === 'function') {
+    options.insert(style);
+  } else {
+    var target = getTarget(options.insert || 'head');
+
+    if (!target) {
+      throw new Error("Couldn't find a style target. This probably means that the value for the 'insert' parameter is invalid.");
+    }
+
+    target.appendChild(style);
+  }
+
+  return style;
+}
+
+function removeStyleElement(style) {
+  // istanbul ignore if
+  if (style.parentNode === null) {
+    return false;
+  }
+
+  style.parentNode.removeChild(style);
+}
+/* istanbul ignore next  */
+
+
+var replaceText = function replaceText() {
+  var textStore = [];
+  return function replace(index, replacement) {
+    textStore[index] = replacement;
+    return textStore.filter(Boolean).join('\n');
+  };
+}();
+
+function applyToSingletonTag(style, index, remove, obj) {
+  var css = remove ? '' : obj.media ? "@media ".concat(obj.media, " {").concat(obj.css, "}") : obj.css; // For old IE
+
+  /* istanbul ignore if  */
+
+  if (style.styleSheet) {
+    style.styleSheet.cssText = replaceText(index, css);
+  } else {
+    var cssNode = document.createTextNode(css);
+    var childNodes = style.childNodes;
+
+    if (childNodes[index]) {
+      style.removeChild(childNodes[index]);
+    }
+
+    if (childNodes.length) {
+      style.insertBefore(cssNode, childNodes[index]);
+    } else {
+      style.appendChild(cssNode);
+    }
+  }
+}
+
+function applyToTag(style, options, obj) {
+  var css = obj.css;
+  var media = obj.media;
+  var sourceMap = obj.sourceMap;
+
+  if (media) {
+    style.setAttribute('media', media);
+  } else {
+    style.removeAttribute('media');
+  }
+
+  if (sourceMap && btoa) {
+    css += "\n/*# sourceMappingURL=data:application/json;base64,".concat(btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))), " */");
+  } // For old IE
+
+  /* istanbul ignore if  */
+
+
+  if (style.styleSheet) {
+    style.styleSheet.cssText = css;
+  } else {
+    while (style.firstChild) {
+      style.removeChild(style.firstChild);
+    }
+
+    style.appendChild(document.createTextNode(css));
+  }
+}
+
+var singleton = null;
+var singletonCounter = 0;
+
+function addStyle(obj, options) {
+  var style;
+  var update;
+  var remove;
+
+  if (options.singleton) {
+    var styleIndex = singletonCounter++;
+    style = singleton || (singleton = insertStyleElement(options));
+    update = applyToSingletonTag.bind(null, style, styleIndex, false);
+    remove = applyToSingletonTag.bind(null, style, styleIndex, true);
+  } else {
+    style = insertStyleElement(options);
+    update = applyToTag.bind(null, style, options);
+
+    remove = function remove() {
+      removeStyleElement(style);
+    };
+  }
+
+  update(obj);
+  return function updateStyle(newObj) {
+    if (newObj) {
+      if (newObj.css === obj.css && newObj.media === obj.media && newObj.sourceMap === obj.sourceMap) {
+        return;
+      }
+
+      update(obj = newObj);
+    } else {
+      remove();
+    }
+  };
+}
+
+module.exports = function (list, options) {
+  options = options || {}; // Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
+  // tags it will allow on a page
+
+  if (!options.singleton && typeof options.singleton !== 'boolean') {
+    options.singleton = isOldIE();
+  }
+
+  list = list || [];
+  var lastIdentifiers = modulesToDom(list, options);
+  return function update(newList) {
+    newList = newList || [];
+
+    if (Object.prototype.toString.call(newList) !== '[object Array]') {
+      return;
+    }
+
+    for (var i = 0; i < lastIdentifiers.length; i++) {
+      var identifier = lastIdentifiers[i];
+      var index = getIndexByIdentifier(identifier);
+      stylesInDom[index].references--;
+    }
+
+    var newLastIdentifiers = modulesToDom(newList, options);
+
+    for (var _i = 0; _i < lastIdentifiers.length; _i++) {
+      var _identifier = lastIdentifiers[_i];
+
+      var _index = getIndexByIdentifier(_identifier);
+
+      if (stylesInDom[_index].references === 0) {
+        stylesInDom[_index].updater();
+
+        stylesInDom.splice(_index, 1);
+      }
+    }
+
+    lastIdentifiers = newLastIdentifiers;
+  };
+};
+
+/***/ }),
+
+/***/ "./static/css/main.css":
+/*!*****************************!*\
+  !*** ./static/css/main.css ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--4-1!./main.css */ "./node_modules/css-loader/dist/cjs.js?!./static/css/main.css");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+var exported = content.locals ? content.locals : {};
+
+
+
+module.exports = exported;
+
+/***/ }),
+
+/***/ "./static/css/syntax.css":
+/*!*******************************!*\
+  !*** ./static/css/syntax.css ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--4-1!./syntax.css */ "./node_modules/css-loader/dist/cjs.js?!./static/css/syntax.css");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+var exported = content.locals ? content.locals : {};
+
+
+
+module.exports = exported;
+
+/***/ }),
+
+/***/ "./static/src/main.js":
+/*!****************************!*\
+  !*** ./static/src/main.js ***!
+  \****************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var lunr__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lunr */ "./node_modules/lunr/lunr.js");
+/* harmony import */ var lunr__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lunr__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var mark_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! mark.js */ "./node_modules/mark.js/dist/mark.js");
+/* harmony import */ var mark_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(mark_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _css_main_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../css/main.css */ "./static/css/main.css");
+/* harmony import */ var _css_main_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_css_main_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _css_syntax_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../css/syntax.css */ "./static/css/syntax.css");
+/* harmony import */ var _css_syntax_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_css_syntax_css__WEBPACK_IMPORTED_MODULE_3__);
+
+
+
+
+
+let lunrIndex
+let lunrResult
+let pagesIndex
+
+const bigramTokeniser = (obj, metadata) => {
+  if (obj == null || obj == undefined) {
+    return []
+  }
+
+  let str = obj.toString().trim().toLowerCase()
+  let tokens = []
+
+  for (let i = 0; i <= str.length - 2; i++) {
+    let tokenMetadata = lunr__WEBPACK_IMPORTED_MODULE_0__["utils"].clone(metadata) || {}
+    tokenMetadata['position'] = [i, i + 2]
+    tokenMetadata['index'] = tokens.length
+    tokens.push(new lunr__WEBPACK_IMPORTED_MODULE_0__["Token"](str.slice(i, i + 2), tokenMetadata))
+  }
+
+  return tokens
+}
+
+const queryNgramSeparator = (query) => {
+  const str = query.toString().trim().toLowerCase()
+  const tokens = []
+
+  for (let i = 0; i <= str.length - 2; i++) {
+    tokens.push(str.slice(i, i + 2))
+  }
+
+  return tokens.join(' ')
+}
+
+const index = '../post/index.json'
+
+const initLunr = () => {
+  let request = new XMLHttpRequest()
+  request.open('GET', index, true)
+  request.onload = function () {
+    if (this.status >= 200 && this.status < 400) {
+      pagesIndex = JSON.parse(this.response)
+      lunrIndex = lunr__WEBPACK_IMPORTED_MODULE_0___default()(function () {
+        this.tokenizer = bigramTokeniser
+        this.pipeline.reset()
+        this.ref('ref')
+        this.field('title', { boost: 10 })
+        this.field('body')
+        this.metadataWhitelist = ['position']
+        pagesIndex.forEach((page) => {
+          this.add(page)
+        }, this)
+      })
+    } else {
+      console.error('Error getting Hugo index flie')
+    }
+  }
+  request.onerror = function () {
+    console.error('connection error')
+  }
+  request.send()
+}
+
+/**
+ * Searching pages using lunr
+ * @param {String} query Query string for searching
+ * @return {Object[]} Array of search results
+ */
+const search = (query) => {
+  lunrResult = lunrIndex.search(queryNgramSeparator(query))
+  return lunrResult.map((result) => {
+    return pagesIndex.filter((page) => {
+      return page.ref === result.ref
+    })[0]
+  })
+}
+
+const initUI = () => {
+  const searchBox = document.querySelector('#searchBox')
+  if (searchBox === null) {
+    return
+  }
+  searchBox.addEventListener('keyup', function (event) {
+    let searchResultsArea = document.querySelector('#searchResults')
+    let query = event.currentTarget.value
+
+    // Only trigger a search when 2 chars. at least have been provided
+    if (query.length < 2) {
+      searchResultsArea.style.display = 'none'
+      return
+    }
+
+    // Display search results
+    renderResults(search(query))
+    searchResultsArea.style.display = 'block'
+  })
+}
+
+/**
+ * Rendering search results
+ * @param {Object[]} results Array of search results
+ */
+const renderResults = (results) => {
+  const searchResults = document.querySelector('#searchResults')
+  const query = document.querySelector('#searchBox').value
+  const BODY_LENGTH = 100
+  const MAX_PAGES = 10
+
+  // Clear search result
+  while (searchResults.firstChild)
+    searchResults.removeChild(searchResults.firstChild)
+
+  // Show message when results is empty
+  if (!results.length) {
+    let resultPage = document.createElement('div')
+    resultPage.className = 'searchResultPage'
+    resultPage.innerHTML = 'No results found for query "' + query + '"'
+    searchResults.append(resultPage)
+    return
+  }
+
+  let instance = new mark_js__WEBPACK_IMPORTED_MODULE_1___default.a(document.querySelector('#searchResults'))
+  // Only show the ten first results
+  results.slice(0, MAX_PAGES).forEach((result, idx) => {
+    let resultPage = document.createElement('div')
+    resultPage.className = 'searchResultPage'
+    let metadata = lunrResult[idx].matchData.metadata
+    let matchPosition = metadata[Object.keys(metadata)[0]].body.position[0][0]
+    let bodyStartPosition =
+      matchPosition - BODY_LENGTH / 2 > 0 ? matchPosition - BODY_LENGTH / 2 : 0
+
+    let resultTitle = document.createElement('a')
+    resultTitle.className = 'searchResultTitle'
+    resultTitle.href = result.ref
+    resultTitle.innerHTML = result.title
+    resultPage.append(resultTitle)
+
+    let resultBody = document.createElement('div')
+    resultBody.className = 'searchResultBody'
+    resultBody.innerHTML = result.body.substr(bodyStartPosition, BODY_LENGTH)
+    resultPage.append(resultBody)
+    searchResults.append(resultPage)
+
+    instance.mark(query)
+  })
+}
+
+initLunr()
+initUI()
+
+
+/***/ }),
+
+/***/ "./static/src/theme.js":
+/*!*****************************!*\
+  !*** ./static/src/theme.js ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+window.onload = function () {
+  var toggle = document.getElementById('dark-mode-toggle')
+  var darkTheme = document.getElementById('dark-mode-theme')
+
+  if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    setTheme(localStorage.getItem('dark-mode-storage') || 'dark')
+  } else {
+    setTheme(localStorage.getItem('dark-mode-storage') || 'light')
+  }
+
+  toggle.addEventListener('click', () => {
+    if (toggle.className === 'fas fa-moon') {
+      setTheme('dark')
+    } else if (toggle.className === 'fas fa-sun') {
+      setTheme('light')
+    }
+  })
+
+  function setTheme(mode) {
+    localStorage.setItem('dark-mode-storage', mode)
+    if (mode === 'dark') {
+      darkTheme.disabled = false
+      toggle.className = 'fas fa-sun'
+    } else if (mode === 'light') {
+      darkTheme.disabled = true
+      toggle.className = 'fas fa-moon'
+    }
+  }
+}
+
+
+/***/ }),
+
+/***/ 0:
+/*!********************************************************!*\
+  !*** multi ./static/src/main.js ./static/src/theme.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! ./static/src/main.js */"./static/src/main.js");
+module.exports = __webpack_require__(/*! ./static/src/theme.js */"./static/src/theme.js");
+
+
+/***/ })
+
+/******/ });
+//# sourceMappingURL=bundle.js.map
