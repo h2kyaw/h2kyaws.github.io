@@ -1,0 +1,33 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>General on K&#39;s V/Blog</title>
+		<link>https://h2kyaw.github.io/categories/general/</link>
+		<description>Recent content in General </description>
+		<generator>Hugo -- gohugo.io</generator>
+		
+  		<language>en</language>
+		
+		<managingEditor>Page(/categories/general)</managingEditor>
+    	
+  		<lastBuildDate>Wed, 10 Feb 2021 00:00:00 +0000</lastBuildDate>
+		
+		<atom:link href="/categories/general/" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>Data Hack Warp&#43; 1.1.1.1</title>
+			<link>https://h2kyaw.github.io/2021/data-hack-wrap-1-1-1-1/</link>
+			<pubDate>Wed, 10 Feb 2021 16:35:04 +0630</pubDate>
+			<guid>https://h2kyaw.github.io/2021/data-hack-wrap-1-1-1-1/</guid>
+			<description>&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Virtual_private_network&#34;&gt;Virtual private network&lt;/a&gt; အကြောင်းကိုကျွန်တော်တို့ သုံးဖူးကြသလို တော်တော်များများလဲ ကြားဖူးကြမှာပဲဖြစ်ပါတယ်။ ၂၀၂၁ ရဲ့ ဖေဖော်ဝါရီလထဲမှာတော့ တော်တော်များများကို အသုံးပြုနေကြတာပဲဖြစ်ပါတယ်။ &lt;a href=&#34;https://en.wikipedia.org/wiki/Virtual_private_network&#34;&gt;VPN&lt;/a&gt; တွေထဲကတစ်ခုဖြစ်တဲ့ 1.1.1.1 ဆိုတဲ့ကောင်လေးကို Data တွေကို Share မလုပ်ပါပဲ ဘယ်လို တိုးလို့ရမလဲဆိုတာကို မျှဝေပေးသွားမှာပဲဖြစ်ပါတယ်။&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
+			<title>Personal Website is UP Again!</title>
+			<link>https://h2kyaw.github.io/2021/personal-website-is-up-again/</link>
+			<pubDate>Wed, 10 Feb 2021 00:00:00 +0000</pubDate>
+			<guid>https://h2kyaw.github.io/2021/personal-website-is-up-again/</guid>
+			<description>&lt;p&gt;အရင်တုန်းက ရေးခဲ့ဖူးတဲ့ Website တွေ ဘာတွေရှိပေမယ့် ဒါကိုတော့ Personal အတွက် သီးသန့်နဲ့ ကိုယ်ထင်တာတွေကို ထိုင်ရေးဖို့အတွက် လုပ်ဖြစ်သွားတယ်လို့ဆိုရမယ်။ အရင် Website Data တွေ ရှိပေမယ့် အသစ်ကအစ ပြန်စရင်း ကိုယ်တွေ့တာလေးတွေ ရေးချင်တာလေးတွေကိုရေးမယ်လို့တော့ စိတ်ကူးထားတာပဲ&lt;/p&gt;</description>
+		</item>
+      	
+	</channel>
+</rss>
