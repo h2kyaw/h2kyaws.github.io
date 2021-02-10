@@ -1,5 +1,5 @@
 baseurl = "https://example.com/"
-title = "Myanmar Wordpress Guides"
+title = "Personal V/blog"
 theme = "harbor"
 paginate = 3
 languageCode = "en"
@@ -64,8 +64,13 @@ disqusShortName = "yourdisqusshortname"
   url="link to social media"
   icon="A icon from https://fontawesome.com/"
 
+[[params.social]]
+  name="Facebook"
+  url="https://www.facebook.com/heinhtetkyaw.blog"
+  icon="fab fa-facebook"
+
 [params.logo]
-  url = "icon.svg" # static/images/icon.png
+  url = "icon.png" # static/images/icon.png
   width = 50
   height = 50
   alt = "Logo"
