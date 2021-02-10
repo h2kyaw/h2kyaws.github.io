@@ -69,6 +69,16 @@ disqusShortName = "yourdisqusshortname"
   url="https://www.facebook.com/heinhtetkyaw.blog"
   icon="fab fa-facebook"
 
+[[params.social]]
+  name="Facebook"
+  url="https://twitter.com/HeinHtetKyaw_"
+  icon="fab fa-twitter"
+
+[[params.social]]
+  name="Facebook"
+  url="https://www.youtube.com/channel/UCsxb9mQZlUeNuLZvF_ctyIA"
+  icon="fab fa-youtube"
+
 [params.logo]
   url = "icon.png" # static/images/icon.png
   width = 50
