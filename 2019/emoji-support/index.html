@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-<title>shortcodes</title>
+<title>Emoji Support</title>
 
 
   
@@ -18,8 +18,8 @@
   title="Personal V/blog"
 />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="shortcodes"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="Emoji Support"/>
+<meta name="twitter:description" content="Guide to emoji usage in Hugo"/>
 
 
 
@@ -114,12 +114,17 @@
 
     <div class="intro-header">
       <div class="container">
-        <div class="tags-heading">
+        <div class="post-heading">
           
             <h1>
-              shortcodes
+              Emoji Support
             </h1>
           
+          
+            <span class="meta-post">
+  <em class="fa fa-calendar-alt"></em>&nbsp;Mar 5, 2019
+  
+</span>
           
         </div>
       </div>
@@ -129,35 +134,48 @@
 
     
   <div class="container" role="main">
-    <div class="posts-list">
+    <article class="article" class="blog-post">
       
-        
-      
+  <p>Emoji can be enabled in a Hugo project in a number of ways.</p>
+<p>The <a href="https://gohugo.io/functions/emojify/"><code>emojify</code></a> function can be called directly in templates or <a href="https://gohugo.io/templates/shortcode-templates/#inline-shortcodes">Inline Shortcodes</a>.</p>
+<p>To enable emoji globally, set <code>enableEmoji</code> to <code>true</code> in your site’s <a href="https://gohugo.io/getting-started/configuration/">configuration</a> and then you can type emoji shorthand codes directly in content files; e.g.</p>
+<!-- raw HTML omitted -->
+<p>The <a href="http://www.emoji-cheat-sheet.com/">Emoji cheat sheet</a> is a useful reference for emoji shorthand codes.</p>
+<hr>
+<p><strong>N.B.</strong> The above steps enable Unicode Standard emoji characters and sequences in Hugo, however the rendering of these glyphs depends on the browser and the platform. To style the emoji you can either use a third party emoji font or a font stack; e.g.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">.emoji {
+font-family: Apple Color Emoji,Segoe UI Emoji,NotoColorEmoji,Segoe UI Symbol,Android Emoji,EmojiSymbols;
+}</code></pre></div>
+
+<style>
+.emojify {
+	font-family: Apple Color Emoji,Segoe UI Emoji,NotoColorEmoji,Segoe UI Symbol,Android Emoji,EmojiSymbols;
+	font-size: 2rem;
+	vertical-align: middle;
+}
+@media screen and (max-width:650px) {
+    .nowrap {
+	display: block;
+	margin: 25px 0;
+}
+}
+</style>
+
+
 
       
-        <article class="post-preview">
-  <a href="https://example.org/2019/rich-content/">
-    <h2 class="post-title">Rich Content</h2>
-  </a>
-  <div class="post-entry">
+        <div class="blog-tags">
+          
+            <a href="https://example.org/tags/emoji/">emoji</a
+            >&nbsp;
+          
+        </div>
+      
+    </article>
     
-      <p><p>Hugo ships with several <a href="https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes">Built-in Shortcodes</a> for rich content, along with a <a href="https://gohugo.io/about/hugo-and-gdpr/">Privacy Config</a> and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.</p></p>
-      <a href="https://example.org/2019/rich-content/" class="post-read-more"
-        >Read More</a
-      >
     
-  </div>
-
-  <div class="postmeta">
-    <span class="meta-post">
-  <em class="fa fa-calendar-alt"></em>&nbsp;Mar 10, 2019
-  
-</span>
-  </div>
-</article>
-
       
-    </div>
+
     
   </div>
 
