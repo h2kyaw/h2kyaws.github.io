@@ -1,26 +1,22 @@
-baseurl = "https://example.com/"
+baseURL = "https://example.org/"
 title = "Personal V/blog"
-theme = "harbor"
-paginate = 3
+author = "Hein Htet Kyaw"
+paginate = 5
 languageCode = "en"
 DefaultContentLanguage = "en"
 enableInlineShortcodes = true
 footnoteReturnLinkContents = "^"
-
-# Optional
-# If you use googleAnalytics, you set top-level options in config.toml to the beginning of the config file like other top-level options.
-googleAnalytics = "UA-XXXXXXXX-XX"
-# and disqus too.
-disqusShortName = "yourdisqusshortname"
-
-[params.goatcounter]
-  domain="stats.domain.com"
+theme = "harbor"
 
 [Author]
-  name = "Hein Htet Kyaw"
+  author = "Hein Htet Kyaw"
+
+[permalinks]
+	post = "/:filename/"
+	page = "/:filename/"
 
 [outputs]
-  section = ["JSON", "HTML"]
+    section = ["JSON", "HTML", "RSS"]
 
 [[params.nav]]
   identifier = "about"
@@ -44,43 +40,45 @@ disqusShortName = "yourdisqusshortname"
   weight = 3
 
 [[params.nav]]
-  identifier = "search"
-  name = "Search"
-  icon = "fas fa-search fa-lg"
-  url = "search"
-  weight = 3
-
-[[params.nav]]
   identifier = "archives"
   name = "Archives"
   icon = "fas fa-archive fa-lg"
   url = "archives"
   weight = 3
 
-# copy paste this block and change for each social media to add how many ever social media
-# acounts/links you want
-[[params.social]]
-  name="name of social media"
-  url="link to social media"
-  icon="A icon from https://fontawesome.com/"
+[[params.nav]]
+  identifier = "search"
+  name = "Search"
+  icon = "fas fa-search fa-lg"
+  url = "search"
+  weight = 3
 
 [[params.social]]
-  name="Facebook"
+  name= "Facebook"
   url="https://www.facebook.com/heinhtetkyaw.blog"
   icon="fab fa-facebook"
 
 [[params.social]]
-  name="Facebook"
-  url="https://twitter.com/HeinHtetKyaw_"
+  name= "Twitter"
+  url="https://www.twitter.com/HeinHtetKyaw_"
   icon="fab fa-twitter"
 
 [[params.social]]
-  name="Facebook"
+  name= "Twitter"
   url="https://www.youtube.com/channel/UCsxb9mQZlUeNuLZvF_ctyIA"
   icon="fab fa-youtube"
 
-[params.logo]
-  url = "icon.png" # static/images/icon.png
-  width = 50
-  height = 50
-  alt = "Logo"
+[[params.social]]
+  name= "Twitter"
+  url="https://www.linkedin.com/in/h2kyaw/"
+  icon="fab fa-linkedin"
+
+[params]
+  mainSections = ["post"]
+  favicon = "favicon.ico"
+
+  [params.logo]
+    url = "icon.png"
+    width = 50
+    height = 50
+    alt = "Logo"
