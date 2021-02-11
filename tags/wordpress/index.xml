@@ -1,17 +1,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>K&#39;s V/Blog on K&#39;s V/Blog</title>
-		<link>https://h2kyaw.github.io/</link>
-		<description>Recent content in K&#39;s V/Blog </description>
+		<title>wordpress on K&#39;s V/Blog</title>
+		<link>https://h2kyaw.github.io/tags/wordpress/</link>
+		<description>Recent content in wordpress </description>
 		<generator>Hugo -- gohugo.io</generator>
 		
   		<language>en</language>
 		
-		<managingEditor>Page(&#34;K&#39;s V/Blog&#34;)</managingEditor>
+		<managingEditor>Page(/tags/wordpress)</managingEditor>
     	
   		<lastBuildDate>Thu, 11 Feb 2021 20:05:29 +0630</lastBuildDate>
 		
-		<atom:link href="/" rel="self" type="application/rss+xml" />
+		<atom:link href="/tags/wordpress/" rel="self" type="application/rss+xml" />
 		
 		<item>
 			<title>Woocommerce States Places Dropdown</title>
