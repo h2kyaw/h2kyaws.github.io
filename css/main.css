@@ -3,6 +3,23 @@ html {
   background-color: #FFFFFF;
 }
 
+::-webkit-scrollbar {
+    width: 2px;
+}
+::-webkit-scrollbar-thumb {
+    background: #000;
+}
+::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+::selection {
+    background: rgba(0,0,0,.3);
+}
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
 body {
   margin: 0;
   padding: 0;
