@@ -1,17 +1,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>wordpress on K&#39;s V/Blog</title>
-		<link>https://h2kyaw.github.io/tags/wordpress/</link>
-		<description>Recent content in wordpress </description>
+		<title>Windows on K&#39;s V/Blog</title>
+		<link>https://h2kyaw.github.io/tags/windows/</link>
+		<description>Recent content in Windows </description>
 		<generator>Hugo -- gohugo.io</generator>
 		
   		<language>my</language>
 		
-		<managingEditor>Page(/tags/wordpress)</managingEditor>
+		<managingEditor>Page(/tags/windows)</managingEditor>
     	
-  		<lastBuildDate>Thu, 11 Feb 2021 20:05:29 +0630</lastBuildDate>
+  		<lastBuildDate>Fri, 12 Feb 2021 22:08:58 +0630</lastBuildDate>
 		
-		<atom:link href="/tags/wordpress/" rel="self" type="application/rss+xml" />
+		<atom:link href="/tags/windows/" rel="self" type="application/rss+xml" />
 		
 		<item>
 			<title>Activate Windows 10 Pro Permanently</title>
