@@ -1,17 +1,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>Windows on K&#39;s V/Blog</title>
-		<link>https://h2kyaw.github.io/categories/windows/</link>
-		<description>Recent content in Windows </description>
+		<title>Office 365 on K&#39;s V/Blog</title>
+		<link>https://h2kyaw.github.io/categories/office-365/</link>
+		<description>Recent content in Office 365 </description>
 		<generator>Hugo -- gohugo.io</generator>
 		
   		<language>my</language>
 		
-		<managingEditor>Page(/categories/windows)</managingEditor>
+		<managingEditor>Page(/categories/office-365)</managingEditor>
     	
-  		<lastBuildDate>Fri, 12 Feb 2021 22:08:58 +0630</lastBuildDate>
+  		<lastBuildDate>Sat, 13 Feb 2021 21:41:16 +0630</lastBuildDate>
 		
-		<atom:link href="/categories/windows/" rel="self" type="application/rss+xml" />
+		<atom:link href="/categories/office-365/" rel="self" type="application/rss+xml" />
 		
 		<item>
 			<title>Activate Office With KMS License Key</title>
