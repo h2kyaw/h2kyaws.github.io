@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+
 html {
     background-color: #FFFFFF;
 }
@@ -496,27 +497,42 @@ footer em {
     cursor: pointer;
 }
 
+footer hr {
+    width: 4rem;
+    margin: 0 .7rem;
+    margin-bottom: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    border-bottom: 2px solid hsl(229deg 88% 63%);
+}
+
 @media (min-width: 600px) {
     .header {
         margin: auto;
     }
+
     .nav-links {
         font-size: 18px;
     }
+
     .nav-links li {
         margin: 0 0 0 30px;
     }
+
     .container[role=main] {
         font-size: 16px;
         line-height: 1.8;
         margin: 40px auto;
     }
+
     .blog-tags {
         margin: 20px 0;
     }
+
     .pager li a {
         padding: 10px 20px;
     }
+
     .pager.blog-pager {
         margin-top: 40px;
     }
@@ -536,4 +552,47 @@ img[alt$="><"] {
     height: auto;
     margin: auto;
     float: none !important;
+}
+
+@keyframes fa-blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.fa-blink {
+    -webkit-animation: fa-blink 3s linear infinite;
+    -moz-animation: fa-blink 3s linear infinite;
+    -ms-animation: fa-blink 3s linear infinite;
+    -o-animation: fa-blink 3s linear infinite;
+    animation: fa-blink 3s linear infinite;
+}
+
+.progress {
+    display: flex;
+    height: 1rem;
+    overflow: hidden;
+    font-size: 0.75rem;
+    background-color: #e9ecef;
+    border-radius: 0.25rem;
+}
+
+.progress-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #0d6efd;
+    transition: width 0.6s ease;
 }
