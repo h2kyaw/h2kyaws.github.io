@@ -1,0 +1,172 @@
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4c6cf4;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+::selection {
+  background: rgba(0, 0, 0, .3);
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+blockquote {
+  position: relative;
+  padding-left: 30px !important;
+  font-weight: 900;
+  color: #2560ff !important;
+  padding: 1em !important;
+  margin: 1em;
+  border: none !important;
+  max-width: 33em;
+  font-size: 24px;
+}
+blockquote:before {
+  content: "❝";
+  font-family: serif;
+  position: absolute;
+  right: 100%;
+  font-size: 120px;
+  line-height: 0px;
+  top: 50px;
+  color: #78e08f;
+}
+
+img[alt$=">"] {
+  float: right;
+}
+
+img[alt$="<"] {
+  float: left;
+}
+
+img[alt$="><"] {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  float: none !important;
+}
+
+footer hr {
+  width: 7rem;
+  margin: 0 .7rem;
+  margin-bottom: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  border-bottom: 2px solid hsl(229deg 88% 63%);
+}
+
+@keyframes fa-blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.fa-blink {
+  -webkit-animation: fa-blink 3s linear infinite;
+  -moz-animation: fa-blink 3s linear infinite;
+  -ms-animation: fa-blink 3s linear infinite;
+  -o-animation: fa-blink 3s linear infinite;
+  animation: fa-blink 3s linear infinite;
+}
+
+.progress-bar {
+  width: 100%;
+  padding: 0px;
+  border-radius: 3px;
+  background-color: #f9f9f9;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);
+}
+
+.progress-frame {
+  width: 50%;
+  float: right;
+}
+
+.progress-bar-fill {
+  height: 15px;
+  display: block;
+  border-radius: 3px;
+  background-color: #4e6cf4;
+  transition: width 500ms ease-in-out;
+}
+
+.skills>ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.skills>ul>li {
+  position: relative;
+  padding-left: 25px;
+}
+
+.skills>ul>li:before {
+  content: '';
+  top: 0;
+  left: 0;
+  font-weight: 900;
+  position: absolute;
+  font-family: "Font Awesome 5 Brands";
+}
+
+.skills>ul>li:nth-child(1)::before {
+  content: '\f13b';
+}
+
+.skills>ul>li:nth-child(2)::before {
+  content: '\f13c';
+}
+
+.skills>ul>li:nth-child(3)::before {
+  content: '\f457';
+}
+
+.skills>ul>li:nth-child(4)::before {
+  content: '\f3bd';
+}
+
+.skills>ul>li:nth-child(5)::before {
+  content: '\f09b';
+}
+
+.skills>ul>li:nth-child(6)::before {
+  content: '\f19a';
+}
+
+.languages>ul {
+  list-style-type: none;
+}
+
+
+img.emoji {
+  height: 1em;
+  width: 1em !important;
+  margin: 0 .05em 0 .1em;
+  vertical-align: -0.1em;
+}
+
+.meta-post a:after {
+  content: ", ";
+}
+.meta-post a:last-child:after {
+  content: "";
+}
