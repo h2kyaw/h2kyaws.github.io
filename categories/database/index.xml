@@ -1,0 +1,97 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Database on K&#39;s V/Blog</title>
+		<link>https://h2kyaw.github.io/categories/database/</link>
+		<description>Recent content in Database </description>
+		<generator>Hugo -- gohugo.io</generator>
+		
+  		<language>my</language>
+		
+		<managingEditor>Page(/categories/database)</managingEditor>
+    	
+  		<lastBuildDate>Fri, 26 Nov 2021 03:44:49 +0630</lastBuildDate>
+		
+		<atom:link href="/categories/database/" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>Playing With Database - 1</title>
+			<link>https://h2kyaw.github.io/post/2021/playing-with-database-1/</link>
+			<pubDate>Fri, 26 Nov 2021 03:44:49 +0630</pubDate>
+			<guid>https://h2kyaw.github.io/post/2021/playing-with-database-1/</guid>
+			<description>&lt;p&gt;အလုပ်လုပ်ရင်းနဲ့ တွေ့ကြုံဖြေရှင်းနေရတာနဲ့တင် Blog တောင်မရေးဖြစ်တာ တော်တော်လေးကို ကြာခဲ့ပါပြီ။ ဒီနေ့တော့ ရေးချင်တာရော နောက်ကြုံတွေ့ရရင် ပြန်ရှာလို့ရနိုင်ဖို့အတွက်ရော ရေးသားဖြစ်လိုက်ပါတော့တယ်။&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
+			<title>Schedule Shutdown</title>
+			<link>https://h2kyaw.github.io/post/2021/schedule-shutdown/</link>
+			<pubDate>Fri, 20 Aug 2021 20:05:01 +0630</pubDate>
+			<guid>https://h2kyaw.github.io/post/2021/schedule-shutdown/</guid>
+			<description>&lt;p&gt;ကိုယ်က အပြင်သွားချင်တာပဲဖြစ်ဖြစ် Download လုပ်ထားတယ်။ အလုပ်တစ်ခုခုလုပ်ထားတယ်ဆိုရင်ပဲဖြစ်ဖြစ် ကွန်ပျူတာကို ပိတ်တော့ ပိတ်ချင်တယ် အိပ်နေတုန်း အပြင်ရောက်နေတုန်း တစ်နေရာရာကို ရောက်နေတုန်း လှမ်းပိတ်ဖို့ဆိုတာ အဆင်မပြေတဲ့အလုပ်ကြီး တစ်ခုလိုပဲ။ ဘာလုပ်သင့်လဲဆိုရင်တော့ ကျွန်တော်တို့တွေ ကွန်ပျူတာကို Schedule လုပ်ပြီး Shutdown သင့်တာကြောင့် ဟိုရှာဒီမွှေရင်း လိုက်ရှာကြည့်ပြီးတဲ့နောက်မှာတော့ ဘယ်လိုလုပ်ရမလဲဆိုတာကိုတွေ့ပြီး ဒီလိုလုပ်ဖို့အတွက်ကတော့ နည်းလမ်း ၃ မျိုးရှိပါတယ်။ တစ်ဆင့်ချင်းစီ သေချာရှင်းပြပေးပါ့မယ်။&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
+			<title>Spotify Downloader</title>
+			<link>https://h2kyaw.github.io/post/2021/spotify-downloader/</link>
+			<pubDate>Sun, 15 Aug 2021 14:39:23 +0630</pubDate>
+			<guid>https://h2kyaw.github.io/post/2021/spotify-downloader/</guid>
+			<description>&lt;p&gt;ဒီရက်ပိုင်းက စရတဲ့ Blog တွေကများနေပြီ မတတ်နိုင်ဘူး။ ဒီ Content ကိုလဲ ဒီရက်ပိုင်းက စရမှာပဲဗျ။ ဒီရက်ပိုင်းမှာ အလုပ်လုပ်မယ် ဆိုပြီးသီချင်းနားထောင်တဲ့အခါမှာ Rock နဲ့ Alternative ဘက်ကို နားထောင်ဖြစ်ပေမယ့်လို့ အရမ်းနားထောင်ဖြစ်တဲ့အထဲမှာမပါတာကြောင့်ကော အာရုံမရတာကောကြောင့် Lofi လေးတွေ နားထောင်ရင်း အလုပ်လုပ်ချင်တာရယ်။ အေးအေးချမ်းချမ်းလေးမှာ Lofi Beat လေးတွေ နားထောင်ချင်တာကြောင့် Spotify က သီချင်းတွေ နားထောင်ရင်းလုပ်မယ်လို့ စဉ်းစားဖြစ်ခဲ့ပါသေးတယ်။&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
+			<title>Apply Hugo Module Twemoji</title>
+			<link>https://h2kyaw.github.io/post/2021/apply-hugo-module-twemoji/</link>
+			<pubDate>Sun, 01 Aug 2021 16:52:52 +0630</pubDate>
+			<guid>https://h2kyaw.github.io/post/2021/apply-hugo-module-twemoji/</guid>
+			<description>&lt;p&gt;Emoji ထဲမှာတော့ Saumsung နဲ့ iPhone က Emoji တွေကို သဘောကျပေမယ့် လိုက်ရှာကြည့်တဲ့အခါမှာတော့ Twitter က Emoji လေးတွေကလဲ တော်တော်လှတဲ့အထဲပါတာဖြစ်ပြီး Twiiter Emjoi တွေကိုတော့ Open Source သဘောမျိုးနဲ့ Share ပေးထားတာတွေ့တာကြောင့် အခုရက်ပိုင်း Website တွေထဲ ထည့်ထည့်သုံးဖြစ်ရင်း အခြားအရာတွေမှာလဲ ထည့်သုံးမယ်လို့ တွေးထားတာကြောင့် လိုက်ရှာရင်း။ ဒီ Site က &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt; နဲ့ရေးထားတာဖြစ်တာကြောင့် Hugo အတွက်ပါ လိုက်ရှာ ဖြစ်ခဲ့တော့တယ်။&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
+			<title>Where I Am?</title>
+			<link>https://h2kyaw.github.io/post/2021/where-i-am/</link>
+			<pubDate>Tue, 06 Jul 2021 04:47:31 +0630</pubDate>
+			<guid>https://h2kyaw.github.io/post/2021/where-i-am/</guid>
+			<description>&lt;p&gt;ဘာလုပ်သင့်သလဲ၊ ဘာလုပ်ရမလဲ၊ ဘာကိုဆက်လုပ်ရင် ကောင်းမလဲ လမ်းပျောက်နေပြီ &amp;hellip; လမ်းပြပေးကြပါလို့ ကျွန်တော်တို့ အမြဲလိုလိုဖြစ်တတ်ပြီး Immature Age မှာ ဖြစ်တတ်တဲ့အရာလေးအကြောင်းကို ရေးဖို့ဖြစ်လာပြန်ပါသေးတယ်။ အခြားကြောင့်တော့မဟုတ်ဘူး၊ ကျွန်တော်လဲ ဖြစ်ခဲ့ဖူးတဲ့အကြောင်းကို မှတ်စုအနေနဲ့ ရေးချင်စိတ်ဖြစ်လာတာနဲ့ပဲ ရေးဖို့ဆုံးဖြတ်ဖြစ်ခဲ့ပါတော့တယ်။&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
+			<title>Unlock Ooredoo Broadband B310s-22</title>
+			<link>https://h2kyaw.github.io/post/2021/unlock-ooredoo-broadband-b310s-22/</link>
+			<pubDate>Tue, 18 May 2021 22:45:31 +0630</pubDate>
+			<guid>https://h2kyaw.github.io/post/2021/unlock-ooredoo-broadband-b310s-22/</guid>
+			<description>&lt;p&gt;ရောက်နေတဲ့နေရာမှာက လိုင်းမကောင်းတာနဲ့ Supernet ဝယ်တုန်းက ပါလာတဲ့ 4G Router လေး ကို Other SIM ထည့်စမ်းလိုက်တဲ့အခါမှာတော့ SIM Lock ဖြစ်ပြီး လိုင်းမတက်တာနဲ့ ကြုံပြီးတဲ့နောက်မှာတော့ ဟိုရှာဒီရှာဇာတ်လမ်းကြီး ပိတ်ကားပေါ်ရောက်ရှိသွားခဲ့ပါတော့တယ်။ ဇာတ်ကားလို့ပြောလိုက်ရင် Spoil တာလို့ ပြေးမြင်နေကြပါလိမ့်မယ်။ တကယ်တော့ Spoil တာမဟုတ်ပါဘူး ကျွန်တော် စမ်းခဲ့လို့ အဆင်ပြေတာလေးအကြောင်း မှတ်စုလေးတစ်ပုဒ်အဖြစ် ချရေးချင်လို့ပါ။&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
+			<title>Write Protected? I Choice Network Sharing</title>
+			<link>https://h2kyaw.github.io/post/2021/write-protected-i-choice-network-sharing/</link>
+			<pubDate>Mon, 19 Apr 2021 22:47:24 +0630</pubDate>
+			<guid>https://h2kyaw.github.io/post/2021/write-protected-i-choice-network-sharing/</guid>
+			<description>&lt;p&gt;အင်တာနက်တွေ မရတဲ့အခုလိုအချိန်မှာ ဟိုလူအကူအညီတောင်းရ ဒီလူအကူအညီတောင်းရနဲ့ တော်တော်တော့ တိုင်ပတ်တဲ့အချိန်၊ Offline ဖြစ်နေတာ ကိစ္စမရှိပေမယ့် အချို့သော အရာလေးတွေ လိုအပ်တာတွေကို Download လုပ်ဖို့အတွက်ကတော့ အင်တာနက်ကတော့ လိုအပ်လာပြီ။ ဒီလိုအဆင်မပြေတဲ့အချိန် အဆင်ပြေပြီး သုံးလို့ရတဲ့လူတွေကို Download လုပ်ခိုင်းရင်းနဲ့ သူတို့ ပြန်ပေးတဲ့အခါမှာ Company Computer ဖြစ်တဲ့အတွက်ကြောင့် Company Policy တွေအရ Data တွေ ကူးယူခွင့်ကို ပိတ်ထားတတ်ကြတယ်။ ဒါလဲ သိပ်ပြီး ကိစ္စတော့မရှိလှပါဘူး။&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
+			<title>Useful Browser Tools</title>
+			<link>https://h2kyaw.github.io/post/2021/useful-browser-tools/</link>
+			<pubDate>Mon, 01 Mar 2021 19:36:56 +0630</pubDate>
+			<guid>https://h2kyaw.github.io/post/2021/useful-browser-tools/</guid>
+			<description>&lt;p&gt;Browser တွေဖြစ်တဲ့ Google Chrome, Mozilla Firefox, Opera နှင့်အခြားသော Browser တွေ တော်တော်များများ သုံးနေကြပါတယ်။ အဲ့ဒီ ထဲမှာမှ အသုံးဝင်တဲ့ Tool လေးတွေအကြောင်းနဲ့ အခြားသော Third Party Tool တွေ ထည့်သွင်းစရာမလိုတဲ့အရာတွေ အကြောင်းလေးပေါ့။&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
+			<title>Ripping Disk Files</title>
+			<link>https://h2kyaw.github.io/post/2021/ripping-disk-files/</link>
+			<pubDate>Sun, 07 Feb 2021 04:19:50 +0630</pubDate>
+			<guid>https://h2kyaw.github.io/post/2021/ripping-disk-files/</guid>
+			<description>&lt;p&gt;အချို့တော်တော်များများသော Audio Disk တွေမှာ ကူးလို့မရအောင် လုပ်ထားတဲ့ဟာတွေရှိတယ်။ Track Name မှာ Track01, Track02, Type မှာ Audio CD Track ဖြစ်ပြီး Size ကိုတော့ 1 KB ဆိုပြီး Disk ထည့်လိုက်တဲ့အခါမှာ တွေ့ပါလိမ့်မယ်။ များသောအားဖြင့် အဲ့လို File တွေက ကော်ပီ ကူးယူလို့မရအောင် Encoding နည်းလမ်းတစ်ခုခုနဲ့ လုပ်ထားတာပဲဖြစ်ပါတယ်။ အဲ့ဒါမှလဲ End User တွေ လွယ်လင့်တကူ မကူးယူနိုင်တဲ့အတွက် အခွေတွေကို ဝယ်ပြီး နားထောင်ဖြစ်အောင်လုပ်ကြတာမျိုးထင်တယ်။&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
+			<title>Generals Zero Hour Crash Fix</title>
+			<link>https://h2kyaw.github.io/post/2021/generals-zero-hour-crash-fix/</link>
+			<pubDate>Sat, 06 Feb 2021 19:22:51 +0630</pubDate>
+			<guid>https://h2kyaw.github.io/post/2021/generals-zero-hour-crash-fix/</guid>
+			<description>&lt;p&gt;ဒီရက်ပိုင်း စိတ်ထဲမှာ ပစ်ချင် တိုက်ချင်တဲ့ စိတ်ဖြစ်နေတာနဲ့ပဲ ဟိုးအရင်က ဆော့နေကျဂိမ်းလေးကိုသွားသတိရခဲ့မိသေးတယ်။ အဲ့ဒီ ဂိမ်းလေးကတော့ Command &amp;amp; Conquer Generals Zero Hour ဆိုတာလေးပါပဲ။ အင်တာနက် ဆိုင်ကိုသွားပြီး သူငယ်ချင်းတွေနဲ့ ဆော့ခဲ့ရတဲ့အချိန်တွေကိုလဲ သတိရတာနဲ့ ပြန်ဆော့ဖြစ်ရင်းနဲ့ Windows 10 မှာ အဆင်မပြေတာလေးတွေ တွေ့တာနဲ့ ရှာရင်း ဖွေရင်း ရှာဖွေရင်း အဆင်ပြေသွားတာလေးကို နည်းနည်း ပြန်မျှပေးချင်လို့ပါ။ အဆင်ပြေလှမဟုတ်ပေမယ့် ဆော့တဲ့အချိန်တွေကတော့အရင်ကလောက်မထစ်တော့တာနဲ့ပဲ ဒါလေးကိုလဲ မှတ်စုအဖြစ် သိမ်းဖို့ စဉ်းစားမိရင်း ရေးပေးပါအုံးမယ်။&lt;/p&gt;</description>
+		</item>
+      	
+	</channel>
+</rss>

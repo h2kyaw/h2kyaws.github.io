@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#" lang="my">
+  <head itemscope itemtype="https://schema.org/WebPage">  
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Playing With Database - 1</title>
+    <meta name="description" content="You can read Kiddo&#39;s Blogs again, Extra you can watch Video Tutorials later too." />
+
+  
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138756551-3"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-138756551-3');
+  </script>
+  
+
+
+
+
+<link rel="alternate" type="application/rss+xml" href="https://h2kyaw.github.io/index.xml" title="K&#39;s V/Blog"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://h2kyaw.github.io/images/og.jpg"/>
+
+<meta name="twitter:title" content="Playing With Database - 1"/>
+<meta name="twitter:description" content="တွေ့ရကြုံရ ဖြေရှင်းရင်းနဲ့ ဖြစ်ခဲ့တဲ့ Database အတွေ့အကြုံများအကြောင်းထဲကမှ အကြောင်းအရာ နံပါတ် (၁)"/>
+
+
+
+<link rel="stylesheet" href="https://h2kyaw.github.io/fontawesome/css/all.min.css" />
+
+  <link rel="stylesheet" href="https://h2kyaw.github.io/css/custom.css" />
+
+<link id="dark-mode-theme" rel="stylesheet" href="https://h2kyaw.github.io/css/dark.css"/>
+
+<script>
+  var darkTheme = document.getElementById('dark-mode-theme')
+  var storedTheme = localStorage.getItem('dark-mode-storage')
+  if (storedTheme === 'dark') {
+    darkTheme.disabled = false
+  } else if (storedTheme === 'light') {
+    darkTheme.disabled = true
+  }
+</script>
+
+<script src="https://h2kyaw.github.io/js/main.bundle.js"></script>
+<script src="https://h2kyaw.github.io/js/instantpage.min.js" type="module" defer></script>
+<meta name="generator" content="Hugo 0.86.0" />
+    
+<title itemprop="name">Playing With Database - 1 | K&#39;s V/Blog</title>
+<meta property="og:title" content="Playing With Database - 1 | K&#39;s V/Blog" />
+<meta name="twitter:title" content="Playing With Database - 1 | K&#39;s V/Blog" />
+<meta itemprop="name" content="Playing With Database - 1 | K&#39;s V/Blog" />
+<meta name="application-name" content="Playing With Database - 1 | K&#39;s V/Blog" />
+<meta property="og:site_name" content="K&#39;s V/Blog" />
+
+
+<meta name="description" content="တွေ့ရကြုံရ ဖြေရှင်းရင်းနဲ့ ဖြစ်ခဲ့တဲ့ Database အတွေ့အကြုံများအကြောင်းထဲကမှ အကြောင်းအရာ နံပါတ် (၁)" />
+<meta itemprop="description" content="တွေ့ရကြုံရ ဖြေရှင်းရင်းနဲ့ ဖြစ်ခဲ့တဲ့ Database အတွေ့အကြုံများအကြောင်းထဲကမှ အကြောင်းအရာ နံပါတ် (၁)" />
+<meta property="og:description" content="တွေ့ရကြုံရ ဖြေရှင်းရင်းနဲ့ ဖြစ်ခဲ့တဲ့ Database အတွေ့အကြုံများအကြောင်းထဲကမှ အကြောင်းအရာ နံပါတ် (၁)" />
+<meta name="twitter:description" content="တွေ့ရကြုံရ ဖြေရှင်းရင်းနဲ့ ဖြစ်ခဲ့တဲ့ Database အတွေ့အကြုံများအကြောင်းထဲကမှ အကြောင်းအရာ နံပါတ် (၁)" />
+
+
+<base href="https://h2kyaw.github.io/post/2021/playing-with-database-1/">
+<link rel="canonical" href="https://h2kyaw.github.io/post/2021/playing-with-database-1/" itemprop="url" />
+<meta name="url" content="https://h2kyaw.github.io/post/2021/playing-with-database-1/" />
+<meta name="twitter:url" content="https://h2kyaw.github.io/post/2021/playing-with-database-1/" />
+<meta property="og:url" content="https://h2kyaw.github.io/post/2021/playing-with-database-1/" />
+
+
+<meta property="og:locale" content="my">
+<meta name="language" content="">
+
+
+ 
+
+  <meta itemprop="image" content="https://h2kyaw.github.io/images/runcloud_running_services.png" />
+  <meta property="og:image" content="https://h2kyaw.github.io/images/runcloud_running_services.png" />
+  <meta name="twitter:image" content="https://h2kyaw.github.io/images/runcloud_running_services.png" />
+  <meta name="twitter:image:src" content="https://h2kyaw.github.io/images/runcloud_running_services.png" />
+
+
+
+<meta property="og:updated_time" content=2021-11-26T03:44:49&#43;0630 />
+<link rel="sitemap" type="application/xml" title="Sitemap" href="https://h2kyaw.github.io/sitemap.xml" /> 
+
+
+
+
+
+
+
+
+<meta property="og:type" content="website" />
+<meta name="author" content="Hein Htet Kyaw" />
+<script defer type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "url": "https:\/\/h2kyaw.github.io\/post\/2021\/playing-with-database-1\/",
+    "sameAs": [
+      "https:\/\/facebook.com\/heinhtetkyaw.blog",
+      "https:\/\/github.com\/h2kyaw"
+    ],
+    "name": "Playing With Database - 1",
+    "logo": "https:\/\/h2kyaw.github.io\/images/icon.svg"
+  }
+</script>
+
+
+<meta name="twitter:site" content="@HeinHtetKyaw_">
+<meta name="twitter:creator" content="@HeinHtetKyaw_" />
+<meta property="fb:app_id" content="876755112896216" />
+<meta property="fb:admins" content="100063934020877" />
+
+
+
+<link rel="manifest" href="https://h2kyaw.github.io/manifest.json" />
+
+
+<meta name="theme-color" content="#4c6cf4" />
+<meta name="msapplication-TileColor" content="#4c6cf4" />
+
+<meta name="keywords" content="Technology, Tech, Block, Vlog, Video Blog, Information Technology" />
+<meta name="imagemode" content="force" />
+<meta name="coverage" content="Worldwide" />
+<meta name="distribution" content="Global" />
+<meta name="HandheldFriendly" content="True" />
+<meta name="msapplication-tap-highlight" content="no" />
+<meta name="apple-mobile-web-app-title" content="K&#39;s V/Blog" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-touch-fullscreen" content="yes" />
+
+<meta name="robots" content="index,follow" />
+<meta name="googlebot" content="index,follow" />
+
+    <base href="https://h2kyaw.github.io/post/2021/playing-with-database-1/">
+<link rel="canonical" href="https://h2kyaw.github.io/post/2021/playing-with-database-1/" itemprop="url" />
+<meta name="url" content="https://h2kyaw.github.io/post/2021/playing-with-database-1/" />
+<meta name="twitter:url" content="https://h2kyaw.github.io/post/2021/playing-with-database-1/" />
+<meta property="og:url" content="https://h2kyaw.github.io/post/2021/playing-with-database-1/" />
+
+  </head>
+  <body>
+    
+  
+
+
+
+
+  <header>
+    <nav class="navbar">
+  <div class="nav">
+    
+      <a href="https://h2kyaw.github.io/" class="nav-logo">
+        <img src="https://h2kyaw.github.io/images/icon.svg" width="50" height="50" alt="Logo"/>
+      </a>
+    
+    <ul class="nav-links">
+      
+        
+          <li>
+            <a href="https://h2kyaw.github.io/page/about/" id="About"><em class="fas fa-user fa-lg"></em></a>
+          </li>
+          
+      
+        
+          <li>
+            <a href="https://h2kyaw.github.io/tags" id="Tags"><em class="fas fa-tags fa-lg"></em></a>
+          </li>
+          
+      
+        
+          <li>
+            <a href="https://h2kyaw.github.io/categories" id="Category"><em class="fas fa-folder-open fa-lg"></em></a>
+          </li>
+          
+      
+        
+          <li>
+            <a href="https://h2kyaw.github.io/page/ebooks/" id="eBooks"><em class="fas fa-book fa-lg"></em></a>
+          </li>
+          
+      
+        
+          <li>
+            <a href="https://h2kyaw.github.io/page/archives" id="Archives"><em class="fas fa-archive fa-lg"></em></a>
+          </li>
+          
+      
+        
+          <li>
+            <a href="https://h2kyaw.github.io/search" id="Search"><em class="fas fa-search fa-lg"></em></a>
+          </li>
+          
+      
+    </ul>
+  </div>
+</nav>
+
+    <div class="intro-header">
+      <div class="container">
+        <div class="post-heading">
+          
+            <h1>
+              Playing With Database - 1
+            </h1>
+          
+          
+            <span class="meta-post">
+  <em class="fa fa-calendar-alt"></em>
+  Nov 26, 2021
+  
+    &nbsp;&nbsp;&nbsp;<em class="fa fa-folder-open"></em>
+    
+      <a href="https://h2kyaw.github.io/categories/database/">Database</a>
+    
+  
+</span>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+  
+
+    
+  <div class="container" role="main">
+    <article class="article" class="blog-post">
+      
+  <p>အလုပ်လုပ်ရင်းနဲ့ တွေ့ကြုံဖြေရှင်းနေရတာနဲ့တင် Blog တောင်မရေးဖြစ်တာ တော်တော်လေးကို ကြာခဲ့ပါပြီ။ ဒီနေ့တော့ ရေးချင်တာရော နောက်ကြုံတွေ့ရရင် ပြန်ရှာလို့ရနိုင်ဖို့အတွက်ရော ရေးသားဖြစ်လိုက်ပါတော့တယ်။</p>
+<p>အခုလောလောဆယ်မှာတော့ Mybb ကို အသုံးပြုပြီး Forum တစ်ခုကို Develop လုပ်နေရင်းနဲ့မှ Database ထဲမှာ <strong>Strict Mode</strong> က Enable ဖြစ်နေတဲ့အတွက်ကြောင့် ရှာရင်း ဖွေရင်းနဲ့ တွေ့ရတဲ့ Solution လေးအကြောင်းကို မှတ်ထားချင်တာကြောင့် ဒီလိုလေးလုပ်ခဲ့ပါတယ်ပေါ့။</p>
+<p>ကျွန်တော် အခုလောလောဆယ် Runcloud ကို သုံးနေတာဖြစ်တဲ့အတွက်ကြောင့် မတူညီတာတွေရှိကောင်းရှိနိုင်ပါတယ်။ အဓိကကတော့ သက်ဆိုင်ရာ နေရာအလိုက် ဘယ်လိုလုပ်ရမလဲ ဆိုတာကို အခြားတွေမှာပါ ထပ်ပြီးရှာဖွေစေချင်တာတော့ အမှန်ပါပဲ။ ကျွန်တော် လုပ်ခဲ့တာကိုတော့ အောက်မှာ အသေးစိတ်အဆင့်ဆင့်ရှင်းပြထားပါတယ်။</p>
+<p>ပထမဆုံး ssh ကိုလှမ်းချိတ်လိုက်ပါတယ်။ <strong>(Server ရယ်လို့ပြောပြီဆိုရင်တော့ ssh က မပါမဖြစ်နေရာမှာပါပြီပေါ့)</strong> ချိတ်ပြီးရင်တော့ User အနေနဲ့ လုပ်လို့မရတာကြောင့် root user ကိုပြောင်းလိုက်ပါတော့တယ်။</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">su -
+</code></pre></div><p>command ရိုက်ပြီးရင်တော့ <strong>Password:</strong> ဆိုပြီးပေါ်နေရင်တော့ root password ကိုရိုက်ပေးရပါမယ်။ ပြောင်းပြီးသွားရင်တော့ php.ini file ထဲမှာမရှိတဲ့အတွက်ကြောင့် <strong>mysql</strong> folder ထဲကိုပြောင်းပြီး ဆက်လုပ်ရပါတယ်။</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd"><span style="color:#66d9ef">cd</span> /etc/mysql
+</code></pre></div><p>အရင်ဆုံး my.cnf file ကို touch လုပ်မှာဖြစ်တဲ့အတွက်ကြောင့် Server နဲ့ပက်သက်ပြီး တစ်ခုခုလုပ်ရင် လွဲတတ်တာကြောင့် backup အရင်လုပ်ပါတယ်။ ဒါမှလဲ တစ်ခုခုဖြစ်သွားရင် ပြန်ယူလို့ရတာပေါ့။</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">cp my.cnf my.cnf.b
+</code></pre></div><p>အဲ့ဒီနောက်မှာတော့ my.cnf file ကို modify လုပ်ပါတော့မယ်။ nano ဖြစ်ဖြစ် vim ဖြစ်ဖြစ် သုံးလို့ရပေမယ့် ကျွန်တော်ကတော့ nano ကို သုံးလိုက်ပါတော့တယ်။</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">nano my.cnf
+</code></pre></div><p>ပွင့်လာတဲ့ my.cnf မှာပဲ Nano ရဲ့ command ဖြစ်တဲ့ <kbd>Ctrl</kbd> + <kbd>W</kbd> နဲ့ <strong>sql_mode</strong> ကိုရှာလိုက်ပါတော့တယ်။ ကျွန်တော်ပြင်ချင်တာကလဲ sql_mode ဖြစ်တဲ့အတွက်ကြောင့်ပါပဲ။ ဆိုတော့ တွေ့ပြီဆိုရင်တော့။ Default ရှိပြီးသား Line ရဲ့အောက်မှာ အသစ်လေးကို ထည့်ပေးလိုက်ပါတော့တယ်။ တစ်ခုခုဖြစ်တဲ့အခါ အသစ်ထည့်ထားတဲ့ Line ကို Remove လုပ်လိုက်ရင် ရတာဖြစ်တာကြောင့်ပါပဲ။ Server နဲ့ပက်သက်ပြီး error တက်သွားရင် အချိန်ပိုကုန်တာကြောင့် ကိုယ့်ဘက်က Safe Side ဖြစ်အောင်လုပ်ထားတာအကောင်းဆုံးပါပဲ။ အသစ်ထည့်လိုက်တာကတော့</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">sql_mode                = ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+</code></pre></div><p><img src="https://h2kyaw.github.io/images/nano_sql_mode_search_result.png" alt="Nano Search Result of sql_mode ><"></p>
+<p>ဘာကြောင့်လဲဆိုတော့ ကျွန်တော့ mysql ထဲမှာရှိတဲ့ db_queries ကတော့</p>
+<pre><code>STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+</code></pre><p>ဖြစ်နေတဲ့အတွက် <strong>STRICT_TRANS_TABLES</strong> ကို Remove လိုက်တဲ့အတွက်ကြောင့်ပဲဖြစ်ပါတယ်။ အခြားဟာတွေကိုလဲ လိုအပ်သလို ထည့်လို့ရပြီး ဖြုတ်ချင်လဲ ဖြုတ်လို့ရပါတယ်။ အခုလောလောဆယ်မှာတော့ <strong>STRICT_TRANS_TABLES</strong> ကို ဖြုတ်ချင်တာဆိုတော့ <strong>STRICT_TRANS_TABLES</strong> လေးကိုပဲ ဖြုတ်ချလိုက်ပြီး Nano ကို Save ပြီး ပိတ်လိုက်ပါတော့တယ်။ အဲ့ဒီနောက်မှာတော့ Terminal ကနေ Smart ကျကျ Command ရိုက်ပြီးလုပ်မယ်ဟဲ့ဆိုပြီး လုပ်လိုက်ပေမယ့်လို့ အဆင်မပြေတဲ့အတွက်ကြောင့် <strong>Runcloud</strong> ရဲ့ GUI ကနေပဲ click click လေး လုပ်လိုက်ပါတော့တယ်။</p>
+<p><img src="https://h2kyaw.github.io/images/runcloud_running_services.png" alt="Runcloud Running Services ><"></p>
+<p>MariaDB သုံးထားတာဖြစ်ပြီး <strong>Runcloud</strong> Doc ထဲမှာလဲ MariaDB အကြောင်းသိပ်မပါတာနဲ့ပဲ <strong>Runcloud</strong> GUI ရဲ့ Dashboard ထဲမှ Services ကိုသွားပြီး MariaDB ရဲ့ Option မှာ အထာကျကျပဲ <strong>Restart</strong> လုပ်လိုက်ပါတော့တယ်။ အခုဆိုရင်တော့ ssh ထဲကပဲဖြစ်ဖြစ် phpmyadmin ကဖြစ်ဖြစ် စစ်လိုက်ရင် <strong>STRICT_TRANS_TABLES</strong> ဆိုတာလေး မပါတော့ပါဘူး။ ဆိုတော့ အခုလောလောဆယ် ကြုံနေရတဲ့ <strong>Strict Mode</strong> Disable လုပ်တဲ့ဟာလေးက အဆင်ပြေသွားပြီပဲဖြစ်ပါတော့တယ်။ <strong>STRICT_TRANS_TABLES</strong> ကို စစ်ချင်ရင်တော့ Terminal မှဆိုရင်</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">mysql -e <span style="color:#e6db74">&#34;SELECT @@sql_mode;&#34;</span>
+</code></pre></div><p><img src="https://h2kyaw.github.io/images/terminal_mysql_sql_mode.png" alt="Terminal mysql sql_mode ><"></p>
+<p>လို့ရိုက်ပြီး စစ်နိုင်မှာဖြစ်ပါတယ်။ အကယ်လို့သာ phpmyadmin ထဲမှ စစ်ချင်တယ်ဆိုရင်တော့။</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">SHOW GLOBAL VARIABLES LIKE &#39;sql_mode&#39;;
+SHOW SESSION VARIABLES LIKE &#39;sql_mode&#39;;
+</code></pre></div><p><img src="https://h2kyaw.github.io/images/phpmyadmin_sql_mode.png" alt="phpmyadmin sql_mode ><"></p>
+<p>တို့ဖြင့် ကြိုက်နှစ်သက်သလို စစ်လို့ရမှာပါ။ <strong>BOOM!</strong></p>
+
+
+
+      
+        <div class="blog-tags">
+          
+            <a
+              href="https://h2kyaw.github.io/tags/database/"
+              >Database</a
+            >&nbsp;
+          
+        </div>
+      
+    </article>
+    
+    
+      
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+        (function() {
+            
+            
+            if (window.location.hostname == "localhost") return;
+
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            var disqus_shortname = 'heinhtetkyaw';
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+  <noscript
+    >Please enable JavaScript to view the
+    <a href="https://disqus.com/?ref_noscript"
+      >comments powered by Disqus.</a
+    ></noscript
+  >
+  <a href="https://disqus.com/" class="dsq-brlink"
+    >comments powered by <span class="logo-disqus">Disqus</span></a
+  >
+
+
+    
+  </div>
+
+    <footer>
+  <div style="margin-bottom: 5px;">
+    <hr>
+    <i class="fas fa-heartbeat fa-blink fa-2x"></i>
+    <hr>
+  </div>
+  <meta name="twitter:site" content="@HeinHtetKyaw_">
+<meta name="twitter:creator" content="@HeinHtetKyaw_" />
+<meta property="fb:app_id" content="876755112896216" />
+<meta property="fb:admins" content="100063934020877" />
+
+
+  
+  <div class="container">
+    <p class="credits copyright">
+      <a href="https://h2kyaw.github.io/page/about"></a>
+      
+        <a href="https://h2kyaw.github.io/">K&#39;s V/Blog</a>
+      
+      &nbsp;&ndash;&nbsp;
+      <em class="fas fa-moon" id="dark-mode-toggle"></em>
+    </p>
+
+    <p class="credits theme-by">
+      Powered By <a href="https://gohugo.io">Hugo</a>&nbsp;
+      Theme
+      <a href="https://github.com/matsuyoshi30/harbor">Harbor</a>
+    </p>
+
+    <div class="credits copyright">Content licensed under CC BY-NC-ND 4.0, <a class="no-underline" href="https://h2kyaw.github.io/page/previously/" title="Previously on...">2012</a> &ndash; 2021.</div>
+
+  </div>
+</footer>
+
+    
+<script src="https://h2kyaw.github.io/js/twemoji.min.js"></script>
+<script>twemoji.parse(document.body,{"base":"https://h2kyaw.github.io/twemoji/","ext":".svg","folder":"svg"})</script>
+
+  </body>
+</html>

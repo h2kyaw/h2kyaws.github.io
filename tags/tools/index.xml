@@ -14,6 +14,22 @@
 		<atom:link href="/tags/tools/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>Playing With Database - 1</title>
+			<link>https://h2kyaw.github.io/post/2021/playing-with-database-1/</link>
+			<pubDate>Fri, 26 Nov 2021 03:44:49 +0630</pubDate>
+			<guid>https://h2kyaw.github.io/post/2021/playing-with-database-1/</guid>
+			<description>&lt;p&gt;အလုပ်လုပ်ရင်းနဲ့ တွေ့ကြုံဖြေရှင်းနေရတာနဲ့တင် Blog တောင်မရေးဖြစ်တာ တော်တော်လေးကို ကြာခဲ့ပါပြီ။ ဒီနေ့တော့ ရေးချင်တာရော နောက်ကြုံတွေ့ရရင် ပြန်ရှာလို့ရနိုင်ဖို့အတွက်ရော ရေးသားဖြစ်လိုက်ပါတော့တယ်။&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
+			<title>Schedule Shutdown</title>
+			<link>https://h2kyaw.github.io/post/2021/schedule-shutdown/</link>
+			<pubDate>Fri, 20 Aug 2021 20:05:01 +0630</pubDate>
+			<guid>https://h2kyaw.github.io/post/2021/schedule-shutdown/</guid>
+			<description>&lt;p&gt;ကိုယ်က အပြင်သွားချင်တာပဲဖြစ်ဖြစ် Download လုပ်ထားတယ်။ အလုပ်တစ်ခုခုလုပ်ထားတယ်ဆိုရင်ပဲဖြစ်ဖြစ် ကွန်ပျူတာကို ပိတ်တော့ ပိတ်ချင်တယ် အိပ်နေတုန်း အပြင်ရောက်နေတုန်း တစ်နေရာရာကို ရောက်နေတုန်း လှမ်းပိတ်ဖို့ဆိုတာ အဆင်မပြေတဲ့အလုပ်ကြီး တစ်ခုလိုပဲ။ ဘာလုပ်သင့်လဲဆိုရင်တော့ ကျွန်တော်တို့တွေ ကွန်ပျူတာကို Schedule လုပ်ပြီး Shutdown သင့်တာကြောင့် ဟိုရှာဒီမွှေရင်း လိုက်ရှာကြည့်ပြီးတဲ့နောက်မှာတော့ ဘယ်လိုလုပ်ရမလဲဆိုတာကိုတွေ့ပြီး ဒီလိုလုပ်ဖို့အတွက်ကတော့ နည်းလမ်း ၃ မျိုးရှိပါတယ်။ တစ်ဆင့်ချင်းစီ သေချာရှင်းပြပေးပါ့မယ်။&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
 			<title>Spotify Downloader</title>
 			<link>https://h2kyaw.github.io/post/2021/spotify-downloader/</link>
 			<pubDate>Sun, 15 Aug 2021 14:39:23 +0630</pubDate>
@@ -75,22 +91,6 @@
 			<pubDate>Sat, 06 Feb 2021 19:22:51 +0630</pubDate>
 			<guid>https://h2kyaw.github.io/post/2021/generals-zero-hour-crash-fix/</guid>
 			<description>&lt;p&gt;ဒီရက်ပိုင်း စိတ်ထဲမှာ ပစ်ချင် တိုက်ချင်တဲ့ စိတ်ဖြစ်နေတာနဲ့ပဲ ဟိုးအရင်က ဆော့နေကျဂိမ်းလေးကိုသွားသတိရခဲ့မိသေးတယ်။ အဲ့ဒီ ဂိမ်းလေးကတော့ Command &amp;amp; Conquer Generals Zero Hour ဆိုတာလေးပါပဲ။ အင်တာနက် ဆိုင်ကိုသွားပြီး သူငယ်ချင်းတွေနဲ့ ဆော့ခဲ့ရတဲ့အချိန်တွေကိုလဲ သတိရတာနဲ့ ပြန်ဆော့ဖြစ်ရင်းနဲ့ Windows 10 မှာ အဆင်မပြေတာလေးတွေ တွေ့တာနဲ့ ရှာရင်း ဖွေရင်း ရှာဖွေရင်း အဆင်ပြေသွားတာလေးကို နည်းနည်း ပြန်မျှပေးချင်လို့ပါ။ အဆင်ပြေလှမဟုတ်ပေမယ့် ဆော့တဲ့အချိန်တွေကတော့အရင်ကလောက်မထစ်တော့တာနဲ့ပဲ ဒါလေးကိုလဲ မှတ်စုအဖြစ် သိမ်းဖို့ စဉ်းစားမိရင်း ရေးပေးပါအုံးမယ်။&lt;/p&gt;</description>
-		</item>
-      	
-		<item>
-			<title>Activate Office With KMS License Key</title>
-			<link>https://h2kyaw.github.io/post/2021/activate-office-with-kms-license-key/</link>
-			<pubDate>Fri, 05 Feb 2021 21:41:16 +0630</pubDate>
-			<guid>https://h2kyaw.github.io/post/2021/activate-office-with-kms-license-key/</guid>
-			<description>&lt;p&gt;မနေ့ကရေးခဲ့တာကတော့ Windows 10 ကို Active လုပ်မလဲလို့ ရေးခဲ့ပြီးပြီဆိုတော့ ဒီနေ့တော့ ကျွန်တော် ရေးသွားမှာက Microsoft Office နဲ့ Office 365 ကို ဘယ်လို Active လုပ်ရမလဲဆိုတာပါပဲ။ ဘာ Software မှမသုံးပါပဲ command File တစ်ခုတည်းနဲ့လုပ်သွားမှာပဲဖြစ်ပါတယ်။ အကယ်လို့သာ Manual လုပ်ချင်ရင်လဲ အဆင်ပြေမှာပဲဖြစ်ပါတယ်။ နည်းလမ်းနှစ်ခုလုံးကိုတော့ ပြောပြပေးသွားပါ့မယ်။&lt;/p&gt;</description>
-		</item>
-      	
-		<item>
-			<title>Activate Windows 10 Pro Permanently</title>
-			<link>https://h2kyaw.github.io/post/2021/activate-windows-10-pro-permanently/</link>
-			<pubDate>Thu, 04 Feb 2021 22:08:58 +0630</pubDate>
-			<guid>https://h2kyaw.github.io/post/2021/activate-windows-10-pro-permanently/</guid>
-			<description>&lt;p&gt;Facebook ရဲ့ Ads တွေ တော်တော်များများထဲမှာ Window Activation လုပ်ဖို့အတွက် Key တွေ ရောင်းတဲ့အခါမှာ Crack Version တွေ ဘာတွေကပဲ Virus ကိုက်တာလိုလို ဘာလိုလိုရေးထားတာတွေများသားဆိုတော့ ကိုယ်သုံးတဲ့ သက်တမ်းတလျှောက်တော့ ဘာဆိုဘာမှကိုမဖြစ်ခဲ့ဖူးသေးတော့ သူတို့ပြောတဲ့ Window Active က app တွေနဲ့များဖြစ်နေမလားပေါ့ &amp;hellip;&lt;/p&gt;</description>
 		</item>
       	
 	</channel>

@@ -170,3 +170,7 @@ img.emoji {
 .meta-post a:last-child:after {
   content: "";
 }
+.container img {
+  width: auto !important;
+  max-width: 100%;
+}
